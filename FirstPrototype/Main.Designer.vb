@@ -22,7 +22,6 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Door = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
@@ -31,18 +30,7 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
-        CType(Me.Door, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Door
-        '
-        Me.Door.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
-        Me.Door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Door.Location = New System.Drawing.Point(222, 20)
-        Me.Door.Name = "Door"
-        Me.Door.Size = New System.Drawing.Size(37, 46)
-        Me.Door.TabIndex = 0
-        Me.Door.TabStop = False
         '
         'Panel1
         '
@@ -127,15 +115,12 @@ Partial Class Main
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Door)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        CType(Me.Door, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Door As System.Windows.Forms.PictureBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
