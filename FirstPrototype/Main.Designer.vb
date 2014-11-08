@@ -22,31 +22,33 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Door = New System.Windows.Forms.PictureBox()
+        CType(Me.Door, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'Door
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(100, 101)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Door.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
+        Me.Door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Door.Location = New System.Drawing.Point(235, 204)
+        Me.Door.Name = "Door"
+        Me.Door.Size = New System.Drawing.Size(37, 46)
+        Me.Door.TabIndex = 0
+        Me.Door.TabStop = False
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Door)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Door, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Door As System.Windows.Forms.PictureBox
 
 End Class
