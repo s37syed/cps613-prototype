@@ -13,4 +13,12 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Door.Click
         Me.Close()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
+
+    End Sub
+
+    Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
+
+    End Sub
 End Class
