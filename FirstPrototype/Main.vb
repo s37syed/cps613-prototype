@@ -1,6 +1,6 @@
-﻿Public Class Form1
+﻿Public Class Main
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = DateTime.Now.ToShortTimeString()
+        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
     End Sub
 End Class
