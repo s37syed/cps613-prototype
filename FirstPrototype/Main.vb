@@ -10,7 +10,7 @@
         Me.Location = New System.Drawing.Point(X, Y)
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Door.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 End Class

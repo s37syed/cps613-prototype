@@ -22,20 +22,8 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Door = New System.Windows.Forms.PictureBox()
         Me.Clock1 = New AnalogClock.Clock()
-        CType(Me.Door, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Door
-        '
-        Me.Door.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
-        Me.Door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Door.Location = New System.Drawing.Point(102, 82)
-        Me.Door.Name = "Door"
-        Me.Door.Size = New System.Drawing.Size(28, 30)
-        Me.Door.TabIndex = 0
-        Me.Door.TabStop = False
         '
         'Clock1
         '
@@ -68,15 +56,12 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(134, 116)
         Me.Controls.Add(Me.Clock1)
-        Me.Controls.Add(Me.Door)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        CType(Me.Door, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Door As System.Windows.Forms.PictureBox
     Friend WithEvents Clock1 As AnalogClock.Clock
 
 End Class
