@@ -43,6 +43,7 @@ Partial Class ContactScreen3
         'ContactPhoto
         '
         Me.ContactPhoto.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_image
+        Me.ContactPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactPhoto.Location = New System.Drawing.Point(40, 19)
         Me.ContactPhoto.Name = "ContactPhoto"
         Me.ContactPhoto.Size = New System.Drawing.Size(33, 33)
@@ -52,6 +53,7 @@ Partial Class ContactScreen3
         'ContactPhone
         '
         Me.ContactPhone.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_call
+        Me.ContactPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactPhone.Location = New System.Drawing.Point(8, 58)
         Me.ContactPhone.Name = "ContactPhone"
         Me.ContactPhone.Size = New System.Drawing.Size(33, 33)
@@ -61,6 +63,7 @@ Partial Class ContactScreen3
         'ContactMsg
         '
         Me.ContactMsg.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_text
+        Me.ContactMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactMsg.Location = New System.Drawing.Point(72, 58)
         Me.ContactMsg.Name = "ContactMsg"
         Me.ContactMsg.Size = New System.Drawing.Size(33, 33)
