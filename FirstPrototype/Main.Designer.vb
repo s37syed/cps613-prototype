@@ -30,11 +30,12 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.Calendar
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Location = New System.Drawing.Point(87, 49)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(113, 113)
@@ -119,7 +120,6 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
