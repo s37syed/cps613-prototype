@@ -63,9 +63,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property Calendar() As System.Drawing.Bitmap
+        Friend ReadOnly Property door_resized1() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Calendar", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("door_resized1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -73,9 +73,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property door_resized1() As System.Drawing.Bitmap
+        Friend ReadOnly Property notepad() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("door_resized1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("notepad", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property notepad_even_smaller() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("notepad_even_smaller", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property notepad_smaller() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("notepad_smaller", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property notepad_smallest() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("notepad_smallest", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

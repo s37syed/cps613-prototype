@@ -74,6 +74,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar2.Designer.vb">
+      <DependentUpon>Calendar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,8 +108,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Tasks.Designer.vb">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar2.resx">
+      <DependentUpon>Calendar2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +130,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +152,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17NumberSeventeenInCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_even_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smallest.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

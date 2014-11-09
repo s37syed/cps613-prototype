@@ -30,12 +30,14 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.Calendar
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Location = New System.Drawing.Point(87, 49)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(113, 113)
@@ -104,11 +106,22 @@ Partial Class Main
         Me.PowerButton.Text = "Power"
         Me.PowerButton.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(135, 197)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 31)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
@@ -120,6 +133,7 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -131,5 +145,6 @@ Partial Class Main
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
