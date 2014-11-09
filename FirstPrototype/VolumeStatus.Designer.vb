@@ -41,7 +41,7 @@ Partial Class VolumeStatus
         Me.Controls.Add(Me.VolumeStatusLabel)
         Me.Location = New System.Drawing.Point(20, 30)
         Me.Name = "VolumeStatus"
-        Me.Size = New System.Drawing.Size(68, 25)
+        Me.Size = New System.Drawing.Size(83, 25)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

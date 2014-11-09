@@ -6,6 +6,8 @@ Public Class Main
     Dim volumeStatus As VolumeStatus = New VolumeStatus()
 
     Dim TimerValue As Integer = 0
+
+    Dim musicArtist As MusicArtist = New MusicArtist()
     '########################################## ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##########################################
 
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -29,6 +31,8 @@ Public Class Main
     End Sub
 
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
+
+        Panel1.Controls.Add(musicArtist)
 
     End Sub
 

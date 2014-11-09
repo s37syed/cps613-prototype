@@ -36,6 +36,7 @@ Partial Class Main
         '
         'Panel1
         '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Location = New System.Drawing.Point(87, 49)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(113, 113)
@@ -103,6 +104,9 @@ Partial Class Main
         Me.PowerButton.TabIndex = 8
         Me.PowerButton.Text = "Power"
         Me.PowerButton.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
         '
         'Main
         '

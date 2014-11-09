@@ -1,20 +1,19 @@
 ﻿Public Class MusicArtist
 
+    Dim MusicArtistNames As String() = {"Lord", "Drake", "fucker13", "fucker11"}
+
+    Dim musicAlbum As MusicAlbum = New MusicAlbum()
 
 
-    Private Sub MusicArtist1_Click(sender As Object, e As EventArgs) Handles MusicArtist1.Click
+    Sub New()
 
-    End Sub
+        ' This call is required by the designer.
+        InitializeComponent()
 
-    Private Sub MusicArtist2_Click(sender As Object, e As EventArgs) Handles MusicArtist2.Click
+        ' Add any initialization after the InitializeComponent() call.
 
-    End Sub
+      
 
-    Private Sub MusicArtist3_Click(sender As Object, e As EventArgs) Handles MusicArtist3.Click
-
-    End Sub
-
-    Private Sub MusicArtist4_Click(sender As Object, e As EventArgs) Handles MusicArtist4.Click
 
     End Sub
 
