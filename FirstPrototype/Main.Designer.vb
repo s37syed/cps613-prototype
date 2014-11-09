@@ -33,6 +33,8 @@ Partial Class Main
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.MainWatch = New System.Windows.Forms.Panel()
+        Me.PhoneContacts1 = New FirstPrototype.PhoneContacts()
+        Me.MainWatch.SuspendLayout()
         Me.SuspendLayout()
         '
         'SwipeUpButton
@@ -110,10 +112,18 @@ Partial Class Main
         'MainWatch
         '
         Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Controls.Add(Me.PhoneContacts1)
         Me.MainWatch.Location = New System.Drawing.Point(87, 49)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 10
+        '
+        'PhoneContacts1
+        '
+        Me.PhoneContacts1.Location = New System.Drawing.Point(-1, -1)
+        Me.PhoneContacts1.Name = "PhoneContacts1"
+        Me.PhoneContacts1.Size = New System.Drawing.Size(113, 113)
+        Me.PhoneContacts1.TabIndex = 0
         '
         'Main
         '
@@ -132,6 +142,7 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
+        Me.MainWatch.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -146,5 +157,6 @@ Partial Class Main
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
+    Friend WithEvents PhoneContacts1 As FirstPrototype.PhoneContacts
 
 End Class

@@ -121,7 +121,7 @@
   <data name="MessagesMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfeCwgWIyDL6EZq
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfeCwgWIyDL6EZq
         AAAClUlEQVRoQ+3YvWsUQRzG8dOoECTaaiEENVF8iSgYX5CARYIWdiJoKVb+A1oqNkER7FXwDwgRtAhW
         mhSmyT8gChoUFVG0NS/q91n5HcNkLpnx5uYumAc+cLu53Xt2M7c3u7XVnr14iIlC7mIz/jlj+N0mV5Gc
         89DGv7CIzwV8glt8P5LyHLbxVq0olFOwzx3XikD24Ce+oU8rLO+gDZ9US+WyAfpc/YentMLLEOZgB6by
@@ -139,7 +139,7 @@
   <data name="PhoneMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfeCwgWJA8veO30
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfeCwgWJA8veO30
         AAACLUlEQVRoQ+3Yu2sUURjG4fVCMEaDl2Bj2mhjaREExUbEWkhIYRHMn6CB9GItCkoCIRaCoFiolQqC
         JKCFpU1Q0iRFIAQvJAHB2+8FPxgO385mk7M5X5EXHhaG3Z13Zs/OnDmN3QTKWbzAe1zWhsg5gDv4W/EL
         XQiZXvxAtbB5jnA5gm/wCv/5/3oKYaIhsYa0bOor9iFEbsEr6bmO4umBV67OURTNBLxidV6haF7DK9bK
@@ -155,7 +155,7 @@
   <data name="ContactsMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAACYktHRAD/h4/MvwAAAAd0SU1FB94LCBYiNb8uk8AAAAH2
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAACYktHRAD/h4/MvwAAAAd0SU1FB94LCBYiNb8uk8AAAAH2
         SURBVGhD1Zi9LgRRGIYnkWjUgpugVCncgSvQUotCiVan1WlocAGuQaOgkVCriHrxPuwnJ7PfrPk5Z3bO
         mzzZnTPfz5ud87O7RSQtiy1xJu7Fh/gcv3LNOPeJm7nmxaX4agDx5M1Eu+JdYIRPtWzOw+LII79XHYvQ
         RFMsjzq9yAzHIrlxHqnXuCvJpgqLh7nYdkpUQT3qJlmcTXeJplA/qthfKRz7UzasbtR9nIOh3CgF9Imm
@@ -170,7 +170,7 @@
   <data name="CalendarMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAACYktHRAD/h4/MvwAAAAd0SU1FB94LCBYgGb/AnaEAAALv
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAACYktHRAD/h4/MvwAAAAd0SU1FB94LCBYgGb/AnaEAAALv
         SURBVGhD7dhLqIxhHMdxUSwsJKXcr7lkYyWyUZJSpIhiYYEVuSykZMPGwlLKLdfIbWFjQywQFiglbFwi
         otxS7hy+X/yn13uemTPjjPEov/qcmZ73eef8Zs57eeZ0IV//QcnB3CUHc5cczF1yMHfJwdwlB3OXHMxd
         cjB333+0FQZyFj1/GfiMTxmyV/GDrTx5hWPYgV0ZsY+97Neu9E30cyDD2Mt+7UrfxigHMoy97Pe/9J9O

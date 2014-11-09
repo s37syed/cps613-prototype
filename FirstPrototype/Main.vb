@@ -1,8 +1,9 @@
 ﻿Public Class Main
     Private MainScreenTracker As Integer
-    Dim MenuScreen0 As ClockScreen = New ClockScreen
-    Dim menuScreen1 As MenuScreen1 = New MenuScreen1
-    Dim menuScreen2 As MenuScreen2 = New MenuScreen2
+    Shared MenuScreen0 As ClockScreen = New ClockScreen
+    Shared menuScreen1 As MenuScreen1 = New MenuScreen1
+    Shared menuScreen2 As MenuScreen2 = New MenuScreen2
+    Shared PhoneContactsScreen As PhoneContacts = New PhoneContacts
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         'Hide the title bar
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -15,8 +16,7 @@
         MainWatch.Controls.Add(MenuScreen0)
         MainWatch.Controls.Add(menuScreen1)
         MainWatch.Controls.Add(menuScreen2)
-
-
+        MainWatch.Controls.Add(PhoneContactsScreen)
     End Sub
 
    
@@ -58,4 +58,11 @@
         MainScreenTracker = 0
     End Sub
 
+    Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
+        PhoneContacts1.scrollDown()
+    End Sub
+
+    Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
+        PhoneContacts1.scrollUp()
+    End Sub
 End Class
