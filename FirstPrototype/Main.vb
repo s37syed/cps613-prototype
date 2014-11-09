@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
-
+        Debug.Write("test" & vbCrLf)
     End Sub
 
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
