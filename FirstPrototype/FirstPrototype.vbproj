@@ -74,6 +74,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactScreen2.Designer.vb">
+      <DependentUpon>ContactScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactScreen3.Designer.vb">
+      <DependentUpon>ContactScreen3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ContactScreen2.resx">
+      <DependentUpon>ContactScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactScreen3.resx">
+      <DependentUpon>ContactScreen3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>

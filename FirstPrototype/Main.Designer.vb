@@ -107,6 +107,7 @@ Partial Class Main
         '
         'MainWatch
         '
+        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MainWatch.Location = New System.Drawing.Point(87, 49)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
