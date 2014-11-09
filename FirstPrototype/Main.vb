@@ -1,9 +1,9 @@
 ﻿Public Class Main
-    Public horizontalCount As Integer
-    Public verticalCount As Integer
+    Public Shared horizontalCount As Integer
+    Public Shared verticalCount As Integer
     'Create controls
-    Dim contactScreen As ContactScreen = New ContactScreen
-    Dim contactScreen2 As ContactScreen2 = New ContactScreen2
+    Public contactScreen1 As ContactScreen = New ContactScreen
+    Public contactScreen2 As ContactScreen2 = New ContactScreen2
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         'Hide the title bar
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -13,20 +13,19 @@
         Me.StartPosition = FormStartPosition.Manual
         Me.Location = New System.Drawing.Point(X, Y)
         'Add controls
-        MainWatch.Controls.Add(contactScreen)
+        MainWatch.Controls.Add(contactScreen1)
         MainWatch.Controls.Add(contactScreen2)
         For Each cont In MainWatch.Controls
             cont.Hide()
         Next cont
     End Sub
-
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
         For Each cont In MainWatch.Controls
             cont.Hide()
         Next cont
         horizontalCount = horizontalCount + 1
         If (horizontalCount = 1) Then
-            contactScreen.Show()
+            contactScreen1.Show()
         End If
     End Sub
 
@@ -42,41 +41,22 @@
             horizontalCount = horizontalCount - 1
         End If
         If (horizontalCount = 1) Then
-            contactScreen.Show()
+            contactScreen1.Show()
         End If
     End Sub
 
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         If (horizontalCount = 1) Then
-            For Each cont In MainWatch.Controls
-                cont.Hide()
-            Next cont
-            If Not verticalCount = 0 Then
-                verticalCount = verticalCount - 1
-            End If
-            If (verticalCount = 0) Then
-                contactScreen.Show()
-            End If
-            If (verticalCount = 1) Then
-                contactScreen2.Show()
-            End If
+            contactScreen1.scrollUp()
         End If
     End Sub
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
         If (horizontalCount = 1) Then
-            For Each cont In MainWatch.Controls
-                cont.Hide()
-            Next cont
-            If Not verticalCount = 1 Then
-                verticalCount = verticalCount + 1
-            End If
-            If (verticalCount = 0) Then
-                contactScreen.Show()
-            End If
-            If (verticalCount = 1) Then
-                contactScreen2.Show()
-            End If
+            'For Each cont In MainWatch.Controls
+            '    cont.Hide()
+            'Next cont
+            contactScreen1.scrollDown()
         End If
     End Sub
 End Class

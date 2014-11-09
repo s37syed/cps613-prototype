@@ -1,7 +1,60 @@
 ﻿Public Class ContactScreen
+    Dim contactScreen3 As ContactScreen3 = New ContactScreen3()
+    Dim contacts() As String
+    Dim buttons() As Button
+    Dim firstPosition As Integer
+    Dim lastPosition As Integer
+    Dim currentPosition As Integer
+    Sub New()
 
-    Private Sub Name_Click(sender As Object, e As EventArgs) Handles Name1.Click, Name2.Click, Name3.Click, Name4.Click
-        Dim clickedLabel = TryCast(sender, Label)
-        Debug.Write(clickedLabel.Text.ToString & vbCrLf)
+        ' This call is required by the designer.
+        InitializeComponent()
+        contacts = {"Mom", "Dad", "Danielle", "Christina", "Andrea", "Johnny", "Lorde"}
+        buttons = {Contact1, Contact2, Contact3, Contact4}
+        firstPosition = 0
+        lastPosition = 0
+        currentPosition = 0
+        For counter As Integer = 0 To 3
+            buttons(counter).Text = contacts(counter)
+            lastPosition += 1
+        Next
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
+
+    Sub scrollDown()
+        If lastPosition + 1 <= 6 Then
+            firstPosition += 1
+            lastPosition += 1
+            currentPosition = firstPosition
+            For counter As Integer = 0 To 3
+                buttons(counter).Text = contacts(currentPosition)
+                currentPosition += 1
+            Next
+        End If
+    End Sub
+
+    Sub scrollUp()
+        If firstPosition - 1 >= 0 Then
+            firstPosition -= 1
+            lastPosition -= 1
+            currentPosition = firstPosition
+            For counter As Integer = 0 To 3
+                buttons(counter).Text = contacts(currentPosition)
+                currentPosition += 1
+            Next
+        End If
+    End Sub
+    Private Sub Name_Click(sender As Object, e As EventArgs) Handles Contact1.Click, Contact2.Click, Contact3.Click, Contact4.Click
+        'continue from here
+        Dim clickedLabel = TryCast(sender, Button)
+        Main.MainWatch.Controls.Add(contactScreen3)
+        For Each cont In Main.MainWatch.Controls
+            cont.Hide()
+        Next cont
+        contactScreen3.Show()
+        contactScreen3.ContactName.Text = clickedLabel.Text.ToString
+        Main.horizontalCount = 2
+        Main.verticalCount = 0
     End Sub
 End Class

@@ -1,7 +1,6 @@
 ﻿Public Class ContactScreen2
-
-    Private Sub Name5_Click(sender As Object, e As EventArgs) Handles Name5.Click, Name6.Click, Name7.Click, Name8.Click
+    Public Sub Name2_Click(sender As Object, e As EventArgs) Handles Name5.Click, Name6.Click, Name7.Click, Name8.Click
         Dim clickedLabel = TryCast(sender, Label)
-        Debug.Write(clickedLabel.Text.ToString & vbCrLf)
+        ContactScreen3.nameContact = clickedLabel.Text.ToString
     End Sub
 End Class
