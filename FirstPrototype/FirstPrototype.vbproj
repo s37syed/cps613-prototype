@@ -126,6 +126,7 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ContactScreen.resx">
       <DependentUpon>ContactScreen.vb</DependentUpon>
@@ -143,8 +144,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\door_resized1.png" />
+    <None Include="Resources\placeholder_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder_text.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
