@@ -22,7 +22,6 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDownButton = New System.Windows.Forms.Button()
@@ -30,15 +29,11 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.DoorButton = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
+        Me.MainWatch = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Location = New System.Drawing.Point(87, 49)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(113, 113)
-        Me.Panel1.TabIndex = 1
         '
         'SwipeUpButton
         '
@@ -103,11 +98,30 @@ Partial Class Main
         Me.PowerButton.Text = "Power"
         Me.PowerButton.UseVisualStyleBackColor = True
         '
+        'DoorButton
+        '
+        Me.DoorButton.Location = New System.Drawing.Point(111, 205)
+        Me.DoorButton.Name = "DoorButton"
+        Me.DoorButton.Size = New System.Drawing.Size(75, 23)
+        Me.DoorButton.TabIndex = 9
+        Me.DoorButton.Text = "Door"
+        Me.DoorButton.UseVisualStyleBackColor = True
+        '
+        'MainWatch
+        '
+        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Name = "MainWatch"
+        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
+        Me.MainWatch.TabIndex = 10
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
+        Me.Controls.Add(Me.MainWatch)
+        Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
@@ -115,15 +129,12 @@ Partial Class Main
         Me.Controls.Add(Me.SwipeDownButton)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
-        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
     Friend WithEvents SwipeDownButton As System.Windows.Forms.Button
@@ -131,5 +142,9 @@ Partial Class Main
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
+    Friend WithEvents DoorButton As System.Windows.Forms.Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents MainWatch As System.Windows.Forms.Panel
 
 End Class

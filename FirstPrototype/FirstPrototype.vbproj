@@ -46,6 +46,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AnalogClockControl">
+      <HintPath>..\..\..\Documents\Downloads\AnalogClockControl\AnalogClockControl\bin\Release\AnalogClockControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -71,12 +74,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClockScreen.Designer.vb">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClockScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuScreen1.Designer.vb">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen2.Designer.vb">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen2.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -93,15 +114,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PhoneContacts.Designer.vb">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClockScreen.resx">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen1.resx">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen2.resx">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneContacts.resx">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +157,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\door_resized1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageTracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1Tracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page2TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page3TrackerClear.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
