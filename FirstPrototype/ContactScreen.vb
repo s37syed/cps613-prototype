@@ -54,6 +54,9 @@
         Next cont
         contactScreen3.Show()
         contactScreen3.ContactName.Text = clickedLabel.Text.ToString
+        ' center the text
+        contactScreen3.ContactName.Left = 57 - contactScreen3.ContactName.Width \ 2
+        ' make it so you can't scroll anywhere except left
         Main.freeze = True
         Main.horizontalCount = Main.horizontalCount + 1
     End Sub
