@@ -22,65 +22,74 @@ Partial Class ContactScreen2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Name8 = New System.Windows.Forms.Label()
-        Me.Name7 = New System.Windows.Forms.Label()
-        Me.Name6 = New System.Windows.Forms.Label()
-        Me.Name5 = New System.Windows.Forms.Label()
+        Me.ContactName = New System.Windows.Forms.Label()
+        Me.ContactPhoto = New System.Windows.Forms.PictureBox()
+        Me.ContactPhone = New System.Windows.Forms.PictureBox()
+        Me.ContactMsg = New System.Windows.Forms.PictureBox()
+        CType(Me.ContactPhoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ContactPhone, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ContactMsg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Name8
+        'ContactName
         '
-        Me.Name8.AutoSize = True
-        Me.Name8.Location = New System.Drawing.Point(3, 92)
-        Me.Name8.Name = "Name8"
-        Me.Name8.Size = New System.Drawing.Size(67, 13)
-        Me.Name8.TabIndex = 1
-        Me.Name8.Text = "Drizzy Drake"
+        Me.ContactName.AutoSize = True
+        Me.ContactName.Location = New System.Drawing.Point(39, 3)
+        Me.ContactName.Name = "ContactName"
+        Me.ContactName.Size = New System.Drawing.Size(35, 13)
+        Me.ContactName.TabIndex = 0
+        Me.ContactName.Text = "Name"
         '
-        'Name7
+        'ContactPhoto
         '
-        Me.Name7.AutoSize = True
-        Me.Name7.Location = New System.Drawing.Point(3, 65)
-        Me.Name7.Name = "Name7"
-        Me.Name7.Size = New System.Drawing.Size(45, 13)
-        Me.Name7.TabIndex = 2
-        Me.Name7.Text = "Danielle"
+        Me.ContactPhoto.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_image
+        Me.ContactPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ContactPhoto.Location = New System.Drawing.Point(40, 19)
+        Me.ContactPhoto.Name = "ContactPhoto"
+        Me.ContactPhoto.Size = New System.Drawing.Size(33, 33)
+        Me.ContactPhoto.TabIndex = 1
+        Me.ContactPhoto.TabStop = False
         '
-        'Name6
+        'ContactPhone
         '
-        Me.Name6.AutoSize = True
-        Me.Name6.Location = New System.Drawing.Point(3, 38)
-        Me.Name6.Name = "Name6"
-        Me.Name6.Size = New System.Drawing.Size(35, 13)
-        Me.Name6.TabIndex = 3
-        Me.Name6.Text = "Butch"
+        Me.ContactPhone.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_call
+        Me.ContactPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ContactPhone.Location = New System.Drawing.Point(8, 58)
+        Me.ContactPhone.Name = "ContactPhone"
+        Me.ContactPhone.Size = New System.Drawing.Size(33, 33)
+        Me.ContactPhone.TabIndex = 1
+        Me.ContactPhone.TabStop = False
         '
-        'Name5
+        'ContactMsg
         '
-        Me.Name5.AutoSize = True
-        Me.Name5.Location = New System.Drawing.Point(3, 11)
-        Me.Name5.Name = "Name5"
-        Me.Name5.Size = New System.Drawing.Size(35, 13)
-        Me.Name5.TabIndex = 4
-        Me.Name5.Text = "Hogie"
+        Me.ContactMsg.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_text
+        Me.ContactMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ContactMsg.Location = New System.Drawing.Point(72, 58)
+        Me.ContactMsg.Name = "ContactMsg"
+        Me.ContactMsg.Size = New System.Drawing.Size(33, 33)
+        Me.ContactMsg.TabIndex = 1
+        Me.ContactMsg.TabStop = False
         '
-        'ContactScreen2
+        'ContactScreen3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Name8)
-        Me.Controls.Add(Me.Name7)
-        Me.Controls.Add(Me.Name6)
-        Me.Controls.Add(Me.Name5)
-        Me.Name = "ContactScreen2"
+        Me.Controls.Add(Me.ContactPhone)
+        Me.Controls.Add(Me.ContactMsg)
+        Me.Controls.Add(Me.ContactPhoto)
+        Me.Controls.Add(Me.ContactName)
+        Me.Name = "ContactScreen3"
         Me.Size = New System.Drawing.Size(113, 113)
+        CType(Me.ContactPhoto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ContactPhone, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ContactMsg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Name8 As System.Windows.Forms.Label
-    Friend WithEvents Name7 As System.Windows.Forms.Label
-    Friend WithEvents Name6 As System.Windows.Forms.Label
-    Friend WithEvents Name5 As System.Windows.Forms.Label
+    Friend WithEvents ContactName As System.Windows.Forms.Label
+    Friend WithEvents ContactPhoto As System.Windows.Forms.PictureBox
+    Friend WithEvents ContactPhone As System.Windows.Forms.PictureBox
+    Friend WithEvents ContactMsg As System.Windows.Forms.PictureBox
 
 End Class

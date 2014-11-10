@@ -1,9 +1,9 @@
 ﻿Public Class Main
-    Public Shared horizontalCount As Integer
-    Public Shared verticalCount As Integer
+    ' Assuming we're already in the first screen
+    Public Shared horizontalCount = 1
+    Public Shared freeze As Boolean = True
     'Create controls
     Public contactScreen1 As ContactScreen = New ContactScreen
-    Public contactScreen2 As ContactScreen2 = New ContactScreen2
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         'Hide the title bar
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -14,18 +14,23 @@
         Me.Location = New System.Drawing.Point(X, Y)
         'Add controls
         MainWatch.Controls.Add(contactScreen1)
-        MainWatch.Controls.Add(contactScreen2)
-        For Each cont In MainWatch.Controls
-            cont.Hide()
-        Next cont
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        For Each cont In MainWatch.Controls
-            cont.Hide()
-        Next cont
-        horizontalCount = horizontalCount + 1
+        Debug.WriteLine(horizontalCount)
+        'Increment every time you swipe to the right, as long as freeze isn't flagged
+        If (freeze = False) Then
+            horizontalCount = horizontalCount + 1
+        End If
+        ' If you slide to the right once, show the contact screen. Stop moving once ur at the right.
         If (horizontalCount = 1) Then
+            Debug.WriteLine("Currently at Contacts screen")
+            freeze = True
             contactScreen1.Show()
+        End If
+        ' If you are at the Contact3 screen, then you cannot go right anymore
+        If (horizontalCount = 2) Then
+            Debug.WriteLine("Currently at Contacts Add screen")
+            freeze = True
         End If
     End Sub
 
@@ -34,10 +39,9 @@
     End Sub
 
     Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
-        For Each cont In MainWatch.Controls
-            cont.Hide()
-        Next cont
-        If Not horizontalCount = 0 Then
+        Debug.WriteLine(horizontalCount)
+        'Decrement every time you swipe to the left, as long as it isn't the Contacts screen
+        If Not horizontalCount = 1 Then
             horizontalCount = horizontalCount - 1
         End If
         If (horizontalCount = 1) Then
@@ -53,9 +57,6 @@
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
         If (horizontalCount = 1) Then
-            'For Each cont In MainWatch.Controls
-            '    cont.Hide()
-            'Next cont
             contactScreen1.scrollDown()
         End If
     End Sub

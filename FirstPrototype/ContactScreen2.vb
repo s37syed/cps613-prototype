@@ -1,6 +1,7 @@
 ﻿Public Class ContactScreen2
-    Public Sub Name2_Click(sender As Object, e As EventArgs) Handles Name5.Click, Name6.Click, Name7.Click, Name8.Click
-        Dim clickedLabel = TryCast(sender, Label)
-        ContactScreen3.nameContact = clickedLabel.Text.ToString
+    Public Shared nameContact As String
+    Private Sub ContactScreen3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.ContactName.Left = Me.ClientSize.Width \ 2 - Me.ContactName.Width \ 2
+        ContactName.Text = nameContact
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class ContactScreen
-    Dim contactScreen3 As ContactScreen3 = New ContactScreen3()
+    Public Shared contactScreen3 As ContactScreen2 = New ContactScreen2()
     Dim contacts() As String
     Dim buttons() As Button
     Dim firstPosition As Integer
@@ -54,7 +54,7 @@
         Next cont
         contactScreen3.Show()
         contactScreen3.ContactName.Text = clickedLabel.Text.ToString
-        Main.horizontalCount = 2
-        Main.verticalCount = 0
+        Main.freeze = True
+        Main.horizontalCount = Main.horizontalCount + 1
     End Sub
 End Class
