@@ -1,5 +1,5 @@
 ﻿Public Class ContactScreen
-    Public Shared contactScreen3 As ContactScreen2 = New ContactScreen2()
+    Public Shared contactScreen2 As ContactScreen2 = New ContactScreen2()
     Dim contacts() As String
     Dim buttons() As Button
     Dim firstPosition As Integer
@@ -48,14 +48,14 @@
     Private Sub Name_Click(sender As Object, e As EventArgs) Handles Contact1.Click, Contact2.Click, Contact3.Click, Contact4.Click
         'continue from here
         Dim clickedLabel = TryCast(sender, Button)
-        Main.MainWatch.Controls.Add(contactScreen3)
+        Main.MainWatch.Controls.Add(contactScreen2)
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
         Next cont
-        contactScreen3.Show()
-        contactScreen3.ContactName.Text = clickedLabel.Text.ToString
+        contactScreen2.Show()
+        contactScreen2.ContactName.Text = clickedLabel.Text.ToString
         ' center the text
-        contactScreen3.ContactName.Left = 57 - contactScreen3.ContactName.Width \ 2
+        contactScreen2.ContactName.Left = 57 - contactScreen2.ContactName.Width \ 2
         ' make it so you can't scroll anywhere except left
         Main.freeze = True
         Main.horizontalCount = Main.horizontalCount + 1
