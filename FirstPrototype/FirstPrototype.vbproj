@@ -105,6 +105,15 @@
     <Compile Include="ContactScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ReceiveMsg.Designer.vb">
+      <DependentUpon>ReceiveMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMsg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransparentTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContactScreen2.resx">
@@ -121,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContactScreen.resx">
       <DependentUpon>ContactScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveMsg.resx">
+      <DependentUpon>ReceiveMsg.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
