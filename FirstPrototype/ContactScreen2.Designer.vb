@@ -70,7 +70,7 @@ Partial Class ContactScreen2
         Me.ContactMsg.TabIndex = 1
         Me.ContactMsg.TabStop = False
         '
-        'ContactScreen3
+        'ContactScreen2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -78,7 +78,7 @@ Partial Class ContactScreen2
         Me.Controls.Add(Me.ContactMsg)
         Me.Controls.Add(Me.ContactPhoto)
         Me.Controls.Add(Me.ContactName)
-        Me.Name = "ContactScreen3"
+        Me.Name = "ContactScreen2"
         Me.Size = New System.Drawing.Size(113, 113)
         CType(Me.ContactPhoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ContactPhone, System.ComponentModel.ISupportInitialize).EndInit()
