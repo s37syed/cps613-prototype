@@ -111,9 +111,6 @@
     <Compile Include="ReceiveMsg.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TransparentTextBox.vb">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContactScreen2.resx">
