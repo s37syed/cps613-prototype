@@ -144,6 +144,12 @@
   <ItemGroup>
     <None Include="Resources\placeholder_text.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_delete_msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_new_msg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
