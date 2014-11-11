@@ -24,32 +24,37 @@ Partial Class ReceiveMsg
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReceiveMsg))
         Me.ContactName = New System.Windows.Forms.Label()
-        Me.TempTextBox = New System.Windows.Forms.RichTextBox()
+        Me.TransparentTextBox = New FirstPrototype.TransparentRichTextBox()
         Me.SuspendLayout()
         '
         'ContactName
         '
         Me.ContactName.AutoSize = True
+        Me.ContactName.BackColor = System.Drawing.Color.Transparent
         Me.ContactName.Location = New System.Drawing.Point(39, 3)
         Me.ContactName.Name = "ContactName"
         Me.ContactName.Size = New System.Drawing.Size(35, 13)
         Me.ContactName.TabIndex = 1
         Me.ContactName.Text = "Name"
         '
-        'TempTextBox
+        'TransparentTextBox
         '
-        Me.TempTextBox.Location = New System.Drawing.Point(17, 19)
-        Me.TempTextBox.MaxLength = 160
-        Me.TempTextBox.Name = "TempTextBox"
-        Me.TempTextBox.Size = New System.Drawing.Size(96, 94)
-        Me.TempTextBox.TabIndex = 2
-        Me.TempTextBox.Text = resources.GetString("TempTextBox.Text")
+        Me.TransparentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TransparentTextBox.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TransparentTextBox.Location = New System.Drawing.Point(17, 21)
+        Me.TransparentTextBox.MaxLength = 160
+        Me.TransparentTextBox.Name = "TransparentTextBox"
+        Me.TransparentTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.TransparentTextBox.Size = New System.Drawing.Size(96, 94)
+        Me.TransparentTextBox.TabIndex = 4
+        Me.TransparentTextBox.Text = resources.GetString("TransparentTextBox.Text")
         '
         'ReceiveMsg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.TempTextBox)
+        Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
+        Me.Controls.Add(Me.TransparentTextBox)
         Me.Controls.Add(Me.ContactName)
         Me.Name = "ReceiveMsg"
         Me.Size = New System.Drawing.Size(113, 113)
@@ -58,6 +63,6 @@ Partial Class ReceiveMsg
 
     End Sub
     Friend WithEvents ContactName As System.Windows.Forms.Label
-    Friend WithEvents TempTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents TransparentTextBox As FirstPrototype.TransparentRichTextBox
 
 End Class

@@ -111,6 +111,12 @@
     <Compile Include="ReceiveMsg.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="TransparentBox.Designer.vb">
+      <DependentUpon>TransparentBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContactScreen2.resx">
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveMsg.resx">
       <DependentUpon>ReceiveMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentBox.resx">
+      <DependentUpon>TransparentBox.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_new_msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_bg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
