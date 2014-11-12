@@ -9,7 +9,7 @@
 
         ' This call is required by the designer.
         InitializeComponent()
-        contacts = {"Mom", "Dad", "Danielle", "Andrea", "Johnny", "Lorde"}
+        contacts = {"Mom", "Dad", "Danielle", "Shahzina", "Andrea", "Johnny", "Lorde"}
         buttons = {Contact1, Contact2, Contact3, Contact4}
         firstPosition = 0
         lastPosition = 0
@@ -23,7 +23,7 @@
     End Sub
 
     Sub scrollDown()
-        If lastPosition + 1 <= 6 Then
+        If lastPosition + 1 <= 7 Then
             firstPosition += 1
             lastPosition += 1
             currentPosition = firstPosition
@@ -58,8 +58,6 @@
         ' center the text
         contactScreen2.ContactName.Left = 57 - contactScreen2.ContactName.Width \ 2
         ' make it so you can't scroll anywhere except left
-        Main.freeze = True
         Main.horizontalCount = Main.horizontalCount + 1
-        Debug.WriteLine(Main.horizontalCount)
     End Sub
 End Class
