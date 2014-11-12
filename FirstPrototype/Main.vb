@@ -33,6 +33,17 @@
             horizontalCount = 1
             contactScreen1.Show()
         End If
+        ' if you're at the options screen
+        If (horizontalCount = 3) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+                If cont.ToString = "FirstPrototype.ReceiveMsg" Then
+                    cont.hideOptions()
+                End If
+            Next
+            horizontalCount = 1
+            contactScreen1.Show()
+        End If
     End Sub
 
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
@@ -44,6 +55,13 @@
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
         If (horizontalCount = 1) Then
             contactScreen1.scrollDown()
+        End If
+        If (horizontalCount = 4) Then
+            For Each cont In MainWatch.Controls
+                If cont.ToString = "FirstPrototype.ReceiveMsg" Then
+                    cont.ShowOptions()
+                End If
+            Next
         End If
     End Sub
 End Class

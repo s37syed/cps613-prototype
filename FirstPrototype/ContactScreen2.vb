@@ -36,11 +36,6 @@
         ' center the text
         receiveMsg.ContactName.Left = 57 - receiveMsg.ContactName.Width \ 2
         ' make it so you can't scroll anywhere except left
-        Main.horizontalCount = Main.horizontalCount + 1
-    End Sub
-    Sub scrollDown()
-        For Each cont In Main.MainWatch.Controls
-            cont.Hide()
-        Next cont
+        Main.horizontalCount = Main.horizontalCount + 2
     End Sub
 End Class
