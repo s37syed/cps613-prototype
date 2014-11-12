@@ -1,6 +1,6 @@
 ﻿Public Class Calendar2
 
-    Dim task As New Tasks
+    Public Shared task As New Tasks
     Private Sub Calendar2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'display current date
         CurrentDateLabel.Text = Format(Date.Now(), "MMM" + "." + " dd")

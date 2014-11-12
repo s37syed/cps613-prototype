@@ -31,13 +31,17 @@ Partial Class Main
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.NewMsgEventPic)
         Me.Panel1.Location = New System.Drawing.Point(87, 49)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(113, 113)
@@ -116,6 +120,17 @@ Partial Class Main
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -133,7 +148,9 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
+        Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -146,5 +163,6 @@ Partial Class Main
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents NewMsgEventPic As System.Windows.Forms.PictureBox
 
 End Class
