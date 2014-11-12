@@ -1,9 +1,11 @@
 ﻿Public Class Main
     Private MainScreenTracker As Integer
-    Shared MenuScreen0 As ClockScreen = New ClockScreen
-    Shared menuScreen1 As MenuScreen1 = New MenuScreen1
-    Shared menuScreen2 As MenuScreen2 = New MenuScreen2
-    Shared PhoneContactsScreen As PhoneContacts = New PhoneContacts
+    Friend MenuScreen0 As ClockScreen = New ClockScreen
+    Friend menuScreen1 As MenuScreen1 = New MenuScreen1
+    Friend menuScreen2 As MenuScreen2 = New MenuScreen2
+    Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
+    Friend CallContactScreen As CallContact = New CallContact
+    Friend CallingScreen As Calling = New Calling
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         'Hide the title bar
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
@@ -17,6 +19,10 @@
         MainWatch.Controls.Add(menuScreen1)
         MainWatch.Controls.Add(menuScreen2)
         MainWatch.Controls.Add(PhoneContactsScreen)
+        MainWatch.Controls.Add(CallContactScreen)
+        MainWatch.Controls.Add(CallingScreen)
+        PhoneContactsScreen.Enabled = False
+        CallContactScreen.Enabled = False
     End Sub
 
    
@@ -25,10 +31,12 @@
         If MainScreenTracker = 0 Then
             MenuScreen0.Visible = False
             menuScreen1.Visible = True
+            menuScreen2.Visible = False
             MainScreenTracker = 1
         ElseIf MainScreenTracker = 1 Then
             menuScreen1.Visible = False
-            MenuScreen2.Visible = True
+            menuScreen2.Visible = True
+            MenuScreen0.Visible = False
             MainScreenTracker = 2
         ElseIf MainScreenTracker = 2 Then
 
@@ -42,11 +50,13 @@
 
         ElseIf MainScreenTracker = 1 Then
             MenuScreen0.Visible = True
-            MenuScreen1.Visible = False
+            menuScreen1.Visible = False
+            menuScreen2.Visible = False
             MainScreenTracker = 0
         ElseIf MainScreenTracker = 2 Then
-            MenuScreen1.Visible = True
-            MenuScreen2.Visible = False
+            MenuScreen0.Visible = False
+            menuScreen1.Visible = True
+            menuScreen2.Visible = False
             MainScreenTracker = 1
         End If
     End Sub
@@ -59,10 +69,24 @@
     End Sub
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
-        PhoneContacts1.scrollDown()
+        If PhoneContactsScreen.Enabled = True Then
+            PhoneContactsScreen.scrollDown()
+        End If
     End Sub
 
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
-        PhoneContacts1.scrollUp()
+        If PhoneContactsScreen.Enabled = True Then
+            PhoneContactsScreen.scrollUp()
+        End If
+    End Sub
+    Friend Sub ResetTracker()
+        MainScreenTracker = 0
+    End Sub
+    Friend Sub incrementTracker()
+        MainScreenTracker += 1
+    End Sub
+
+    Friend Sub decrementTracker()
+        MainScreenTracker -= 1
     End Sub
 End Class

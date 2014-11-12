@@ -74,6 +74,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallContact.Designer.vb">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallContact.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calling.Designer.vb">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChristinaMap.Designer.vb">
+      <DependentUpon>ChristinaMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChristinaMap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClockScreen.Designer.vb">
       <DependentUpon>ClockScreen.vb</DependentUpon>
     </Compile>
@@ -86,6 +104,12 @@
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapApp.Designer.vb">
+      <DependentUpon>MapApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapApp.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MenuScreen1.Designer.vb">
       <DependentUpon>MenuScreen1.vb</DependentUpon>
@@ -114,19 +138,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ParentPhone.Designer.vb">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PhoneContacts.Designer.vb">
       <DependentUpon>PhoneContacts.vb</DependentUpon>
     </Compile>
     <Compile Include="PhoneContacts.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="PhoneMenu.Designer.vb">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CallContact.resx">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calling.resx">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChristinaMap.resx">
+      <DependentUpon>ChristinaMap.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClockScreen.resx">
       <DependentUpon>ClockScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapApp.resx">
+      <DependentUpon>MapApp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuScreen1.resx">
       <DependentUpon>MenuScreen1.vb</DependentUpon>
@@ -139,8 +187,14 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhone.resx">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhoneContacts.resx">
       <DependentUpon>PhoneContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneMenu.resx">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Page3TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
