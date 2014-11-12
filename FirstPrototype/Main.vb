@@ -25,7 +25,7 @@
 
 
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-
+        'no functionality as of yet
     End Sub
 
     Private Sub PowerButton_Click(sender As Object, e As EventArgs) Handles PowerButton.Click
@@ -61,7 +61,7 @@
         End If
     End Sub
     Private Sub AccessControl2()
-        'display new msg prompt
+        'remove new msg prompt
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
         Else
