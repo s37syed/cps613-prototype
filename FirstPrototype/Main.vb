@@ -53,11 +53,23 @@
         If (horizontalCount = 1) Then
             contactScreen1.scrollUp()
         End If
+        If (horizontalCount = 3) Then
+           
+        End If
     End Sub
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
+        Debug.WriteLine(horizontalCount)
         If (horizontalCount = 1) Then
             contactScreen1.scrollDown()
+        End If
+        If (horizontalCount = 3) Then
+            For Each cont In MainWatch.Controls
+                Debug.WriteLine(cont)
+                'If cont.ToString = "FirstPrototype.ReceiveMsg" Then
+                '    cont.scrollUp()
+                'End If
+            Next
         End If
     End Sub
 End Class

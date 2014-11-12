@@ -9,7 +9,7 @@
 
         ' This call is required by the designer.
         InitializeComponent()
-        contacts = {"Mom", "Dad", "Danielle", "Christina", "Andrea", "Johnny", "Lorde"}
+        contacts = {"Mom", "Dad", "Danielle", "Andrea", "Johnny", "Lorde"}
         buttons = {Contact1, Contact2, Contact3, Contact4}
         firstPosition = 0
         lastPosition = 0
@@ -60,5 +60,6 @@
         ' make it so you can't scroll anywhere except left
         Main.freeze = True
         Main.horizontalCount = Main.horizontalCount + 1
+        Debug.WriteLine(Main.horizontalCount)
     End Sub
 End Class
