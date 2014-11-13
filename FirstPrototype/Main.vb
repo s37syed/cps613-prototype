@@ -3,20 +3,20 @@ Public Class Main
 
     '########################################## ADD this into the MAIN Form ##########################################
     '@author Daniel Kozij 
-    Dim volumeStatus As VolumeStatus = New VolumeStatus()
+    Friend volumeStatus As VolumeStatus = New VolumeStatus()
 
     Dim TimerValue As Integer = 0
 
-    Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.YUNGLEANHURT)
-    Private SongPlayer2 As SoundPlayer = New SoundPlayer(My.Resources.South_Park___LORDE_Song____quot_Push_quot___Feeling_Good_on_a_Wednesday___Extended___Fixed_Audio_)
-    Private SongPlayer3 As SoundPlayer = New SoundPlayer(My.Resources.Death_Metal_Rooster)
-    Private SongPlayer4 As SoundPlayer = New SoundPlayer(My.Resources.Drake___Started_From_The_Bottom__Explicit_)
+    Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
+    Private SongPlayer2 As SoundPlayer = New SoundPlayer(My.Resources.push_lorde)
+    Private SongPlayer3 As SoundPlayer = New SoundPlayer(My.Resources.death_metal)
+    Private SongPlayer4 As SoundPlayer = New SoundPlayer(My.Resources.drake_song)
 
 
-    Dim song1 As Music = New Music("YUNG LEAN", SongPlayer1)
-    Dim song2 As Music = New Music("SouthPark LORDE", SongPlayer2)
-    Dim song3 As Music = New Music("Death Metal Rooster", SongPlayer3)
-    Dim song4 As Music = New Music("Drake Started from the bottom", SongPlayer4)
+    Dim song1 As Music = New Music("Yung Lean", SongPlayer1)
+    Dim song2 As Music = New Music("Lorde - Push", SongPlayer2)
+    Dim song3 As Music = New Music("Death Metal", SongPlayer3)
+    Dim song4 As Music = New Music("Drake Song", SongPlayer4)
 
     Dim songs As Music() = {song1, song2, song3, song4}
 

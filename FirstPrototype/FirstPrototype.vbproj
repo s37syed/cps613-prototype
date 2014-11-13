@@ -204,6 +204,27 @@
   <ItemGroup>
     <None Include="Resources\South Park - LORDE Song - &amp;quot%3bPush&amp;quot%3b %28Feeling Good on a Wednesday%29 %28Extended%29 %28Fixed Audio%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death_metal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drake_song.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\push_lorde.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yung_lean.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

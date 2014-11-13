@@ -23,10 +23,6 @@ Public Class VolumeStatus
 
     End Sub
 
-    Private Sub VolumeStatus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     ' Set Volume Level 
     Public Sub SetVolume(VolumeLevel As Integer)
 
