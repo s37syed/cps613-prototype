@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnalogClockControl">
-      <HintPath>..\..\..\..\Desktop\AnalogClockControl.dll</HintPath>
+      <HintPath>..\..\..\resource\AnalogClockControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
