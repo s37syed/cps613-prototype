@@ -43,5 +43,6 @@
 
         ' center the text
         receiveMsg.ContactName.Left = 57 - receiveMsg.ContactName.Width \ 2
+        Main.horizontalCount = 4
     End Sub
 End Class
