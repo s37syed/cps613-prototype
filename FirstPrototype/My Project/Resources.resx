@@ -202,4 +202,23 @@
   <data name="placeholder_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\placeholder_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="door_resized1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door_resized1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewMsgPrompt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewMsgPrompt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notepad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notepad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notepad_even_smaller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notepad_even_smaller.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notepad_smaller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notepad_smaller.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notepad_smallest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notepad_smallest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

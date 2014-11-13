@@ -22,6 +22,8 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.MainWatch = New System.Windows.Forms.Panel()
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDown = New System.Windows.Forms.Button()
@@ -32,9 +34,31 @@ Partial Class Main
         Me.DoorButton = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
-        Me.MainWatch = New System.Windows.Forms.Panel()
         Me.HomeButton = New System.Windows.Forms.Button()
+        Me.MainWatch.SuspendLayout()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'MainWatch
+        '
+        Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Controls.Add(Me.NewMsgEventPic)
+        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Name = "MainWatch"
+        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
+        Me.MainWatch.TabIndex = 10
+        '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
         '
         'SwipeUpButton
         '
@@ -108,14 +132,6 @@ Partial Class Main
         Me.DoorButton.Text = "Door"
         Me.DoorButton.UseVisualStyleBackColor = True
         '
-        'MainWatch
-        '
-        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
-        Me.MainWatch.Name = "MainWatch"
-        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
-        Me.MainWatch.TabIndex = 10
-        '
         'HomeButton
         '
         Me.HomeButton.Location = New System.Drawing.Point(108, 205)
@@ -130,7 +146,6 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
-        Me.Controls.Add(Me.MainWatch)
         Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.VolumeDownButton)
@@ -139,12 +154,16 @@ Partial Class Main
         Me.Controls.Add(Me.SwipeDown)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
+        Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
+        Me.MainWatch.ResumeLayout(False)
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
     Friend WithEvents SwipeDown As System.Windows.Forms.Button
@@ -155,7 +174,8 @@ Partial Class Main
     Friend WithEvents DoorButton As System.Windows.Forms.Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents MainWatch As System.Windows.Forms.Panel
+    'Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents HomeButton As System.Windows.Forms.Button
+    Friend WithEvents NewMsgEventPic As System.Windows.Forms.PictureBox
 
 End Class

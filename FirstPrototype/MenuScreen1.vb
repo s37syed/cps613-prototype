@@ -13,4 +13,13 @@
         Next
         Main.contactScreen1.Visible = True
     End Sub
+
+    Private Sub CalendarMenuButton_Click(sender As Object, e As EventArgs) Handles CalendarMenuButton.Click
+        Main.MainScreenTracker = 0
+        Main.horizontalCount = 5
+        For Each cont In Main.MainWatch.Controls
+            cont.Hide()
+        Next
+        Main.cal.Visible = True
+    End Sub
 End Class

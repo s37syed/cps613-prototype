@@ -113,6 +113,18 @@
     <Compile Include="ContactScreen2.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar2.Designer.vb">
+      <DependentUpon>Calendar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +231,12 @@
     <Compile Include="PhoneContacts.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Tasks.Designer.vb">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CallChild.resx">
@@ -238,6 +256,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContactScreen2.resx">
       <DependentUpon>ContactScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar2.resx">
+      <DependentUpon>Calendar2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
@@ -291,6 +315,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneContacts.resx">
       <DependentUpon>PhoneContacts.vb</DependentUpon>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -388,6 +416,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PhoneTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17NumberSeventeenInCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_even_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smallest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_resized1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMsgPrompt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

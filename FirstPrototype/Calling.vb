@@ -6,6 +6,4 @@
         Main.ResetTracker()
         'Main.SwipeLeftButton.
     End Sub
-
-
 End Class
