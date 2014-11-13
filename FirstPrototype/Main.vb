@@ -22,7 +22,7 @@
         MainWatch.Controls.Add(MenuScreen1)
         MainWatch.Controls.Add(MenuScreen2)
         MainWatch.Controls.Add(PhoneContactsScreen)
-        MainWatch.Controls.Add(CallContactScreen)
+        'MainWatch.Controls.Add(CallContactScreen)
         'MainWatch.Controls.Add(CallingScreen)
         PhoneContactsScreen.Enabled = False
         'CallContactScreen.Enabled = False

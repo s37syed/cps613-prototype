@@ -85,5 +85,4 @@
     Public Function getSelected() As String
         Return selectedContact
     End Function
-
 End Class
