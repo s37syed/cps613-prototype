@@ -240,4 +240,8 @@
     Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
         'load message
     End Sub
+
+    Private Sub Clock1_TimeChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
