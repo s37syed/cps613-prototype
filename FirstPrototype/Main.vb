@@ -50,6 +50,13 @@
         If (horizontalCount = 1) Then
             contactScreen1.scrollUp()
         End If
+        If (horizontalCount = 4) Then
+            For Each cont In MainWatch.Controls
+                If cont.ToString = "FirstPrototype.ReceiveMsg" Then
+                    cont.ShowOptions()
+                End If
+            Next
+        End If
     End Sub
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
@@ -59,7 +66,7 @@
         If (horizontalCount = 4) Then
             For Each cont In MainWatch.Controls
                 If cont.ToString = "FirstPrototype.ReceiveMsg" Then
-                    cont.ShowOptions()
+                    cont.HideOptions()
                 End If
             Next
         End If
