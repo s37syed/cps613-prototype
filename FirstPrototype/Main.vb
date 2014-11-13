@@ -22,7 +22,7 @@
         MainWatch.Controls.Add(MenuScreen1)
         MainWatch.Controls.Add(MenuScreen2)
         MainWatch.Controls.Add(PhoneContactsScreen)
-        'MainWatch.Controls.Add(CallContactScreen)
+        MainWatch.Controls.Add(CallContactScreen)
         'MainWatch.Controls.Add(CallingScreen)
         PhoneContactsScreen.Enabled = False
         'CallContactScreen.Enabled = False
@@ -32,8 +32,6 @@
         MainWatch.Controls.Add(contactScreen1)
     End Sub
     Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
-        Debug.WriteLine("Horizontal Count was at: " & horizontalCount)
-        Debug.WriteLine("MainScreenTracker was at: " & MainScreenTracker)
         'Chris' code
         If MainScreenTracker = 0 Then
 
@@ -75,15 +73,12 @@
         End If
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        Debug.WriteLine("Horizontal Count was at: " & horizontalCount)
-        Debug.WriteLine("MainScreenTracker was at: " & MainScreenTracker)
         If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
             MainScreenTracker = 1
         ElseIf MainScreenTracker = 1 Then
-            Debug.WriteLine("statement2 reached")
             MenuScreen0.Visible = False
             MenuScreen1.Visible = False
             MenuScreen2.Visible = True
