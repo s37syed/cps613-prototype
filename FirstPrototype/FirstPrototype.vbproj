@@ -117,6 +117,30 @@
     <Compile Include="ReceiveMsg.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SelectMsgType.Designer.vb">
+      <DependentUpon>SelectMsgType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMsgType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendImg.Designer.vb">
+      <DependentUpon>SendImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendImg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendMsg.Designer.vb">
+      <DependentUpon>SendMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendMsg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendVid.Designer.vb">
+      <DependentUpon>SendVid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendVid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="TransparentBox.Designer.vb">
       <DependentUpon>TransparentBox.vb</DependentUpon>
     </Compile>
@@ -145,6 +169,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveMsg.resx">
       <DependentUpon>ReceiveMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMsgType.resx">
+      <DependentUpon>SelectMsgType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendImg.resx">
+      <DependentUpon>SendImg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMsg.resx">
+      <DependentUpon>SendMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendVid.resx">
+      <DependentUpon>SendVid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransparentBox.resx">
       <DependentUpon>TransparentBox.vb</DependentUpon>
@@ -179,6 +215,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\note_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoolander.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rickroll.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
