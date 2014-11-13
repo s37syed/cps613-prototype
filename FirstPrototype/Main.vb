@@ -6,6 +6,14 @@
     Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
     Friend CallContactScreen As CallContact = New CallContact
     Friend CallingScreen As Calling = New Calling
+
+
+    Friend SendMsgType2 As SelectMsgType2 = New SelectMsgType2 'added this
+    Friend MsgSendContacts1 As MsgSendContacts = New MsgSendContacts ' added this
+    Friend send_image As SendImg = New SendImg 'added this
+    Friend send_video As SendVid = New SendVid 'added this
+    Friend send_message As SendMsg = New SendMsg 'assed this
+
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -53,6 +61,14 @@
         MainWatch.Controls.Add(cal)
         MainWatch.Controls.Add(cal2)
         MainWatch.Controls.Add(task)
+
+
+        MainWatch.Controls.Add(SendMsgType2) 'added this 
+        MainWatch.Controls.Add(MsgSendContacts1) ' added this
+        MainWatch.Controls.Add(send_image) ' added this
+        MainWatch.Controls.Add(send_video) ' added this
+        MainWatch.Controls.Add(send_message) ' added this
+
         PhoneContactsScreen.Enabled = False
         CallContactScreen.Enabled = False
         ParentPhone.Visible = True
@@ -122,11 +138,21 @@
             MainScreenTracker = 0
             horizontalCount = 0
         End If
+        If (horizontalCount = 7) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
         'add calendar with first half of days
         MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 7 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -172,6 +198,9 @@
             Next
             cal.Show()
         End If
+        If (horizontalCount = 7) Then
+            Me.MsgSendContacts1.scrollDown()
+        End If
     End Sub
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
@@ -192,6 +221,9 @@
         If (horizontalCount = 5) Then
             cal.Hide()
             cal2.Show()
+        End If
+        If (horizontalCount = 7) Then
+            Me.MsgSendContacts1.scrollUp()
         End If
     End Sub
     Friend Sub ResetTracker()

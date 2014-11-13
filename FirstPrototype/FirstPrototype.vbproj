@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnalogClockControl">
-      <HintPath>..\..\..\resource\AnalogClockControl.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\AnalogClockControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -156,6 +156,12 @@
     <Compile Include="MessageOptions.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="MsgSendContacts.Designer.vb">
+      <DependentUpon>MsgSendContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MsgSendContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -199,6 +205,12 @@
       <DependentUpon>SelectMsgType.vb</DependentUpon>
     </Compile>
     <Compile Include="SelectMsgType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectMsgType2.Designer.vb">
+      <DependentUpon>SelectMsgType2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMsgType2.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SendImg.Designer.vb">
@@ -278,6 +290,9 @@
     <EmbeddedResource Include="MessageOptions.resx">
       <DependentUpon>MessageOptions.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MsgSendContacts.resx">
+      <DependentUpon>MsgSendContacts.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -299,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectMsgType.resx">
       <DependentUpon>SelectMsgType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMsgType2.resx">
+      <DependentUpon>SelectMsgType2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SendImg.resx">
       <DependentUpon>SendImg.vb</DependentUpon>

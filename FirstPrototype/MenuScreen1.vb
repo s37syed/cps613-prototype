@@ -22,4 +22,13 @@
         Next
         Main.cal.Visible = True
     End Sub
+
+    Private Sub MessagesMenuButton_Click(sender As Object, e As EventArgs) Handles MessagesMenuButton.Click
+        Main.MainScreenTracker = 0
+        Main.horizontalCount = 7
+        For Each cont In Main.MainWatch.Controls
+            cont.Hide()
+        Next
+        Main.SendMsgType2.Visible = True 'added this
+    End Sub
 End Class
