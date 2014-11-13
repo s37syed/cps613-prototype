@@ -105,6 +105,7 @@
             For Each cont In MainWatch.Controls
                 cont.Hide()
             Next
+            'Main.SendMsg.MsgSentNotification.Hide()
             MenuScreen0.Visible = True
             MenuScreen1.Visible = False
             MenuScreen2.Visible = False

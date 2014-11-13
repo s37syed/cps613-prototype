@@ -1,5 +1,6 @@
 ﻿Public Class ContactScreen
     Public Shared contactScreen2 As ContactScreen2 = New ContactScreen2()
+    Friend sendName As String
     Dim contacts() As String
     Dim buttons() As Button
     Dim firstPosition As Integer
@@ -54,10 +55,13 @@
         Next cont
         contactScreen2.Show()
         contactScreen2.ContactName.Text = clickedLabel.Text.ToString
+        sendName = clickedLabel.Text.ToString
         contactScreen2.nameContact = "From: " & clickedLabel.Text.ToString
         ' center the text
         contactScreen2.ContactName.Left = 57 - contactScreen2.ContactName.Width \ 2
         ' make it so you can't scroll anywhere except left
         'Main.horizontalCount = Main.horizontalCount + 1
+        Debug.WriteLine("what is the name: " & sendName)
+        Debug.WriteLine("what it should be: " & clickedLabel.Text.ToString)
     End Sub
 End Class

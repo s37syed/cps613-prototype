@@ -2,7 +2,7 @@
 
     Private Sub SendMsg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateLabel.Text = Format(Date.Now(), "dd" + "/" + " MM" + "/" + "yy")
-        NameLabel.Text = "To: " + ContactScreen.contactScreen2.ContactName.Text
+        NameLabel.Text = "To: " & Main.contactScreen1.sendName
     End Sub
 
     Private Sub Contact1_Click(sender As Object, e As EventArgs) Handles Contact1.Click, Contact2.Click, Contact3.Click

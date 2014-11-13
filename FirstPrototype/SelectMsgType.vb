@@ -2,7 +2,7 @@
     Public Shared send_msg As SendMsg = New SendMsg
     Public Shared send_img As SendImg = New SendImg
     Public Shared send_vid As SendVid = New SendVid
-    Private Sub MsgPicBox_Click(sender As Object, e As EventArgs) Handles MsgPicBox.Click, ImgPicBox.Click
+    Private Sub MsgPicBox_Click(sender As Object, e As EventArgs) Handles MsgPicBox.Click
         Main.MainWatch.Controls.Add(send_msg)
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
