@@ -51,7 +51,7 @@ Partial Class MusicPanelControl
         '
         'RepeatButton
         '
-        Me.RepeatButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.repeat_unselected
+        Me.RepeatButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.repeat
         Me.RepeatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RepeatButton.Location = New System.Drawing.Point(63, 93)
         Me.RepeatButton.Name = "RepeatButton"

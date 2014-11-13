@@ -163,18 +163,6 @@
     <None Include="Resources\no_cover.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\~ YUNG LEAN - HURT - -OFFICIAL VIDEO- ~.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\South Park - LORDE Song - &amp;quot%3bPush&amp;quot%3b %28Feeling Good on a Wednesday%29 %28Extended%29 %28Fixed Audio%29.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Death Metal Rooster.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Drake - Started From The Bottom %28Explicit%29.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pause.png" />
   </ItemGroup>
   <ItemGroup>
@@ -188,21 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shuffle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DeathMetalRooster.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\YUNGLEANHURT.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Death Metal Rooster.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Drake - Started From The Bottom %28Explicit%29.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\South Park - LORDE Song - &amp;quot%3bPush&amp;quot%3b %28Feeling Good on a Wednesday%29 %28Extended%29 %28Fixed Audio%29.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\repeat.png" />

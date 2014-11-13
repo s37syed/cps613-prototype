@@ -33,7 +33,7 @@
         Me.SongName.Text = song(whichPlaying).getSongName
         Strt = New System.Threading.Thread(AddressOf WorkerThread)
         Strt.Start()
-        notify.Text = "Shuffling Playlist!"
+        notify.Text = "Shuffling Playlist"
         notify.Left = 57 - notify.Width \ 2
         notify.Visible = True
     End Sub
