@@ -38,7 +38,7 @@ Partial Class Main
         '
         'SwipeUpButton
         '
-        Me.SwipeUpButton.Location = New System.Drawing.Point(83, 20)
+        Me.SwipeUpButton.Location = New System.Drawing.Point(80, 20)
         Me.SwipeUpButton.Name = "SwipeUpButton"
         Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
         Me.SwipeUpButton.TabIndex = 2
@@ -47,7 +47,7 @@ Partial Class Main
         '
         'SwipeLeftButton
         '
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(9, 94)
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(6, 94)
         Me.SwipeLeftButton.Name = "SwipeLeftButton"
         Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeLeftButton.TabIndex = 3
@@ -56,7 +56,7 @@ Partial Class Main
         '
         'SwipeDown
         '
-        Me.SwipeDown.Location = New System.Drawing.Point(78, 168)
+        Me.SwipeDown.Location = New System.Drawing.Point(80, 168)
         Me.SwipeDown.Name = "SwipeDown"
         Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
         Me.SwipeDown.TabIndex = 4
@@ -65,7 +65,7 @@ Partial Class Main
         '
         'SwipeRightButton
         '
-        Me.SwipeRightButton.Location = New System.Drawing.Point(209, 94)
+        Me.SwipeRightButton.Location = New System.Drawing.Point(206, 94)
         Me.SwipeRightButton.Name = "SwipeRightButton"
         Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeRightButton.TabIndex = 5
@@ -107,14 +107,6 @@ Partial Class Main
         Me.DoorButton.TabIndex = 9
         Me.DoorButton.Text = "Door"
         Me.DoorButton.UseVisualStyleBackColor = True
-        'HomeButton
-        '
-        Me.HomeButton.Location = New System.Drawing.Point(108, 205)
-        Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(75, 23)
-        Me.HomeButton.TabIndex = 9
-        Me.HomeButton.Text = "Door"
-        Me.HomeButton.UseVisualStyleBackColor = True
         '
         'MainWatch
         '
@@ -123,6 +115,15 @@ Partial Class Main
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 10
+        '
+        'HomeButton
+        '
+        Me.HomeButton.Location = New System.Drawing.Point(108, 205)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(75, 23)
+        Me.HomeButton.TabIndex = 9
+        Me.HomeButton.Text = "Door"
+        Me.HomeButton.UseVisualStyleBackColor = True
         '
         'Main
         '
