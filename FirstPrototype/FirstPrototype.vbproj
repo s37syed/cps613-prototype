@@ -74,12 +74,21 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.vb" />
+    <Compile Include="Artist.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music.vb" />
+    <Compile Include="MusicPanelControl.Designer.vb">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MusicPanelControl.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -96,16 +105,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SongPanel.Designer.vb">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SongPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VolumeStatus.Designer.vb">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VolumeStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicPanelControl.resx">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongPanel.resx">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeStatus.resx">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +155,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\~ YUNG LEAN - HURT - -OFFICIAL VIDEO- ~.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Park - LORDE Song - &amp;quot%3bPush&amp;quot%3b %28Feeling Good on a Wednesday%29 %28Extended%29 %28Fixed Audio%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death Metal Rooster.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drake - Started From The Bottom %28Explicit%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeathMetalRooster.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YUNGLEANHURT.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death Metal Rooster.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drake - Started From The Bottom %28Explicit%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Park - LORDE Song - &amp;quot%3bPush&amp;quot%3b %28Feeling Good on a Wednesday%29 %28Extended%29 %28Fixed Audio%29.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

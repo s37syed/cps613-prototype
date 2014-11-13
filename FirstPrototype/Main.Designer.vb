@@ -22,7 +22,7 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.components = New System.ComponentModel.Container()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDownButton = New System.Windows.Forms.Button()
@@ -30,16 +30,9 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.Calendar
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(87, 49)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(113, 113)
-        Me.Panel1.TabIndex = 1
         '
         'SwipeUpButton
         '
@@ -104,6 +97,18 @@ Partial Class Main
         Me.PowerButton.Text = "Power"
         Me.PowerButton.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Location = New System.Drawing.Point(87, 49)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(113, 113)
+        Me.Panel1.TabIndex = 1
+        '
+        'Timer1
+        '
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -131,5 +136,6 @@ Partial Class Main
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
