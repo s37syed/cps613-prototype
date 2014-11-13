@@ -1,4 +1,5 @@
-﻿Public Class Main
+﻿Imports System.Media
+Public Class Main
     Public Shared MainScreenTracker = 0
     Friend MenuScreen0 As ClockScreen = New ClockScreen
     Friend MenuScreen1 As MenuScreen1 = New MenuScreen1
@@ -23,6 +24,37 @@
     Public contactScreen1 As ContactScreen = New ContactScreen
 
     Private Strt As System.Threading.Thread
+
+    '########################################## ADD this into the MAIN Form ##########################################
+    '@author Daniel Kozij 
+    Friend volumeStatus As VolumeStatus = New VolumeStatus()
+
+    Dim TimerValue As Integer = 0
+
+    Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
+    Private SongPlayer2 As SoundPlayer = New SoundPlayer(My.Resources.push_lorde)
+    Private SongPlayer3 As SoundPlayer = New SoundPlayer(My.Resources.death_metal)
+    Private SongPlayer4 As SoundPlayer = New SoundPlayer(My.Resources.drake_song)
+
+
+    Dim song1 As Music = New Music("Yung Lean", SongPlayer1)
+    Dim song2 As Music = New Music("Lorde - Push", SongPlayer2)
+    Dim song3 As Music = New Music("Death Metal", SongPlayer3)
+    Dim song4 As Music = New Music("Drake Song", SongPlayer4)
+
+    Dim songs As Music() = {song1, song2, song3, song4}
+
+    Dim songMainWatch As SongPanel
+    Dim songPanel2 As SongPanel
+    Dim songPanel3 As SongPanel
+    Dim songPanel4 As SongPanel
+
+    Friend MusicAppCounter As Integer = 0
+
+    Friend musicControls As MusicPanelControl
+
+    '########################################## ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##########################################
+
 
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         BaseLoad()
@@ -243,5 +275,101 @@
 
     Private Sub Clock1_TimeChanged(sender As Object, e As EventArgs)
 
+
+        songMainWatch = New SongPanel(songs, 0)
+        songPanel2 = New SongPanel(songs, 1)
+        songPanel3 = New SongPanel(songs, 2)
+        songPanel4 = New SongPanel(songs, 3)
+
+        songMainWatch.Location = New Point(0, 0)
+        songPanel2.Location = New Point(0, 28)
+        songPanel3.Location = New Point(0, 56)
+        songPanel4.Location = New Point(0, 84)
+
+
+        Me.MainWatch.Controls.Add(songMainWatch)
+        Me.MainWatch.Controls.Add(songPanel2)
+        Me.MainWatch.Controls.Add(songPanel3)
+        Me.MainWatch.Controls.Add(songPanel4)
+
+        songMainWatch.BringToFront()
+        songPanel2.BringToFront()
+        songPanel3.BringToFront()
+        songPanel4.BringToFront()
+        MusicAppCounter += 1
     End Sub
+
+    'Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
+
+    '    If MouseButtons >= 0 Then
+    '        MusicAppCounter -= 1
+    '        MsgBox(MusicAppCounter)
+
+    '        If MusicAppCounter = 0 Then
+    '            musicControls.Hide()
+    '            songMainWatch.Hide()
+    '            songPanel2.Hide()
+    '            songPanel3.Hide()
+    '            songPanel4.Hide()
+
+    '        ElseIf MusicAppCounter = 1 Then
+
+    '            songMainWatch.Show()
+    '            songPanel2.Show()
+    '            songPanel3.Show()
+    '            songPanel4.Show()
+    '            songMainWatch.BringToFront()
+    '            songPanel2.BringToFront()
+    '            songPanel3.BringToFront()
+    '            songPanel4.BringToFront()
+
+    '        ElseIf MusicAppCounter = 2 Then
+
+
+    '        End If
+    '    End If
+
+
+    'End Sub
+
+
+    '########################################## ADD this into the MAIN Form ##########################################
+    ' Note: make sure the Volume buttons are called VolumeDownButton and VolumeUpButton
+    '@author Daniel Kozij 
+    Private Sub VolumeDownButton_Click(sender As Object, e As EventArgs) Handles VolumeDownButton.Click
+        volumeStatus.SubtractVolumeLevel()
+        MainWatch.Controls.Add(volumeStatus)
+        volumeStatus.BringToFront()
+        Me.Timer1.Start()
+
+    End Sub
+
+    '@author Daniel Kozij 
+    Private Sub VolumeUpButton_Click(sender As Object, e As EventArgs) Handles VolumeUpButton.Click
+        volumeStatus.AddVolumeLevel()
+        MainWatch.Controls.Add(volumeStatus)
+        volumeStatus.BringToFront()
+        Me.Timer1.Start()
+
+    End Sub
+
+    'Timer Tick handler
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        TimerValue = TimerValue + 1
+        TurnOffVolumeStatus()
+
+    End Sub
+
+
+    Private Sub TurnOffVolumeStatus()
+
+        If (TimerValue.Equals(10)) Then
+            MainWatch.Controls.Remove(volumeStatus)
+            Timer1.Stop()
+            TimerValue = 0
+        End If
+    End Sub
+    '########################################## ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##########################################
+
 End Class

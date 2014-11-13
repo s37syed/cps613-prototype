@@ -125,6 +125,8 @@
     <Compile Include="Calendar2.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Album.vb" />
+    <Compile Include="Artist.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +162,13 @@
       <DependentUpon>MsgSendContacts.vb</DependentUpon>
     </Compile>
     <Compile Include="MsgSendContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music.vb" />
+    <Compile Include="MusicPanelControl.Designer.vb">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MusicPanelControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -249,6 +258,18 @@
     <Compile Include="Tasks.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SongPanel.Designer.vb">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SongPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VolumeStatus.Designer.vb">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VolumeStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CallChild.resx">
@@ -292,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MsgSendContacts.resx">
       <DependentUpon>MsgSendContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicPanelControl.resx">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -337,6 +361,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tasks.resx">
       <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongPanel.resx">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeStatus.resx">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -461,6 +491,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NewMsgPrompt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death_metal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drake_song.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\push_lorde.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yung_lean.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle_unselected.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

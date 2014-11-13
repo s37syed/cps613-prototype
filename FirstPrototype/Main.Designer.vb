@@ -24,6 +24,7 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
+        Me.components = New System.ComponentModel.Container()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDown = New System.Windows.Forms.Button()
@@ -37,6 +38,7 @@ Partial Class Main
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.MainWatch.SuspendLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'MainWatch
@@ -141,6 +143,18 @@ Partial Class Main
         Me.HomeButton.Text = "Door"
         Me.HomeButton.UseVisualStyleBackColor = True
         '
+        'MainWatch
+        '
+        Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Name = "MainWatch"
+        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
+        Me.MainWatch.TabIndex = 1
+        '
+        'Timer1
+        '
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -177,5 +191,6 @@ Partial Class Main
     'Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents HomeButton As System.Windows.Forms.Button
     Friend WithEvents NewMsgEventPic As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
