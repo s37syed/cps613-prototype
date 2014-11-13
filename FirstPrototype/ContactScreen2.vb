@@ -17,7 +17,6 @@
         receiveMsg.Show()
         receiveMsg.ContactName.Text = nameContact
         ' ADD MESSAGES HERE
-        ' Rework to add objects for messages
         Select Case receiveMsg.ContactName.Text.ToString
             Case "From: Dad"
                 receiveMsg.getName = "12/11/2014" & vbCrLf & "@11:50 AM" & vbCrLf & "Hey Christina, I'm sick and tired of picking you up at school."
@@ -44,7 +43,5 @@
 
         ' center the text
         receiveMsg.ContactName.Left = 57 - receiveMsg.ContactName.Width \ 2
-        ' make it so you can't scroll anywhere except left
-        'Main.horizontalCount = Main.horizontalCount + 2
     End Sub
 End Class

@@ -42,7 +42,7 @@ Partial Class ContactScreen2
         '
         'ContactPhoto
         '
-        Me.ContactPhoto.BackgroundImage = My.Resources.placeholder_image
+        Me.ContactPhoto.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_image
         Me.ContactPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactPhoto.Location = New System.Drawing.Point(40, 19)
         Me.ContactPhoto.Name = "ContactPhoto"
@@ -52,7 +52,7 @@ Partial Class ContactScreen2
         '
         'ContactPhone
         '
-        Me.ContactPhone.BackgroundImage = My.Resources.placeholder_call
+        Me.ContactPhone.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_call
         Me.ContactPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactPhone.Location = New System.Drawing.Point(8, 58)
         Me.ContactPhone.Name = "ContactPhone"
@@ -62,7 +62,7 @@ Partial Class ContactScreen2
         '
         'ContactMsg
         '
-        Me.ContactMsg.BackgroundImage = My.Resources.placeholder_text
+        Me.ContactMsg.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.placeholder_text
         Me.ContactMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ContactMsg.Location = New System.Drawing.Point(72, 58)
         Me.ContactMsg.Name = "ContactMsg"

@@ -6,16 +6,17 @@
     Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
     Friend CallContactScreen As CallContact = New CallContact
     Friend CallingScreen As Calling = New Calling
+    Public cal As New Calendar
+    Public cal2 As New Calendar2
+    Public Shared task As New Tasks
     ' Assuming we're already in the first screen
     Public Shared horizontalCount = 0
     'Create controls
     Public contactScreen1 As ContactScreen = New ContactScreen
-    Public cal As New Calendar
-    Public cal2 As New Calendar2
+
     Private Strt As System.Threading.Thread
 
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
-
         BaseLoad()
         'thread for delayed msg prompt
         Strt = New System.Threading.Thread(AddressOf WorkerThread)
@@ -51,6 +52,7 @@
         MainWatch.Controls.Add(CallingScreen)
         MainWatch.Controls.Add(cal)
         MainWatch.Controls.Add(cal2)
+        MainWatch.Controls.Add(task)
         PhoneContactsScreen.Enabled = False
         CallContactScreen.Enabled = False
         ParentPhone.Visible = True
@@ -109,6 +111,16 @@
             MainScreenTracker = 0
             horizontalCount = 0
         End If
+        If (horizontalCount = 6) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
         'add calendar with first half of days
         MainWatch.Controls.Add(cal)
     End Sub
@@ -153,6 +165,12 @@
                 End If
             Next
         End If
+        If (horizontalCount = 5) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            cal.Show()
+        End If
     End Sub
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
@@ -171,12 +189,8 @@
             Next
         End If
         If (horizontalCount = 5) Then
-            Debug.WriteLine("Horizontal count was: " & horizontalCount)
-            For Each cont In MainWatch.Controls
-                cont.Hide()
-            Next
+            cal.Hide()
             cal2.Show()
-            horizontalCount = 5
         End If
     End Sub
     Friend Sub ResetTracker()
