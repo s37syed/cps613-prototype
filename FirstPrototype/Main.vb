@@ -44,10 +44,10 @@ Public Class Main
 
     Dim songs As Music() = {song1, song2, song3, song4}
 
-    Dim songMainWatch As SongPanel
-    Dim songPanel2 As SongPanel
-    Dim songPanel3 As SongPanel
-    Dim songPanel4 As SongPanel
+    Friend songPanel1 As SongPanel
+    Friend songPanel2 As SongPanel
+    Friend songPanel3 As SongPanel
+    Friend songPanel4 As SongPanel
 
     Friend MusicAppCounter As Integer = 0
 
@@ -276,23 +276,23 @@ Public Class Main
     Private Sub Clock1_TimeChanged(sender As Object, e As EventArgs)
 
 
-        songMainWatch = New SongPanel(songs, 0)
+        songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
         songPanel4 = New SongPanel(songs, 3)
 
-        songMainWatch.Location = New Point(0, 0)
+        songPanel1.Location = New Point(0, 0)
         songPanel2.Location = New Point(0, 28)
         songPanel3.Location = New Point(0, 56)
         songPanel4.Location = New Point(0, 84)
 
 
-        Me.MainWatch.Controls.Add(songMainWatch)
+        Me.MainWatch.Controls.Add(songPanel1)
         Me.MainWatch.Controls.Add(songPanel2)
         Me.MainWatch.Controls.Add(songPanel3)
         Me.MainWatch.Controls.Add(songPanel4)
 
-        songMainWatch.BringToFront()
+        songPanel1.BringToFront()
         songPanel2.BringToFront()
         songPanel3.BringToFront()
         songPanel4.BringToFront()
@@ -307,18 +307,18 @@ Public Class Main
 
     '        If MusicAppCounter = 0 Then
     '            musicControls.Hide()
-    '            songMainWatch.Hide()
+    '            songPanel1.Hide()
     '            songPanel2.Hide()
     '            songPanel3.Hide()
     '            songPanel4.Hide()
 
     '        ElseIf MusicAppCounter = 1 Then
 
-    '            songMainWatch.Show()
+    '            songPanel1.Show()
     '            songPanel2.Show()
     '            songPanel3.Show()
     '            songPanel4.Show()
-    '            songMainWatch.BringToFront()
+    '            songPanel1.BringToFront()
     '            songPanel2.BringToFront()
     '            songPanel3.BringToFront()
     '            songPanel4.BringToFront()
