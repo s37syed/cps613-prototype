@@ -4,8 +4,8 @@
     Friend MenuScreen1 As MenuScreen1 = New MenuScreen1
     Friend MenuScreen2 As MenuScreen2 = New MenuScreen2
     Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
-    'Friend CallContactScreen As CallContact = New CallContact
-    'Friend CallingScreen As Calling = New Calling
+    Friend CallContactScreen As CallContact = New CallContact
+    Friend CallingScreen As Calling = New Calling
     ' Assuming we're already in the first screen
     Public Shared horizontalCount = 0
     'Create controls
@@ -22,11 +22,11 @@
         MainWatch.Controls.Add(MenuScreen1)
         MainWatch.Controls.Add(MenuScreen2)
         MainWatch.Controls.Add(PhoneContactsScreen)
-        'MainWatch.Controls.Add(CallContactScreen)
-        'MainWatch.Controls.Add(CallingScreen)
+        MainWatch.Controls.Add(CallContactScreen)
+        MainWatch.Controls.Add(CallingScreen)
         PhoneContactsScreen.Enabled = False
-        'CallContactScreen.Enabled = False
-        'ParentPhone.Visible = True
+        CallContactScreen.Enabled = False
+        ParentPhone.Visible = True
 
         'Add controls
         MainWatch.Controls.Add(contactScreen1)

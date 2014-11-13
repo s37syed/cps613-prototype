@@ -17,4 +17,12 @@
         phoneMenuScreen.Visible = True
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        For Each Control In MainPhoneControl.Controls
+            Control.visible = False
+        Next
+        phoneMenuScreen.Enabled = True
+        phoneMenuScreen.Visible = True
+    End Sub
 End Class

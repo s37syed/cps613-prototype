@@ -56,29 +56,29 @@
     Private Sub Contact_Click(sender As Object, e As EventArgs) Handles PhoneContact0.Click, PhoneContact1.Click, PhoneContact2.Click, PhoneContact3.Click
         Dim button As Button
         button = sender
-        'Main.CallContactScreen.CallContactName.Text = button.Text
-        'Dim value = button.Text
+        Main.CallContactScreen.CallContactName.Text = button.Text
+        Dim value = button.Text
 
-        'If (button.Text = "Mom") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(0)
-        'ElseIf (button.Text = "Dad") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(1)
-        'ElseIf (button.Text = "Danielle") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(2)
-        'ElseIf (button.Text = "Christina") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(3)
-        'ElseIf (button.Text = "Andrea") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(4)
-        'ElseIf (button.Text = "Johnny") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(5)
-        'ElseIf (button.Text = "Lorde") Then
-        '    Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(6)
-        'End If
+        If (button.Text = "Mom") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(0)
+        ElseIf (button.Text = "Dad") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(1)
+        ElseIf (button.Text = "Danielle") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(2)
+        ElseIf (button.Text = "Christina") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(3)
+        ElseIf (button.Text = "Andrea") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(4)
+        ElseIf (button.Text = "Johnny") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(5)
+        ElseIf (button.Text = "Lorde") Then
+            Main.CallContactScreen.CallContactNumber.Text = phoneNumbers(6)
+        End If
 
-        'Main.CallContactScreen.Enabled = True
-        'Main.PhoneContactsScreen.Visible = False
-        'Main.CallContactScreen.Visible = True
-        'Main.PhoneContactsScreen.Enabled = False
+        Main.CallContactScreen.Enabled = True
+        Main.PhoneContactsScreen.Visible = False
+        Main.CallContactScreen.Visible = True
+        Main.PhoneContactsScreen.Enabled = False
         Debug.Write(selectedContact)
     End Sub
 
