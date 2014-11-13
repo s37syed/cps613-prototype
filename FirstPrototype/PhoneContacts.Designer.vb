@@ -31,7 +31,7 @@ Partial Class PhoneContacts
         'PhoneContact0
         '
         Me.PhoneContact0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PhoneContact0.Location = New System.Drawing.Point(0, 3)
+        Me.PhoneContact0.Location = New System.Drawing.Point(-1, 4)
         Me.PhoneContact0.Name = "PhoneContact0"
         Me.PhoneContact0.Size = New System.Drawing.Size(113, 23)
         Me.PhoneContact0.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class PhoneContacts
         'PhoneContact1
         '
         Me.PhoneContact1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PhoneContact1.Location = New System.Drawing.Point(0, 32)
+        Me.PhoneContact1.Location = New System.Drawing.Point(-1, 31)
         Me.PhoneContact1.Name = "PhoneContact1"
         Me.PhoneContact1.Size = New System.Drawing.Size(113, 23)
         Me.PhoneContact1.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class PhoneContacts
         'PhoneContact2
         '
         Me.PhoneContact2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PhoneContact2.Location = New System.Drawing.Point(0, 61)
+        Me.PhoneContact2.Location = New System.Drawing.Point(-1, 58)
         Me.PhoneContact2.Name = "PhoneContact2"
         Me.PhoneContact2.Size = New System.Drawing.Size(113, 23)
         Me.PhoneContact2.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class PhoneContacts
         'PhoneContact3
         '
         Me.PhoneContact3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PhoneContact3.Location = New System.Drawing.Point(0, 87)
+        Me.PhoneContact3.Location = New System.Drawing.Point(-1, 85)
         Me.PhoneContact3.Name = "PhoneContact3"
         Me.PhoneContact3.Size = New System.Drawing.Size(113, 23)
         Me.PhoneContact3.TabIndex = 3
