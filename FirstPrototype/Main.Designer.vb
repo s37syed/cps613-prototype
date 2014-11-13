@@ -34,7 +34,6 @@ Partial Class Main
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.HomeButton = New System.Windows.Forms.Button()
-        Me.MainWatch = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'SwipeUpButton
@@ -157,6 +156,5 @@ Partial Class Main
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents HomeButton As System.Windows.Forms.Button
-    Friend WithEvents MainWatch As System.Windows.Forms.Panel
 
 End Class

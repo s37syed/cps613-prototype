@@ -45,6 +45,7 @@ Partial Class MenuScreen2
         '
         'PictureBox4
         '
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Location = New System.Drawing.Point(54, 54)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(45, 45)
@@ -53,6 +54,7 @@ Partial Class MenuScreen2
         '
         'SettingsMenuButton
         '
+        Me.SettingsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SettingsMenuButton.Image = Global.FirstPrototype.My.Resources.Resources.Settings
         Me.SettingsMenuButton.Location = New System.Drawing.Point(3, 54)
         Me.SettingsMenuButton.Name = "SettingsMenuButton"
@@ -62,6 +64,7 @@ Partial Class MenuScreen2
         '
         'SilenceMenuButton
         '
+        Me.SilenceMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SilenceMenuButton.Image = Global.FirstPrototype.My.Resources.Resources.silence
         Me.SilenceMenuButton.Location = New System.Drawing.Point(54, 3)
         Me.SilenceMenuButton.Name = "SilenceMenuButton"
@@ -71,6 +74,7 @@ Partial Class MenuScreen2
         '
         'MusicMenuButton
         '
+        Me.MusicMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MusicMenuButton.Image = Global.FirstPrototype.My.Resources.Resources.music
         Me.MusicMenuButton.Location = New System.Drawing.Point(3, 3)
         Me.MusicMenuButton.Name = "MusicMenuButton"
