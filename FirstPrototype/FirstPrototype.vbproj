@@ -74,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallChild.Designer.vb">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallChild.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CallContact.Designer.vb">
       <DependentUpon>CallContact.vb</DependentUpon>
     </Compile>
@@ -84,6 +90,12 @@
       <DependentUpon>Calling.vb</DependentUpon>
     </Compile>
     <Compile Include="Calling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildLocation.Designer.vb">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildLocation.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChristinaMap.Designer.vb">
@@ -158,11 +170,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CallChild.resx">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CallContact.resx">
       <DependentUpon>CallContact.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calling.resx">
       <DependentUpon>Calling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildLocation.resx">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChristinaMap.resx">
       <DependentUpon>ChristinaMap.vb</DependentUpon>
@@ -250,6 +268,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VladimirMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChristinaMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandyMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhoneTime.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

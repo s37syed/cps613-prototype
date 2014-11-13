@@ -23,6 +23,9 @@
         MainWatch.Controls.Add(CallingScreen)
         PhoneContactsScreen.Enabled = False
         CallContactScreen.Enabled = False
+
+        ParentPhone.Visible = True
+
     End Sub
 
    
@@ -68,7 +71,7 @@
         MainScreenTracker = 0
     End Sub
 
-    Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
+    Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
         If PhoneContactsScreen.Enabled = True Then
             PhoneContactsScreen.scrollDown()
         End If

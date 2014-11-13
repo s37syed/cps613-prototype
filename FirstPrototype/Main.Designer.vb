@@ -24,7 +24,7 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
-        Me.SwipeDownButton = New System.Windows.Forms.Button()
+        Me.SwipeDown = New System.Windows.Forms.Button()
         Me.SwipeRightButton = New System.Windows.Forms.Button()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
@@ -37,34 +37,34 @@ Partial Class Main
         '
         'SwipeUpButton
         '
-        Me.SwipeUpButton.Location = New System.Drawing.Point(108, 20)
+        Me.SwipeUpButton.Location = New System.Drawing.Point(83, 20)
         Me.SwipeUpButton.Name = "SwipeUpButton"
-        Me.SwipeUpButton.Size = New System.Drawing.Size(75, 23)
+        Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
         Me.SwipeUpButton.TabIndex = 2
-        Me.SwipeUpButton.Text = "SwipeUp"
+        Me.SwipeUpButton.Text = "SwipeUpFromTop"
         Me.SwipeUpButton.UseVisualStyleBackColor = True
         '
         'SwipeLeftButton
         '
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(6, 94)
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(9, 94)
         Me.SwipeLeftButton.Name = "SwipeLeftButton"
         Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeLeftButton.TabIndex = 3
         Me.SwipeLeftButton.Text = "SwipeLeft"
         Me.SwipeLeftButton.UseVisualStyleBackColor = True
         '
-        'SwipeDownButton
+        'SwipeDown
         '
-        Me.SwipeDownButton.Location = New System.Drawing.Point(108, 168)
-        Me.SwipeDownButton.Name = "SwipeDownButton"
-        Me.SwipeDownButton.Size = New System.Drawing.Size(75, 23)
-        Me.SwipeDownButton.TabIndex = 4
-        Me.SwipeDownButton.Text = "SwipeDown"
-        Me.SwipeDownButton.UseVisualStyleBackColor = True
+        Me.SwipeDown.Location = New System.Drawing.Point(78, 168)
+        Me.SwipeDown.Name = "SwipeDown"
+        Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
+        Me.SwipeDown.TabIndex = 4
+        Me.SwipeDown.Text = "SwipeDownFromBottom"
+        Me.SwipeDown.UseVisualStyleBackColor = True
         '
         'SwipeRightButton
         '
-        Me.SwipeRightButton.Location = New System.Drawing.Point(206, 94)
+        Me.SwipeRightButton.Location = New System.Drawing.Point(209, 94)
         Me.SwipeRightButton.Name = "SwipeRightButton"
         Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeRightButton.TabIndex = 5
@@ -110,7 +110,7 @@ Partial Class Main
         'MainWatch
         '
         Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Location = New System.Drawing.Point(93, 49)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 10
@@ -126,7 +126,7 @@ Partial Class Main
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
         Me.Controls.Add(Me.SwipeRightButton)
-        Me.Controls.Add(Me.SwipeDownButton)
+        Me.Controls.Add(Me.SwipeDown)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -137,7 +137,7 @@ Partial Class Main
     End Sub
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
-    Friend WithEvents SwipeDownButton As System.Windows.Forms.Button
+    Friend WithEvents SwipeDown As System.Windows.Forms.Button
     Friend WithEvents SwipeRightButton As System.Windows.Forms.Button
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
