@@ -33,7 +33,7 @@ Partial Class Calendar2
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CurrentDay = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CurrentDateLabel = New System.Windows.Forms.Label()
@@ -149,16 +149,16 @@ Partial Class Calendar2
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "20"
         '
-        'Label3
+        'CurrentDay
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Red
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Label3.Location = New System.Drawing.Point(61, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(21, 15)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "19"
+        Me.CurrentDay.AutoSize = True
+        Me.CurrentDay.BackColor = System.Drawing.Color.Red
+        Me.CurrentDay.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.CurrentDay.Location = New System.Drawing.Point(61, 18)
+        Me.CurrentDay.Name = "CurrentDay"
+        Me.CurrentDay.Size = New System.Drawing.Size(21, 15)
+        Me.CurrentDay.TabIndex = 20
+        Me.CurrentDay.Text = "19"
         '
         'Label2
         '
@@ -205,7 +205,7 @@ Partial Class Calendar2
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.CurrentDay)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CurrentDateLabel)
@@ -226,7 +226,7 @@ Partial Class Calendar2
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents CurrentDay As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents CurrentDateLabel As System.Windows.Forms.Label

@@ -6,7 +6,7 @@
         CurrentDateLabel.Text = Format(Date.Now(), "MMM" + "." + " dd")
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles CurrentDay.Click
         'selecting current date of calendar brings up tasks
         Main.MainWatch.Controls.Remove(Main.cal2)
         Main.MainWatch.Controls.Add(task)

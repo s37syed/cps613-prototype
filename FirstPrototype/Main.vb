@@ -175,27 +175,22 @@
             For Each cont In MainWatch.Controls
                 cont.Hide()
             Next
-            cal2.Visible = True
+            cal2.Show()
+            horizontalCount = 5
         End If
     End Sub
     Friend Sub ResetTracker()
         MainScreenTracker = 0
-    End Sub
-    Friend Sub incrementTracker()
-        MainScreenTracker += 1
     End Sub
     Private Sub AccessControl2()
         'remove new msg prompt
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
         Else
-            'NewMsgEventPic.Visible = False
+            NewMsgEventPic.Visible = False
         End If
     End Sub
     Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
         'load message
-    End Sub
-    Friend Sub decrementTracker()
-        MainScreenTracker -= 1
     End Sub
 End Class
