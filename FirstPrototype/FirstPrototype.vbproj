@@ -46,6 +46,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AnalogClockControl">
+      <HintPath>..\..\assets\AnalogClockControl\AnalogClockControl\bin\Release\AnalogClockControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -71,6 +74,42 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallChild.Designer.vb">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallChild.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallContact.Designer.vb">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallContact.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calling.Designer.vb">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildLocation.Designer.vb">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildLocation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChristinaMap.Designer.vb">
+      <DependentUpon>ChristinaMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChristinaMap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClockScreen.Designer.vb">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClockScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ContactScreen2.Designer.vb">
       <DependentUpon>ContactScreen2.vb</DependentUpon>
     </Compile>
@@ -83,6 +122,24 @@
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapApp.Designer.vb">
+      <DependentUpon>MapApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapApp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen1.Designer.vb">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen2.Designer.vb">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen2.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MessageOptions.Designer.vb">
       <DependentUpon>MessageOptions.vb</DependentUpon>
@@ -145,18 +202,64 @@
     <Compile Include="TransparentBox.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ParentPhone.Designer.vb">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneContacts.Designer.vb">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhoneMenu.Designer.vb">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CallChild.resx">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallContact.resx">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calling.resx">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildLocation.resx">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChristinaMap.resx">
+      <DependentUpon>ChristinaMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockScreen.resx">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ContactScreen2.resx">
       <DependentUpon>ContactScreen2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MapApp.resx">
+      <DependentUpon>MapApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen1.resx">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen2.resx">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageOptions.resx">
       <DependentUpon>MessageOptions.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
@@ -182,6 +285,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TransparentBox.resx">
       <DependentUpon>TransparentBox.vb</DependentUpon>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhone.resx">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneContacts.resx">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneMenu.resx">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +341,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rickroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageTracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1Tracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page2TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page3TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VladimirMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChristinaMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandyMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhoneTime.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

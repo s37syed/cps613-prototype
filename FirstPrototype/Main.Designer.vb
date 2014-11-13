@@ -24,45 +24,49 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
-        Me.SwipeDownButton = New System.Windows.Forms.Button()
+        Me.SwipeDown = New System.Windows.Forms.Button()
         Me.SwipeRightButton = New System.Windows.Forms.Button()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
+        Me.DoorButton = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
+        Me.MainWatch = New System.Windows.Forms.Panel()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'SwipeUpButton
         '
-        Me.SwipeUpButton.Location = New System.Drawing.Point(108, 20)
+        Me.SwipeUpButton.Location = New System.Drawing.Point(83, 20)
         Me.SwipeUpButton.Name = "SwipeUpButton"
-        Me.SwipeUpButton.Size = New System.Drawing.Size(75, 23)
+        Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
         Me.SwipeUpButton.TabIndex = 2
-        Me.SwipeUpButton.Text = "SwipeUp"
+        Me.SwipeUpButton.Text = "SwipeUpFromTop"
         Me.SwipeUpButton.UseVisualStyleBackColor = True
         '
         'SwipeLeftButton
         '
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(6, 94)
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(9, 94)
         Me.SwipeLeftButton.Name = "SwipeLeftButton"
         Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeLeftButton.TabIndex = 3
         Me.SwipeLeftButton.Text = "SwipeLeft"
         Me.SwipeLeftButton.UseVisualStyleBackColor = True
         '
-        'SwipeDownButton
+        'SwipeDown
         '
-        Me.SwipeDownButton.Location = New System.Drawing.Point(108, 168)
-        Me.SwipeDownButton.Name = "SwipeDownButton"
-        Me.SwipeDownButton.Size = New System.Drawing.Size(75, 23)
-        Me.SwipeDownButton.TabIndex = 4
-        Me.SwipeDownButton.Text = "SwipeDown"
-        Me.SwipeDownButton.UseVisualStyleBackColor = True
+        Me.SwipeDown.Location = New System.Drawing.Point(78, 168)
+        Me.SwipeDown.Name = "SwipeDown"
+        Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
+        Me.SwipeDown.TabIndex = 4
+        Me.SwipeDown.Text = "SwipeDownFromBottom"
+        Me.SwipeDown.UseVisualStyleBackColor = True
         '
         'SwipeRightButton
         '
-        Me.SwipeRightButton.Location = New System.Drawing.Point(206, 94)
+        Me.SwipeRightButton.Location = New System.Drawing.Point(209, 94)
         Me.SwipeRightButton.Name = "SwipeRightButton"
         Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeRightButton.TabIndex = 5
@@ -96,6 +100,14 @@ Partial Class Main
         Me.PowerButton.Text = "Power"
         Me.PowerButton.UseVisualStyleBackColor = True
         '
+        'DoorButton
+        '
+        Me.DoorButton.Location = New System.Drawing.Point(111, 205)
+        Me.DoorButton.Name = "DoorButton"
+        Me.DoorButton.Size = New System.Drawing.Size(75, 23)
+        Me.DoorButton.TabIndex = 9
+        Me.DoorButton.Text = "Door"
+        Me.DoorButton.UseVisualStyleBackColor = True
         'HomeButton
         '
         Me.HomeButton.Location = New System.Drawing.Point(108, 205)
@@ -119,12 +131,12 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
         Me.Controls.Add(Me.MainWatch)
-        Me.Controls.Add(Me.HomeButton)
+        Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
         Me.Controls.Add(Me.SwipeRightButton)
-        Me.Controls.Add(Me.SwipeDownButton)
+        Me.Controls.Add(Me.SwipeDown)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -135,11 +147,15 @@ Partial Class Main
     End Sub
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
-    Friend WithEvents SwipeDownButton As System.Windows.Forms.Button
+    Friend WithEvents SwipeDown As System.Windows.Forms.Button
     Friend WithEvents SwipeRightButton As System.Windows.Forms.Button
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
+    Friend WithEvents DoorButton As System.Windows.Forms.Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents HomeButton As System.Windows.Forms.Button
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
 
