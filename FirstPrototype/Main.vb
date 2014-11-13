@@ -20,7 +20,7 @@
         Me.StartPosition = FormStartPosition.Manual
         Me.Location = New System.Drawing.Point(X, Y)
         'add calendar with first half of days
-        Panel1.Controls.Add(cal)
+        MainWatch.Controls.Add(cal)
     End Sub
 
 
@@ -34,14 +34,14 @@
 
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDownButton.Click
         'show other days on swipe down
-        Panel1.Controls.Remove(cal)
-        Panel1.Controls.Add(cal2)
+        MainWatch.Controls.Remove(cal)
+        MainWatch.Controls.Add(cal2)
     End Sub
 
     Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'show other days on swipe up
-        Panel1.Controls.Remove(cal2)
-        Panel1.Controls.Add(cal)
+        MainWatch.Controls.Remove(cal2)
+        MainWatch.Controls.Add(cal)
     End Sub
 
     Private Sub WorkerThread()
@@ -57,7 +57,7 @@
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
-            NewMsgEventPic.Visible = True
+            'NewMsgEventPic.Visible = True
         End If
     End Sub
     Private Sub AccessControl2()
@@ -65,7 +65,7 @@
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
         Else
-            NewMsgEventPic.Visible = False
+            'NewMsgEventPic.Visible = False
         End If
     End Sub
 
@@ -75,7 +75,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Panel1.Controls.Remove(Calendar2.task)
+        MainWatch.Controls.Remove(Calendar2.task)
         BaseLoad()
     End Sub
 End Class

@@ -8,7 +8,7 @@
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         'selecting current date of calendar brings up tasks
-        Main.Panel1.Controls.Remove(Main.cal2)
-        Main.Panel1.Controls.Add(task)
+        Main.MainWatch.Controls.Remove(Main.cal2)
+        Main.MainWatch.Controls.Add(task)
     End Sub
 End Class

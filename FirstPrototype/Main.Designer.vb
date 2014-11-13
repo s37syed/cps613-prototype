@@ -22,7 +22,7 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MainWatch = New System.Windows.Forms.Panel()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDownButton = New System.Windows.Forms.Button()
@@ -32,20 +32,20 @@ Partial Class Main
         Me.PowerButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.MainWatch.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'MainWatch
         '
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.NewMsgEventPic)
-        Me.Panel1.Location = New System.Drawing.Point(87, 49)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(113, 113)
-        Me.Panel1.TabIndex = 1
+        Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Controls.Add(Me.NewMsgEventPic)
+        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Name = "MainWatch"
+        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
+        Me.MainWatch.TabIndex = 1
         '
         'SwipeUpButton
         '
@@ -144,17 +144,17 @@ Partial Class Main
         Me.Controls.Add(Me.SwipeDownButton)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.SwipeUpButton)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.Panel1.ResumeLayout(False)
+        Me.MainWatch.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
     Friend WithEvents SwipeDownButton As System.Windows.Forms.Button
