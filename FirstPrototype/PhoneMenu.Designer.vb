@@ -30,7 +30,8 @@ Partial Class PhoneMenu
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.DateLabel = New System.Windows.Forms.Label()
+        Me.TimeLabel = New System.Windows.Forms.Label()
         CType(Me.MapMenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -39,7 +40,6 @@ Partial Class PhoneMenu
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MapMenuButton
@@ -114,20 +114,32 @@ Partial Class PhoneMenu
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox8
+        'DateLabel
         '
-        Me.PictureBox8.Image = Global.FirstPrototype.My.Resources.Resources.PhoneTime
-        Me.PictureBox8.Location = New System.Drawing.Point(55, 23)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox8.TabIndex = 16
-        Me.PictureBox8.TabStop = False
+        Me.DateLabel.AutoSize = True
+        Me.DateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.DateLabel.Location = New System.Drawing.Point(103, 61)
+        Me.DateLabel.Name = "DateLabel"
+        Me.DateLabel.Size = New System.Drawing.Size(90, 25)
+        Me.DateLabel.TabIndex = 16
+        Me.DateLabel.Text = "99/99/99"
+        '
+        'TimeLabel
+        '
+        Me.TimeLabel.AutoSize = True
+        Me.TimeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.TimeLabel.Location = New System.Drawing.Point(73, 14)
+        Me.TimeLabel.Name = "TimeLabel"
+        Me.TimeLabel.Size = New System.Drawing.Size(129, 31)
+        Me.TimeLabel.TabIndex = 17
+        Me.TimeLabel.Text = "99:99 PM"
         '
         'PhoneMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.PictureBox8)
+        Me.Controls.Add(Me.TimeLabel)
+        Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.MapMenuButton)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox6)
@@ -146,8 +158,8 @@ Partial Class PhoneMenu
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MapMenuButton As System.Windows.Forms.PictureBox
@@ -158,6 +170,7 @@ Partial Class PhoneMenu
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents DateLabel As System.Windows.Forms.Label
+    Friend WithEvents TimeLabel As System.Windows.Forms.Label
 
 End Class
