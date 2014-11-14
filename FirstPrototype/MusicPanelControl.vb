@@ -20,7 +20,6 @@
     End Sub
 
     Private Sub PlayButton_Click(sender As Object, e As EventArgs) Handles PlayButton.Click
-        MsgBox(whichPlaying)
         Me.song(whichPlaying).getSongPlayer.Play()
     End Sub
 
@@ -60,7 +59,6 @@
             Me.song(whichPlaying).getSongPlayer.Stop()
             whichPlaying += 1
             Me.song(whichPlaying).getSongPlayer.Play()
-            MsgBox(whichPlaying)
             Me.SongName.Text = song(whichPlaying).getSongName
             SongName.Left = 57 - SongName.Width \ 2
         Else
