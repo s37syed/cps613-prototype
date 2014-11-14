@@ -1,6 +1,9 @@
-﻿Public Class CallContact
+﻿Imports System.Media
+Public Class CallContact
     Friend phoneNumbers() As String
     Dim value As String = ""
+
+    Friend RingToneSound As SoundPlayer = New SoundPlayer(My.Resources.old_telephone)
 
     Sub New()
         ' This call is required by the designer.
@@ -18,5 +21,6 @@
         Dim value As Integer = CInt(Int((5 * Rnd()) + 1))
         Debug.WriteLine("value is " & value)
         Main.CallingScreen.rndValue = value
+        RingToneSound.PlayLooping()
     End Sub
 End Class
