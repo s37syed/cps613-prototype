@@ -77,6 +77,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentOptions.Designer.vb">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CallChild.Designer.vb">
       <DependentUpon>CallChild.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="Album.vb" />
     <Compile Include="Artist.vb" />
+    <Compile Include="DayWeekSelect.Designer.vb">
+      <DependentUpon>DayWeekSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DayWeekSelect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +270,12 @@
     <Compile Include="SendVid.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Tasks2.Designer.vb">
+      <DependentUpon>Tasks2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="TransparentBox.Designer.vb">
       <DependentUpon>TransparentBox.vb</DependentUpon>
     </Compile>
@@ -290,6 +308,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AppointmentOptions.resx">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CallChild.resx">
       <DependentUpon>CallChild.vb</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar2.resx">
       <DependentUpon>Calendar2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayWeekSelect.resx">
+      <DependentUpon>DayWeekSelect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
@@ -377,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SendVid.resx">
       <DependentUpon>SendVid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks2.resx">
+      <DependentUpon>Tasks2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransparentBox.resx">
       <DependentUpon>TransparentBox.vb</DependentUpon>
@@ -493,12 +520,6 @@
     <None Include="Resources\Calendar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\16number.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17NumberSeventeenInCircle.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\notepad.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -581,6 +602,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\playlist_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_18819.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_reminder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
