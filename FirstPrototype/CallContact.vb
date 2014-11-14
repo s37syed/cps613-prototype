@@ -15,5 +15,9 @@
         Main.CallContactScreen.Enabled = False
         Main.CallContactScreen.Visible = False
         Main.CallingScreen.Visible = True
+        Main.CallingScreen.CallingTimer.Start()
+        Dim value As Integer = CInt(Int((5 * Rnd()) + 1))
+        Debug.WriteLine("value is " & value)
+        Main.CallingScreen.rndValue = value
     End Sub
 End Class

@@ -22,9 +22,11 @@ Partial Class Calling
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.CallingLabel = New System.Windows.Forms.Label()
         Me.ContactName = New System.Windows.Forms.Label()
         Me.HangUp = New System.Windows.Forms.Button()
+        Me.CallingTimer = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'CallingLabel
@@ -54,6 +56,10 @@ Partial Class Calling
         Me.HangUp.Text = "HangUp"
         Me.HangUp.UseVisualStyleBackColor = True
         '
+        'CallingTimer
+        '
+        Me.CallingTimer.Interval = 1000
+        '
         'Calling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -70,5 +76,6 @@ Partial Class Calling
     Friend WithEvents CallingLabel As System.Windows.Forms.Label
     Friend WithEvents ContactName As System.Windows.Forms.Label
     Friend WithEvents HangUp As System.Windows.Forms.Button
+    Friend WithEvents CallingTimer As System.Windows.Forms.Timer
 
 End Class
