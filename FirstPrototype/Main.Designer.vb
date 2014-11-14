@@ -257,5 +257,6 @@ Partial Class Main
     Friend WithEvents Reminder As System.Windows.Forms.Label
     Friend WithEvents VolumeDownButton As System.Windows.Forms.PictureBox
     Friend WithEvents VolumeUpButton As System.Windows.Forms.PictureBox
+    Friend WithEvents Clock1 As AnalogClock.Clock
 
 End Class

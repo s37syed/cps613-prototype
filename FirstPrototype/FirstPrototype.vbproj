@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnalogClockControl">
-      <HintPath>..\..\..\AnalogClockControl.dll</HintPath>
+      <HintPath>..\..\..\Downloads\AnalogClockControl\AnalogClockControl\bin\Release\AnalogClockControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -624,6 +624,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\volume_silent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old_telephone.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
