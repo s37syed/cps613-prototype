@@ -113,6 +113,12 @@
     <Compile Include="CallNotConnected.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ReceiveCall.Designer.vb">
+      <DependentUpon>ReceiveCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveCall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Redialling.Designer.vb">
       <DependentUpon>Redialling.vb</DependentUpon>
     </Compile>
@@ -323,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CallNotConnected.resx">
       <DependentUpon>CallNotConnected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveCall.resx">
+      <DependentUpon>ReceiveCall.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Redialling.resx">
       <DependentUpon>Redialling.vb</DependentUpon>

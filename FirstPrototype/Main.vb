@@ -13,6 +13,7 @@ Public Class Main
     Friend send_video As SendVid = New SendVid
     Friend send_message As SendMsg = New SendMsg
     Friend day_or_week As DayWeekSelect = New DayWeekSelect
+    Friend receive_call As ReceiveCall = New ReceiveCall
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -165,6 +166,7 @@ Public Class Main
         MainWatch.Controls.Add(tasks2)
         MainWatch.Controls.Add(appOptions)
         MainWatch.Controls.Add(day_or_week)
+        MainWatch.Controls.Add(receive_call)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
