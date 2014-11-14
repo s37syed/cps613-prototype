@@ -69,11 +69,11 @@ Partial Class Main
         Me.Reminder.AutoSize = True
         Me.Reminder.BackColor = System.Drawing.Color.Transparent
         Me.Reminder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Reminder.Location = New System.Drawing.Point(0, 34)
+        Me.Reminder.Location = New System.Drawing.Point(3, 34)
         Me.Reminder.Name = "Reminder"
-        Me.Reminder.Size = New System.Drawing.Size(112, 15)
+        Me.Reminder.Size = New System.Drawing.Size(104, 15)
         Me.Reminder.TabIndex = 12
-        Me.Reminder.Text = "Fre. Lesson Reminder"
+        Me.Reminder.Text = "Danielle to call Mom"
         Me.Reminder.Visible = False
         '
         'ErrorMsg
