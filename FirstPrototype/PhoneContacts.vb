@@ -33,7 +33,6 @@
             currenPosition = firstPosition
             For counter As Integer = 0 To 3
                 buttons(counter).Text = contacts(currenPosition)
-                Debug.WriteLine("button" & counter & "= " & contacts(currenPosition))
                 currenPosition += 1
             Next
         End If
@@ -47,7 +46,6 @@
             currenPosition = firstPosition
             For counter As Integer = 0 To 3
                 buttons(counter).Text = contacts(currenPosition)
-                Debug.WriteLine("button" & counter & "= " & contacts(currenPosition))
                 currenPosition += 1
             Next
         End If
@@ -57,6 +55,7 @@
         Dim button As Button
         button = sender
         Main.CallContactScreen.CallContactName.Text = button.Text
+        Main.CallContactScreen.CallContactName.Left = 57 - Main.CallContactScreen.CallContactName.Width \ 2
         Dim value = button.Text
 
         If (button.Text = "Mom") Then

@@ -48,11 +48,11 @@ Partial Class CallContact
         'CallContactNumber
         '
         Me.CallContactNumber.AutoSize = True
-        Me.CallContactNumber.Location = New System.Drawing.Point(37, 46)
+        Me.CallContactNumber.Location = New System.Drawing.Point(20, 47)
         Me.CallContactNumber.Name = "CallContactNumber"
-        Me.CallContactNumber.Size = New System.Drawing.Size(39, 13)
+        Me.CallContactNumber.Size = New System.Drawing.Size(73, 13)
         Me.CallContactNumber.TabIndex = 2
-        Me.CallContactNumber.Text = "Label2"
+        Me.CallContactNumber.Text = "416-416-4166"
         '
         'CallContact
         '
