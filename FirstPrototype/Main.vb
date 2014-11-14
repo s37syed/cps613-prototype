@@ -64,7 +64,7 @@ Public Class Main
         'worker thread to handle display of new msg event
         Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl2()
     End Sub
     Friend Sub WorkerThread2()
@@ -191,11 +191,11 @@ Public Class Main
         MainWatch.Controls.Add(songPanel3)
         MainWatch.Controls.Add(songPanel4)
 
-        MainWatch.Controls.Add(SendMsgType2) 'added this 
-        MainWatch.Controls.Add(MsgSendContacts1) ' added this
-        MainWatch.Controls.Add(send_image) ' added this
-        MainWatch.Controls.Add(send_video) ' added this
-        MainWatch.Controls.Add(send_message) ' added this
+        MainWatch.Controls.Add(SendMsgType2)
+        MainWatch.Controls.Add(MsgSendContacts1)
+        MainWatch.Controls.Add(send_image)
+        MainWatch.Controls.Add(send_video)
+        MainWatch.Controls.Add(send_message)
         MainWatch.Controls.Add(CallConnectedScreen)
         MainWatch.Controls.Add(RediallingScreen)
         MainWatch.Controls.Add(CallNotConnectedScreen)
