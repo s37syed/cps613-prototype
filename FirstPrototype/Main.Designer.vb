@@ -40,6 +40,7 @@ Partial Class Main
         Me.DoorButton = New System.Windows.Forms.PictureBox()
         Me.VolumeDownButton = New System.Windows.Forms.PictureBox()
         Me.VolumeUpButton = New System.Windows.Forms.PictureBox()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MainWatch.SuspendLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +51,7 @@ Partial Class Main
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VolumeDownButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VolumeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainWatch
@@ -236,6 +238,7 @@ Partial Class Main
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VolumeDownButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VolumeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -257,5 +260,6 @@ Partial Class Main
     Friend WithEvents Reminder As System.Windows.Forms.Label
     Friend WithEvents VolumeDownButton As System.Windows.Forms.PictureBox
     Friend WithEvents VolumeUpButton As System.Windows.Forms.PictureBox
+    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
 
 End Class
