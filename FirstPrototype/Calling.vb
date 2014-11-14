@@ -3,6 +3,7 @@
     Friend rndValue As Integer = 0
 
     Private Sub HangUp_Click(sender As Object, e As EventArgs) Handles HangUp.Click
+        Main.horizontalCount = 0
         Main.CallingScreen.Visible = False
         Main.MenuScreen0.Visible = True
         Main.ResetTracker()
@@ -37,6 +38,7 @@
                 For Each cont In Main.MainWatch.Controls
                     cont.hide()
                 Next
+                Main.horizontalCount = 10
                 Main.CallingScreen.Visible = False
                 Main.CallNotConnectedScreen.Visible = True
                 Main.CallNotConnectedScreen.BringToFront()
