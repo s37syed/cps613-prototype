@@ -91,9 +91,6 @@ Public Class Main
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
-            For Each cont In MainWatch.Controls
-                cont.Hide()
-            Next
             NewMsgEventPic.Visible = True
         End If
     End Sub
