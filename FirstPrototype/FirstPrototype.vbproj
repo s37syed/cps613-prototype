@@ -534,6 +534,18 @@
   <ItemGroup>
     <None Include="Resources\shuffle_unselected.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_up.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

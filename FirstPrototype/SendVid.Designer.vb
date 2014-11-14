@@ -40,6 +40,7 @@ Partial Class SendVid
         '
         Me.PictureBox1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.rickroll
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.No
         Me.PictureBox1.Location = New System.Drawing.Point(3, 39)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(107, 71)

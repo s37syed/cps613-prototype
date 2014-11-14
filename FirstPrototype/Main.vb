@@ -7,11 +7,11 @@ Public Class Main
     Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
     Friend CallContactScreen As CallContact = New CallContact
     Friend CallingScreen As Calling = New Calling
-    Friend SendMsgType2 As SelectMsgType2 = New SelectMsgType2 'added this
-    Friend MsgSendContacts1 As MsgSendContacts = New MsgSendContacts ' added this
-    Friend send_image As SendImg = New SendImg 'added this
-    Friend send_video As SendVid = New SendVid 'added this
-    Friend send_message As SendMsg = New SendMsg 'assed this
+    Friend SendMsgType2 As SelectMsgType2 = New SelectMsgType2
+    Friend MsgSendContacts1 As MsgSendContacts = New MsgSendContacts
+    Friend send_image As SendImg = New SendImg
+    Friend send_video As SendVid = New SendVid
+    Friend send_message As SendMsg = New SendMsg
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -223,7 +223,7 @@ Public Class Main
         MenuScreen0.Visible = True
         MainScreenTracker = 0
     End Sub
-    Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
+    Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
         'Chris' code
         If PhoneContactsScreen.Enabled = True Then
             PhoneContactsScreen.scrollDown()
@@ -249,7 +249,7 @@ Public Class Main
             Me.MsgSendContacts1.scrollDown()
         End If
     End Sub
-    Private Sub SwipeUpButton_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
+    Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
         If PhoneContactsScreen.Enabled = True Then
             PhoneContactsScreen.scrollUp()

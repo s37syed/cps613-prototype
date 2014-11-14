@@ -25,10 +25,6 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
-        Me.SwipeUpButton = New System.Windows.Forms.Button()
-        Me.SwipeLeftButton = New System.Windows.Forms.Button()
-        Me.SwipeDown = New System.Windows.Forms.Button()
-        Me.SwipeRightButton = New System.Windows.Forms.Button()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
@@ -37,9 +33,17 @@ Partial Class Main
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.MainWatch.SuspendLayout
-        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.SwipeRightButton = New System.Windows.Forms.PictureBox()
+        Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
+        Me.SwipeUpButton = New System.Windows.Forms.PictureBox()
+        Me.SwipeDown = New System.Windows.Forms.PictureBox()
+        Me.MainWatch.SuspendLayout()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'MainWatch
         '
@@ -59,44 +63,8 @@ Partial Class Main
         Me.NewMsgEventPic.Name = "NewMsgEventPic"
         Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
         Me.NewMsgEventPic.TabIndex = 10
-        Me.NewMsgEventPic.TabStop = false
-        Me.NewMsgEventPic.Visible = false
-        '
-        'SwipeUpButton
-        '
-        Me.SwipeUpButton.Location = New System.Drawing.Point(80, 20)
-        Me.SwipeUpButton.Name = "SwipeUpButton"
-        Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
-        Me.SwipeUpButton.TabIndex = 2
-        Me.SwipeUpButton.Text = "SwipeUpFromTop"
-        Me.SwipeUpButton.UseVisualStyleBackColor = true
-        '
-        'SwipeLeftButton
-        '
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(6, 94)
-        Me.SwipeLeftButton.Name = "SwipeLeftButton"
-        Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
-        Me.SwipeLeftButton.TabIndex = 3
-        Me.SwipeLeftButton.Text = "SwipeLeft"
-        Me.SwipeLeftButton.UseVisualStyleBackColor = true
-        '
-        'SwipeDown
-        '
-        Me.SwipeDown.Location = New System.Drawing.Point(80, 168)
-        Me.SwipeDown.Name = "SwipeDown"
-        Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
-        Me.SwipeDown.TabIndex = 4
-        Me.SwipeDown.Text = "SwipeDownFromBottom"
-        Me.SwipeDown.UseVisualStyleBackColor = true
-        '
-        'SwipeRightButton
-        '
-        Me.SwipeRightButton.Location = New System.Drawing.Point(206, 94)
-        Me.SwipeRightButton.Name = "SwipeRightButton"
-        Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
-        Me.SwipeRightButton.TabIndex = 5
-        Me.SwipeRightButton.Text = "SwipeRight"
-        Me.SwipeRightButton.UseVisualStyleBackColor = true
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
         '
         'VolumeUpButton
         '
@@ -105,7 +73,7 @@ Partial Class Main
         Me.VolumeUpButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeUpButton.TabIndex = 6
         Me.VolumeUpButton.Text = "+"
-        Me.VolumeUpButton.UseVisualStyleBackColor = true
+        Me.VolumeUpButton.UseVisualStyleBackColor = True
         '
         'VolumeDownButton
         '
@@ -114,7 +82,7 @@ Partial Class Main
         Me.VolumeDownButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeDownButton.TabIndex = 7
         Me.VolumeDownButton.Text = "-"
-        Me.VolumeDownButton.UseVisualStyleBackColor = true
+        Me.VolumeDownButton.UseVisualStyleBackColor = True
         '
         'PowerButton
         '
@@ -123,7 +91,7 @@ Partial Class Main
         Me.PowerButton.Size = New System.Drawing.Size(75, 23)
         Me.PowerButton.TabIndex = 8
         Me.PowerButton.Text = "Power"
-        Me.PowerButton.UseVisualStyleBackColor = true
+        Me.PowerButton.UseVisualStyleBackColor = True
         '
         'DoorButton
         '
@@ -132,7 +100,7 @@ Partial Class Main
         Me.DoorButton.Size = New System.Drawing.Size(75, 23)
         Me.DoorButton.TabIndex = 9
         Me.DoorButton.Text = "Door"
-        Me.DoorButton.UseVisualStyleBackColor = true
+        Me.DoorButton.UseVisualStyleBackColor = True
         '
         'HomeButton
         '
@@ -141,38 +109,78 @@ Partial Class Main
         Me.HomeButton.Size = New System.Drawing.Size(75, 23)
         Me.HomeButton.TabIndex = 9
         Me.HomeButton.Text = "Door"
-        Me.HomeButton.UseVisualStyleBackColor = true
+        Me.HomeButton.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         '
+        'SwipeRightButton
+        '
+        Me.SwipeRightButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
+        Me.SwipeRightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeRightButton.Location = New System.Drawing.Point(248, 84)
+        Me.SwipeRightButton.Name = "SwipeRightButton"
+        Me.SwipeRightButton.Size = New System.Drawing.Size(33, 33)
+        Me.SwipeRightButton.TabIndex = 10
+        Me.SwipeRightButton.TabStop = False
+        '
+        'SwipeLeftButton
+        '
+        Me.SwipeLeftButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
+        Me.SwipeLeftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(12, 84)
+        Me.SwipeLeftButton.Name = "SwipeLeftButton"
+        Me.SwipeLeftButton.Size = New System.Drawing.Size(33, 33)
+        Me.SwipeLeftButton.TabIndex = 11
+        Me.SwipeLeftButton.TabStop = False
+        '
+        'SwipeUpButton
+        '
+        Me.SwipeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
+        Me.SwipeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeUpButton.Location = New System.Drawing.Point(129, 10)
+        Me.SwipeUpButton.Name = "SwipeUpButton"
+        Me.SwipeUpButton.Size = New System.Drawing.Size(33, 33)
+        Me.SwipeUpButton.TabIndex = 12
+        Me.SwipeUpButton.TabStop = False
+        '
+        'SwipeDown
+        '
+        Me.SwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
+        Me.SwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeDown.Location = New System.Drawing.Point(129, 166)
+        Me.SwipeDown.Name = "SwipeDown"
+        Me.SwipeDown.Size = New System.Drawing.Size(33, 33)
+        Me.SwipeDown.TabIndex = 13
+        Me.SwipeDown.TabStop = False
+        '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
+        Me.Controls.Add(Me.SwipeDown)
+        Me.Controls.Add(Me.SwipeUpButton)
+        Me.Controls.Add(Me.SwipeLeftButton)
+        Me.Controls.Add(Me.SwipeRightButton)
         Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
-        Me.Controls.Add(Me.SwipeRightButton)
-        Me.Controls.Add(Me.SwipeDown)
-        Me.Controls.Add(Me.SwipeLeftButton)
-        Me.Controls.Add(Me.SwipeUpButton)
         Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.MainWatch.ResumeLayout(false)
-        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        Me.MainWatch.ResumeLayout(False)
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
 
-End Sub
+    End Sub
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
-    Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
-    Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button
-    Friend WithEvents SwipeDown As System.Windows.Forms.Button
-    Friend WithEvents SwipeRightButton As System.Windows.Forms.Button
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
@@ -183,5 +191,9 @@ End Sub
     Friend WithEvents HomeButton As System.Windows.Forms.Button
     Friend WithEvents NewMsgEventPic As System.Windows.Forms.PictureBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents SwipeRightButton As System.Windows.Forms.PictureBox
+    Friend WithEvents SwipeLeftButton As System.Windows.Forms.PictureBox
+    Friend WithEvents SwipeUpButton As System.Windows.Forms.PictureBox
+    Friend WithEvents SwipeDown As System.Windows.Forms.PictureBox
 
 End Class
