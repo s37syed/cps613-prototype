@@ -23,6 +23,9 @@
                 Debug.WriteLine("Connected")
                 CallingTimer.Stop()
                 timerValue = 0
+                For Each cont In Main.MainWatch.Controls
+                    cont.hide()
+                Next
                 Main.CallConnectedScreen.ContactNameLabel.Text = ContactName.Text
                 Main.CallingScreen.Visible = False
                 Main.CallConnectedScreen.Visible = True
@@ -31,6 +34,9 @@
                 Debug.WriteLine("Did not connect")
                 CallingTimer.Stop()
                 timerValue = 0
+                For Each cont In Main.MainWatch.Controls
+                    cont.hide()
+                Next
                 Main.CallingScreen.Visible = False
                 Main.CallNotConnectedScreen.Visible = True
                 Main.CallNotConnectedScreen.BringToFront()

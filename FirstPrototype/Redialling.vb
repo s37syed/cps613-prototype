@@ -10,7 +10,7 @@
             countDown = 6
             RedialTimer.Stop()
             timerValue = 0
-            Main.CallNotConnectedScreen.Visible = False
+            Main.RediallingScreen.Visible = False
             Main.CallingScreen.Visible = True
             Main.CallingScreen.BringToFront()
             Main.CallingScreen.CallingTimer.Start()
