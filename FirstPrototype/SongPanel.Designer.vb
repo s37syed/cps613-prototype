@@ -40,6 +40,7 @@ Partial Class SongPanel
         Me.PictureBox1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.no_cover
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(26, 26)
@@ -52,6 +53,7 @@ Partial Class SongPanel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.SongLabel)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Name = "SongPanel"
         Me.Size = New System.Drawing.Size(113, 28)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

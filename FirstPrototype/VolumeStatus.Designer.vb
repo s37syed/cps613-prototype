@@ -38,10 +38,12 @@ Partial Class VolumeStatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Transparent
+        Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.VolumeStatusLabel)
-        Me.Location = New System.Drawing.Point(20, 30)
+        Me.Location = New System.Drawing.Point(13, 46)
         Me.Name = "VolumeStatus"
-        Me.Size = New System.Drawing.Size(89, 24)
+        Me.Size = New System.Drawing.Size(87, 22)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

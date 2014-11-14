@@ -47,6 +47,7 @@ Partial Class MenuScreen1
         'MessagesMenuButton
         '
         Me.MessagesMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MessagesMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MessagesMenuButton.Image = CType(resources.GetObject("MessagesMenuButton.Image"), System.Drawing.Image)
         Me.MessagesMenuButton.Location = New System.Drawing.Point(59, 54)
         Me.MessagesMenuButton.Name = "MessagesMenuButton"
@@ -57,6 +58,7 @@ Partial Class MenuScreen1
         'PhoneMenuButton
         '
         Me.PhoneMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PhoneMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PhoneMenuButton.Image = CType(resources.GetObject("PhoneMenuButton.Image"), System.Drawing.Image)
         Me.PhoneMenuButton.Location = New System.Drawing.Point(8, 54)
         Me.PhoneMenuButton.Name = "PhoneMenuButton"
@@ -67,6 +69,7 @@ Partial Class MenuScreen1
         'ContactsMenuButton
         '
         Me.ContactsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ContactsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ContactsMenuButton.Image = CType(resources.GetObject("ContactsMenuButton.Image"), System.Drawing.Image)
         Me.ContactsMenuButton.Location = New System.Drawing.Point(59, 3)
         Me.ContactsMenuButton.Name = "ContactsMenuButton"
@@ -77,6 +80,7 @@ Partial Class MenuScreen1
         'CalendarMenuButton
         '
         Me.CalendarMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CalendarMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CalendarMenuButton.Image = CType(resources.GetObject("CalendarMenuButton.Image"), System.Drawing.Image)
         Me.CalendarMenuButton.Location = New System.Drawing.Point(8, 3)
         Me.CalendarMenuButton.Name = "CalendarMenuButton"

@@ -53,6 +53,7 @@ Partial Class MusicPanelControl
         '
         Me.RepeatButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.repeat
         Me.RepeatButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RepeatButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.RepeatButton.Location = New System.Drawing.Point(63, 93)
         Me.RepeatButton.Name = "RepeatButton"
         Me.RepeatButton.Size = New System.Drawing.Size(20, 20)
@@ -63,6 +64,7 @@ Partial Class MusicPanelControl
         '
         Me.ShuffleButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.shuffle
         Me.ShuffleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ShuffleButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ShuffleButton.Location = New System.Drawing.Point(28, 93)
         Me.ShuffleButton.Name = "ShuffleButton"
         Me.ShuffleButton.Size = New System.Drawing.Size(20, 20)
@@ -73,6 +75,7 @@ Partial Class MusicPanelControl
         '
         Me.PreviousButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.previous
         Me.PreviousButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PreviousButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PreviousButton.Location = New System.Drawing.Point(0, 65)
         Me.PreviousButton.Name = "PreviousButton"
         Me.PreviousButton.Size = New System.Drawing.Size(28, 28)
@@ -83,6 +86,7 @@ Partial Class MusicPanelControl
         '
         Me.NextButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources._next
         Me.NextButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NextButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.NextButton.Location = New System.Drawing.Point(84, 66)
         Me.NextButton.Name = "NextButton"
         Me.NextButton.Size = New System.Drawing.Size(28, 28)
@@ -93,6 +97,7 @@ Partial Class MusicPanelControl
         '
         Me.PlayButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.play
         Me.PlayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PlayButton.Location = New System.Drawing.Point(28, 66)
         Me.PlayButton.Name = "PlayButton"
         Me.PlayButton.Size = New System.Drawing.Size(28, 28)
@@ -103,6 +108,7 @@ Partial Class MusicPanelControl
         '
         Me.PauseButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.pause
         Me.PauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PauseButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PauseButton.Location = New System.Drawing.Point(56, 66)
         Me.PauseButton.Name = "PauseButton"
         Me.PauseButton.Size = New System.Drawing.Size(28, 28)

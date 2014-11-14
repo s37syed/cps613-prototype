@@ -35,6 +35,7 @@ Partial Class SelectMsgType
         Me.VidPicBox.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.video
         Me.VidPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.VidPicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.VidPicBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.VidPicBox.Location = New System.Drawing.Point(59, 60)
         Me.VidPicBox.Name = "VidPicBox"
         Me.VidPicBox.Size = New System.Drawing.Size(50, 50)
@@ -46,6 +47,7 @@ Partial Class SelectMsgType
         Me.ImgPicBox.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.image
         Me.ImgPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ImgPicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ImgPicBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImgPicBox.Location = New System.Drawing.Point(3, 60)
         Me.ImgPicBox.Name = "ImgPicBox"
         Me.ImgPicBox.Size = New System.Drawing.Size(50, 50)
@@ -57,6 +59,7 @@ Partial Class SelectMsgType
         Me.MsgPicBox.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.msg
         Me.MsgPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MsgPicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MsgPicBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MsgPicBox.Location = New System.Drawing.Point(34, 4)
         Me.MsgPicBox.Name = "MsgPicBox"
         Me.MsgPicBox.Size = New System.Drawing.Size(50, 50)

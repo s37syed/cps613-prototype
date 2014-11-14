@@ -60,9 +60,11 @@ Partial Class CallNotConnected
         'LeaveMsgText
         '
         Me.LeaveMsgText.AutoSize = True
+        Me.LeaveMsgText.BackColor = System.Drawing.Color.Transparent
+        Me.LeaveMsgText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LeaveMsgText.Location = New System.Drawing.Point(5, 40)
         Me.LeaveMsgText.Name = "LeaveMsgText"
-        Me.LeaveMsgText.Size = New System.Drawing.Size(102, 13)
+        Me.LeaveMsgText.Size = New System.Drawing.Size(104, 15)
         Me.LeaveMsgText.TabIndex = 3
         Me.LeaveMsgText.Text = "Leaving a message!"
         Me.LeaveMsgText.Visible = False

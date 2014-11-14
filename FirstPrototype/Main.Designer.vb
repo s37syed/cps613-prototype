@@ -65,9 +65,11 @@ Partial Class Main
         'Reminder
         '
         Me.Reminder.AutoSize = True
+        Me.Reminder.BackColor = System.Drawing.Color.Transparent
+        Me.Reminder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Reminder.Location = New System.Drawing.Point(0, 34)
         Me.Reminder.Name = "Reminder"
-        Me.Reminder.Size = New System.Drawing.Size(110, 13)
+        Me.Reminder.Size = New System.Drawing.Size(112, 15)
         Me.Reminder.TabIndex = 12
         Me.Reminder.Text = "Fre. Lesson Reminder"
         Me.Reminder.Visible = False
@@ -75,9 +77,11 @@ Partial Class Main
         'ErrorMsg
         '
         Me.ErrorMsg.AutoSize = True
+        Me.ErrorMsg.BackColor = System.Drawing.Color.Transparent
+        Me.ErrorMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ErrorMsg.Location = New System.Drawing.Point(12, 47)
         Me.ErrorMsg.Name = "ErrorMsg"
-        Me.ErrorMsg.Size = New System.Drawing.Size(87, 13)
+        Me.ErrorMsg.Size = New System.Drawing.Size(89, 15)
         Me.ErrorMsg.TabIndex = 11
         Me.ErrorMsg.Text = "Not Implemented"
         Me.ErrorMsg.Visible = False
@@ -128,6 +132,7 @@ Partial Class Main
         Me.SwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
         Me.SwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SwipeDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeDown.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SwipeDown.Location = New System.Drawing.Point(123, 185)
         Me.SwipeDown.Name = "SwipeDown"
         Me.SwipeDown.Size = New System.Drawing.Size(45, 45)
@@ -139,6 +144,7 @@ Partial Class Main
         Me.SwipeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
         Me.SwipeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SwipeUpButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeUpButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SwipeUpButton.Location = New System.Drawing.Point(123, 3)
         Me.SwipeUpButton.Name = "SwipeUpButton"
         Me.SwipeUpButton.Size = New System.Drawing.Size(45, 45)
@@ -150,6 +156,7 @@ Partial Class Main
         Me.SwipeRightButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
         Me.SwipeRightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SwipeRightButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeRightButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SwipeRightButton.Location = New System.Drawing.Point(213, 94)
         Me.SwipeRightButton.Name = "SwipeRightButton"
         Me.SwipeRightButton.Size = New System.Drawing.Size(45, 45)
@@ -161,6 +168,7 @@ Partial Class Main
         Me.SwipeLeftButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
         Me.SwipeLeftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SwipeLeftButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeLeftButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SwipeLeftButton.Location = New System.Drawing.Point(21, 94)
         Me.SwipeLeftButton.Name = "SwipeLeftButton"
         Me.SwipeLeftButton.Size = New System.Drawing.Size(45, 45)
@@ -172,6 +180,7 @@ Partial Class Main
         Me.PowerButton.BackgroundImage = CType(resources.GetObject("PowerButton.BackgroundImage"), System.Drawing.Image)
         Me.PowerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PowerButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PowerButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PowerButton.Location = New System.Drawing.Point(12, 197)
         Me.PowerButton.Name = "PowerButton"
         Me.PowerButton.Size = New System.Drawing.Size(33, 33)
@@ -182,6 +191,7 @@ Partial Class Main
         '
         Me.DoorButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
         Me.DoorButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DoorButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DoorButton.Location = New System.Drawing.Point(63, 197)
         Me.DoorButton.Name = "DoorButton"
         Me.DoorButton.Size = New System.Drawing.Size(33, 33)

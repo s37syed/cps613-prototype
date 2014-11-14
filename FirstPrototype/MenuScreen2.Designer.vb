@@ -49,6 +49,7 @@ Partial Class MenuScreen2
         Me.ReminderAppoint.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.reminder_image
         Me.ReminderAppoint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ReminderAppoint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ReminderAppoint.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ReminderAppoint.Location = New System.Drawing.Point(59, 54)
         Me.ReminderAppoint.Name = "ReminderAppoint"
         Me.ReminderAppoint.Size = New System.Drawing.Size(45, 45)
@@ -60,6 +61,7 @@ Partial Class MenuScreen2
         Me.SettingsMenuButton.BackgroundImage = CType(resources.GetObject("SettingsMenuButton.BackgroundImage"), System.Drawing.Image)
         Me.SettingsMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SettingsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SettingsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SettingsMenuButton.Location = New System.Drawing.Point(8, 54)
         Me.SettingsMenuButton.Name = "SettingsMenuButton"
         Me.SettingsMenuButton.Size = New System.Drawing.Size(45, 45)
@@ -71,6 +73,7 @@ Partial Class MenuScreen2
         Me.SilenceMenuButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.playlist_icon
         Me.SilenceMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SilenceMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SilenceMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SilenceMenuButton.Location = New System.Drawing.Point(59, 3)
         Me.SilenceMenuButton.Name = "SilenceMenuButton"
         Me.SilenceMenuButton.Size = New System.Drawing.Size(45, 45)
@@ -80,6 +83,7 @@ Partial Class MenuScreen2
         'MusicMenuButton
         '
         Me.MusicMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MusicMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MusicMenuButton.Image = Global.FirstPrototype.My.Resources.Resources.music
         Me.MusicMenuButton.Location = New System.Drawing.Point(8, 3)
         Me.MusicMenuButton.Name = "MusicMenuButton"
