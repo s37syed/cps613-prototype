@@ -131,7 +131,7 @@ Public Class Main
         End If
         If horizontalCount = 0 Then
 
-        ElseIf horizontalCount = 1 Or horizontalCount = 2 Or horizontalCount = 5 Then
+        ElseIf horizontalCount = 1 Or horizontalCount = 2 Or horizontalCount = 5 Or horizontalCount = 6 Then
             contactScreen1.Hide()
             MenuScreen0.Visible = True
             MenuScreen1.Visible = False
@@ -199,7 +199,7 @@ Public Class Main
         MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 7 And Not horizontalCount = 8 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -213,15 +213,12 @@ Public Class Main
 
         End If
     End Sub
-    Private Sub PowerButton_Click(sender As Object, e As EventArgs) Handles PowerButton.Click
+    Private Sub PowerButton_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub DoorButton_Click(sender As Object, e As EventArgs) Handles DoorButton.Click
-        MenuScreen1.Visible = False
-        MenuScreen2.Visible = False
-        MenuScreen0.Visible = True
-        MainScreenTracker = 0
+    Private Sub DoorButton_Click(sender As Object, e As EventArgs)
+
     End Sub
     Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
         'Chris' code
@@ -346,4 +343,15 @@ Public Class Main
         End If
     End Sub
 
+    Private Sub DoorButton_Click_1(sender As Object, e As EventArgs) Handles DoorButton.Click
+        MenuScreen1.Visible = False
+        MenuScreen2.Visible = False
+        MenuScreen0.Visible = True
+        horizontalCount = 0
+        MainScreenTracker = 0
+    End Sub
+
+    Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerButton.Click
+        Me.Close()
+    End Sub
 End Class

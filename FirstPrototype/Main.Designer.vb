@@ -27,12 +27,18 @@ Partial Class Main
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
-        Me.PowerButton = New System.Windows.Forms.Button()
-        Me.DoorButton = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PowerButton = New System.Windows.Forms.PictureBox()
+        Me.DoorButton = New System.Windows.Forms.PictureBox()
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
+        Me.MainWatch.SuspendLayout()
+        CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         Me.SwipeRightButton = New System.Windows.Forms.PictureBox()
         Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
         Me.SwipeUpButton = New System.Windows.Forms.PictureBox()
@@ -84,24 +90,6 @@ Partial Class Main
         Me.VolumeDownButton.Text = "-"
         Me.VolumeDownButton.UseVisualStyleBackColor = True
         '
-        'PowerButton
-        '
-        Me.PowerButton.Location = New System.Drawing.Point(12, 205)
-        Me.PowerButton.Name = "PowerButton"
-        Me.PowerButton.Size = New System.Drawing.Size(75, 23)
-        Me.PowerButton.TabIndex = 8
-        Me.PowerButton.Text = "Power"
-        Me.PowerButton.UseVisualStyleBackColor = True
-        '
-        'DoorButton
-        '
-        Me.DoorButton.Location = New System.Drawing.Point(111, 205)
-        Me.DoorButton.Name = "DoorButton"
-        Me.DoorButton.Size = New System.Drawing.Size(75, 23)
-        Me.DoorButton.TabIndex = 9
-        Me.DoorButton.Text = "Door"
-        Me.DoorButton.UseVisualStyleBackColor = True
-        '
         'HomeButton
         '
         Me.HomeButton.Location = New System.Drawing.Point(108, 205)
@@ -113,6 +101,36 @@ Partial Class Main
         '
         'Timer1
         '
+        '
+        'PowerButton
+        '
+        Me.PowerButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.power_off
+        Me.PowerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PowerButton.Location = New System.Drawing.Point(29, 197)
+        Me.PowerButton.Name = "PowerButton"
+        Me.PowerButton.Size = New System.Drawing.Size(33, 33)
+        Me.PowerButton.TabIndex = 10
+        Me.PowerButton.TabStop = False
+        '
+        'DoorButton
+        '
+        Me.DoorButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
+        Me.DoorButton.Location = New System.Drawing.Point(130, 197)
+        Me.DoorButton.Name = "DoorButton"
+        Me.DoorButton.Size = New System.Drawing.Size(33, 33)
+        Me.DoorButton.TabIndex = 9
+        Me.DoorButton.TabStop = False
+        '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
         '
         'SwipeRightButton
         '
@@ -159,18 +177,19 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
-        Me.Controls.Add(Me.SwipeDown)
-        Me.Controls.Add(Me.SwipeUpButton)
-        Me.Controls.Add(Me.SwipeLeftButton)
-        Me.Controls.Add(Me.SwipeRightButton)
-        Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.PowerButton)
+        Me.Controls.Add(Me.DoorButton)
         Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.VolumeUpButton)
         Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
+        Me.MainWatch.ResumeLayout(False)
+        CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
         Me.MainWatch.ResumeLayout(False)
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -183,8 +202,6 @@ Partial Class Main
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
-    Friend WithEvents PowerButton As System.Windows.Forms.Button
-    Friend WithEvents DoorButton As System.Windows.Forms.Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     'Friend WithEvents MainWatch As System.Windows.Forms.Panel
@@ -195,5 +212,7 @@ Partial Class Main
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.PictureBox
     Friend WithEvents SwipeUpButton As System.Windows.Forms.PictureBox
     Friend WithEvents SwipeDown As System.Windows.Forms.PictureBox
+    Friend WithEvents DoorButton As System.Windows.Forms.PictureBox
+    Friend WithEvents PowerButton As System.Windows.Forms.PictureBox
 
 End Class

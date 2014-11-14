@@ -487,9 +487,6 @@
     <None Include="Resources\notepad_smallest.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\door_resized1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\NewMsgPrompt.png" />
   </ItemGroup>
   <ItemGroup>
@@ -545,6 +542,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\swipe_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_resized1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
