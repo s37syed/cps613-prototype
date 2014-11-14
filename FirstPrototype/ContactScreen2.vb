@@ -31,7 +31,7 @@
                 receiveMsg.TransparentRichTextBox1.Text = "12/07/2014" & vbCrLf & "@04:00 PM" & vbCrLf & "I'm busy playing DOTA, leave me alone."
                 receiveMsg.getName = receiveMsg.TransparentRichTextBox1.Text
             Case "From: Andrea"
-                receiveMsg.TransparentRichTextBox1.Text = "12/12/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
+                receiveMsg.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
                 receiveMsg.getName = receiveMsg.TransparentRichTextBox1.Text
             Case "From: Johnny"
                 receiveMsg.TransparentRichTextBox1.Text = "09/09/2014" & vbCrLf & "@10:50 AM" & vbCrLf & "Hey Christina, I love you."
