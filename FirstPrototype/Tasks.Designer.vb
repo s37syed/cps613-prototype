@@ -35,7 +35,7 @@ Partial Class Tasks
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label1.Location = New System.Drawing.Point(15, 88)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(89, 13)
