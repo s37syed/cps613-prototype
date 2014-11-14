@@ -240,6 +240,12 @@
     <Compile Include="SendVid.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Tasks2.Designer.vb">
+      <DependentUpon>Tasks2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="TransparentBox.Designer.vb">
       <DependentUpon>TransparentBox.vb</DependentUpon>
     </Compile>
@@ -350,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SendVid.resx">
       <DependentUpon>SendVid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks2.resx">
+      <DependentUpon>Tasks2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransparentBox.resx">
       <DependentUpon>TransparentBox.vb</DependentUpon>

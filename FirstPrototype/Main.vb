@@ -15,6 +15,7 @@ Public Class Main
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
+    Public Shared tasks2 As New Tasks2
     Public Shared horizontalCount = 0
     Public contactScreen1 As ContactScreen = New ContactScreen
     Private Strt As System.Threading.Thread
@@ -100,6 +101,7 @@ Public Class Main
         MainWatch.Controls.Add(cal)
         MainWatch.Controls.Add(cal2)
         MainWatch.Controls.Add(task)
+        MainWatch.Controls.Add(tasks2)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
