@@ -430,9 +430,6 @@
     <None Include="Resources\phone.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Settings.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\silence.png" />
   </ItemGroup>
   <ItemGroup>
@@ -551,6 +548,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\new_msg_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playlist_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,4 +12,14 @@
         Main.MainScreenTracker = 0
         Main.horizontalCount = 8
     End Sub
+
+    Private Sub SilenceMenuButton_Click(sender As Object, e As EventArgs) Handles SilenceMenuButton.Click
+        Main.ErrorMsgTime = New System.Threading.Thread(AddressOf Main.WorkerThread2)
+        Main.ErrorMsgTime.Start()
+    End Sub
+
+    Private Sub SettingsMenuButton_Click(sender As Object, e As EventArgs) Handles SettingsMenuButton.Click
+        Main.ErrorMsgTime = New System.Threading.Thread(AddressOf Main.WorkerThread2)
+        Main.ErrorMsgTime.Start()
+    End Sub
 End Class

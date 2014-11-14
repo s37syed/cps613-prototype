@@ -54,6 +54,8 @@ Partial Class MenuScreen2
         '
         'SettingsMenuButton
         '
+        Me.SettingsMenuButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.Settings
+        Me.SettingsMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SettingsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SettingsMenuButton.Location = New System.Drawing.Point(8, 54)
         Me.SettingsMenuButton.Name = "SettingsMenuButton"
@@ -63,6 +65,8 @@ Partial Class MenuScreen2
         '
         'SilenceMenuButton
         '
+        Me.SilenceMenuButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.playlist_icon
+        Me.SilenceMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SilenceMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SilenceMenuButton.Location = New System.Drawing.Point(59, 3)
         Me.SilenceMenuButton.Name = "SilenceMenuButton"

@@ -18,6 +18,7 @@ Public Class Main
     Public Shared horizontalCount = 0
     Public contactScreen1 As ContactScreen = New ContactScreen
     Private Strt As System.Threading.Thread
+    Friend ErrorMsgTime As System.Threading.Thread
     Friend volumeStatus As VolumeStatus = New VolumeStatus()
     Dim TimerValue As Integer = 0
 
@@ -50,10 +51,15 @@ Public Class Main
     End Sub
     Private Sub WorkerThread()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(5) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(4000) '2 seconds currently
+        Threading.Thread.Sleep(5) '2 seconds currently
         AccessControl2()
+    End Sub
+    Friend Sub WorkerThread2()
+        AccessControl3()
+        Threading.Thread.Sleep(2000)
+        AccessControl4()
     End Sub
     Private Sub AccessControl()
         'display new msg prompt
@@ -61,6 +67,21 @@ Public Class Main
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
             NewMsgEventPic.Visible = True
+        End If
+    End Sub
+    Private Sub AccessControl3()
+        'remove new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl3))
+        Else
+            ErrorMsg.Visible = True
+        End If
+    End Sub
+    Private Sub AccessControl4()
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl4))
+        Else
+            ErrorMsg.Visible = False
         End If
     End Sub
     Private Sub BaseLoad()
