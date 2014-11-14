@@ -31,6 +31,7 @@ Public Class Main
     Friend RediallingScreen As Redialling = New Redialling
     Friend CallNotConnectedScreen As CallNotConnected = New CallNotConnected
     Friend receive_msg_notification As ReceiveMsg = New ReceiveMsg
+    Friend msg_sent_popup As MsgSentPopUp = New MsgSentPopUp
     Dim TimerValue As Integer = 0
 
     Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
@@ -170,6 +171,7 @@ Public Class Main
         MainWatch.Controls.Add(day_or_week)
         MainWatch.Controls.Add(receive_call)
         MainWatch.Controls.Add(receive_msg_notification)
+        MainWatch.Controls.Add(msg_sent_popup)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)

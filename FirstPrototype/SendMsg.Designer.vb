@@ -27,7 +27,6 @@ Partial Class SendMsg
         Me.Contact3 = New System.Windows.Forms.Button()
         Me.Contact2 = New System.Windows.Forms.Button()
         Me.Contact1 = New System.Windows.Forms.Button()
-        Me.MsgSentNotification = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'NameLabel
@@ -95,23 +94,11 @@ Partial Class SendMsg
         Me.Contact1.Text = "OK see u soon <3"
         Me.Contact1.UseVisualStyleBackColor = False
         '
-        'MsgSentNotification
-        '
-        Me.MsgSentNotification.AutoSize = True
-        Me.MsgSentNotification.Location = New System.Drawing.Point(0, 0)
-        Me.MsgSentNotification.MinimumSize = New System.Drawing.Size(113, 113)
-        Me.MsgSentNotification.Name = "MsgSentNotification"
-        Me.MsgSentNotification.Size = New System.Drawing.Size(113, 113)
-        Me.MsgSentNotification.TabIndex = 7
-        Me.MsgSentNotification.Text = "Msg Sent!"
-        Me.MsgSentNotification.Visible = False
-        '
         'SendMsg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
-        Me.Controls.Add(Me.MsgSentNotification)
         Me.Controls.Add(Me.Contact3)
         Me.Controls.Add(Me.Contact2)
         Me.Controls.Add(Me.Contact1)
@@ -128,6 +115,5 @@ Partial Class SendMsg
     Friend WithEvents Contact3 As System.Windows.Forms.Button
     Friend WithEvents Contact2 As System.Windows.Forms.Button
     Friend WithEvents Contact1 As System.Windows.Forms.Button
-    Friend WithEvents MsgSentNotification As System.Windows.Forms.Label
 
 End Class
