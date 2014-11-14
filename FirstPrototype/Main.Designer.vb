@@ -28,8 +28,6 @@ Partial Class Main
         Me.Reminder = New System.Windows.Forms.Label()
         Me.ErrorMsg = New System.Windows.Forms.Label()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
-        Me.VolumeUpButton = New System.Windows.Forms.Button()
-        Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
@@ -40,6 +38,8 @@ Partial Class Main
         Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
         Me.PowerButton = New System.Windows.Forms.PictureBox()
         Me.DoorButton = New System.Windows.Forms.PictureBox()
+        Me.VolumeDownButton = New System.Windows.Forms.PictureBox()
+        Me.VolumeUpButton = New System.Windows.Forms.PictureBox()
         Me.MainWatch.SuspendLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +48,8 @@ Partial Class Main
         CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VolumeDownButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VolumeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainWatch
@@ -96,24 +98,6 @@ Partial Class Main
         Me.NewMsgEventPic.TabIndex = 10
         Me.NewMsgEventPic.TabStop = False
         Me.NewMsgEventPic.Visible = False
-        '
-        'VolumeUpButton
-        '
-        Me.VolumeUpButton.Location = New System.Drawing.Point(236, 205)
-        Me.VolumeUpButton.Name = "VolumeUpButton"
-        Me.VolumeUpButton.Size = New System.Drawing.Size(23, 23)
-        Me.VolumeUpButton.TabIndex = 6
-        Me.VolumeUpButton.Text = "+"
-        Me.VolumeUpButton.UseVisualStyleBackColor = True
-        '
-        'VolumeDownButton
-        '
-        Me.VolumeDownButton.Location = New System.Drawing.Point(206, 205)
-        Me.VolumeDownButton.Name = "VolumeDownButton"
-        Me.VolumeDownButton.Size = New System.Drawing.Size(23, 23)
-        Me.VolumeDownButton.TabIndex = 7
-        Me.VolumeDownButton.Text = "-"
-        Me.VolumeDownButton.UseVisualStyleBackColor = True
         '
         'HomeButton
         '
@@ -199,19 +183,43 @@ Partial Class Main
         Me.DoorButton.TabStop = False
         Me.DoorButton.Visible = False
         '
+        'VolumeDownButton
+        '
+        Me.VolumeDownButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_silent
+        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeDownButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.VolumeDownButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VolumeDownButton.Location = New System.Drawing.Point(200, 197)
+        Me.VolumeDownButton.Name = "VolumeDownButton"
+        Me.VolumeDownButton.Size = New System.Drawing.Size(33, 33)
+        Me.VolumeDownButton.TabIndex = 15
+        Me.VolumeDownButton.TabStop = False
+        '
+        'VolumeUpButton
+        '
+        Me.VolumeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_loud
+        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeUpButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.VolumeUpButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VolumeUpButton.Location = New System.Drawing.Point(239, 197)
+        Me.VolumeUpButton.Name = "VolumeUpButton"
+        Me.VolumeUpButton.Size = New System.Drawing.Size(33, 33)
+        Me.VolumeUpButton.TabIndex = 16
+        Me.VolumeUpButton.TabStop = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
+        Me.Controls.Add(Me.VolumeUpButton)
+        Me.Controls.Add(Me.VolumeDownButton)
         Me.Controls.Add(Me.SwipeDown)
         Me.Controls.Add(Me.SwipeUpButton)
         Me.Controls.Add(Me.SwipeRightButton)
         Me.Controls.Add(Me.SwipeLeftButton)
         Me.Controls.Add(Me.PowerButton)
         Me.Controls.Add(Me.DoorButton)
-        Me.Controls.Add(Me.VolumeDownButton)
-        Me.Controls.Add(Me.VolumeUpButton)
         Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
@@ -225,12 +233,12 @@ Partial Class Main
         CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VolumeDownButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VolumeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
-    Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
-    Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     'Friend WithEvents MainWatch As System.Windows.Forms.Panel
@@ -246,5 +254,7 @@ Partial Class Main
     Friend WithEvents SwipeDown As System.Windows.Forms.PictureBox
     Friend WithEvents ErrorMsg As System.Windows.Forms.Label
     Friend WithEvents Reminder As System.Windows.Forms.Label
+    Friend WithEvents VolumeDownButton As System.Windows.Forms.PictureBox
+    Friend WithEvents VolumeUpButton As System.Windows.Forms.PictureBox
 
 End Class
