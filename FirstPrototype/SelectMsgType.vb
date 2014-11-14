@@ -9,6 +9,7 @@
             cont.Hide()
         Next cont
         send_msg.Show()
+        send_msg.checkIfEmpty()
     End Sub
 
     Private Sub ImgPicBox_Click(sender As Object, e As EventArgs) Handles ImgPicBox.Click
