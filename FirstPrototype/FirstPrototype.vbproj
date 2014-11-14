@@ -83,6 +83,12 @@
     <Compile Include="CallChild.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CallConnected.Designer.vb">
+      <DependentUpon>CallConnected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallConnected.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CallContact.Designer.vb">
       <DependentUpon>CallContact.vb</DependentUpon>
     </Compile>
@@ -93,6 +99,18 @@
       <DependentUpon>Calling.vb</DependentUpon>
     </Compile>
     <Compile Include="Calling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallNotConnected.Designer.vb">
+      <DependentUpon>CallNotConnected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallNotConnected.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Redialling.Designer.vb">
+      <DependentUpon>Redialling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Redialling.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChildLocation.Designer.vb">
@@ -275,11 +293,20 @@
     <EmbeddedResource Include="CallChild.resx">
       <DependentUpon>CallChild.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CallConnected.resx">
+      <DependentUpon>CallConnected.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CallContact.resx">
       <DependentUpon>CallContact.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calling.resx">
       <DependentUpon>Calling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallNotConnected.resx">
+      <DependentUpon>CallNotConnected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Redialling.resx">
+      <DependentUpon>Redialling.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildLocation.resx">
       <DependentUpon>ChildLocation.vb</DependentUpon>

@@ -20,6 +20,9 @@ Public Class Main
     Private Strt As System.Threading.Thread
     Friend ErrorMsgTime As System.Threading.Thread
     Friend volumeStatus As VolumeStatus = New VolumeStatus()
+    Friend CallConnectedScreen As CallConnected = New CallConnected
+    Friend RediallingScreen As Redialling = New Redialling
+    Friend CallNotConnectedScreen As CallNotConnected = New CallNotConnected
     Dim TimerValue As Integer = 0
 
     Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
@@ -126,7 +129,9 @@ Public Class Main
         MainWatch.Controls.Add(send_image) ' added this
         MainWatch.Controls.Add(send_video) ' added this
         MainWatch.Controls.Add(send_message) ' added this
-
+        MainWatch.Controls.Add(CallConnectedScreen)
+        MainWatch.Controls.Add(RediallingScreen)
+        MainWatch.Controls.Add(CallNotConnectedScreen))
         PhoneContactsScreen.Enabled = False
         CallContactScreen.Enabled = False
         ParentPhone.Visible = True
