@@ -53,14 +53,14 @@ Partial Class Main
         Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MainWatch.Controls.Add(Me.NewMsgEventPic)
-        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
+        Me.MainWatch.Location = New System.Drawing.Point(84, 62)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 1
         '
         'NewMsgEventPic
         '
-        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
         Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
         Me.NewMsgEventPic.Name = "NewMsgEventPic"
@@ -103,6 +103,7 @@ Partial Class Main
         '
         Me.PowerButton.BackgroundImage = CType(resources.GetObject("PowerButton.BackgroundImage"), System.Drawing.Image)
         Me.PowerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PowerButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PowerButton.Location = New System.Drawing.Point(12, 197)
         Me.PowerButton.Name = "PowerButton"
         Me.PowerButton.Size = New System.Drawing.Size(33, 33)
@@ -112,17 +113,20 @@ Partial Class Main
         'DoorButton
         '
         Me.DoorButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
+        Me.DoorButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.DoorButton.Location = New System.Drawing.Point(63, 197)
         Me.DoorButton.Name = "DoorButton"
         Me.DoorButton.Size = New System.Drawing.Size(33, 33)
         Me.DoorButton.TabIndex = 9
         Me.DoorButton.TabStop = False
+        Me.DoorButton.Visible = False
         '
         'SwipeLeftButton
         '
         Me.SwipeLeftButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
         Me.SwipeLeftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(18, 89)
+        Me.SwipeLeftButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(21, 94)
         Me.SwipeLeftButton.Name = "SwipeLeftButton"
         Me.SwipeLeftButton.Size = New System.Drawing.Size(45, 45)
         Me.SwipeLeftButton.TabIndex = 11
@@ -132,7 +136,8 @@ Partial Class Main
         '
         Me.SwipeRightButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
         Me.SwipeRightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeRightButton.Location = New System.Drawing.Point(225, 89)
+        Me.SwipeRightButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeRightButton.Location = New System.Drawing.Point(213, 94)
         Me.SwipeRightButton.Name = "SwipeRightButton"
         Me.SwipeRightButton.Size = New System.Drawing.Size(45, 45)
         Me.SwipeRightButton.TabIndex = 12
@@ -142,7 +147,8 @@ Partial Class Main
         '
         Me.SwipeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
         Me.SwipeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeUpButton.Location = New System.Drawing.Point(124, -2)
+        Me.SwipeUpButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeUpButton.Location = New System.Drawing.Point(123, 3)
         Me.SwipeUpButton.Name = "SwipeUpButton"
         Me.SwipeUpButton.Size = New System.Drawing.Size(45, 45)
         Me.SwipeUpButton.TabIndex = 13
@@ -152,7 +158,8 @@ Partial Class Main
         '
         Me.SwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
         Me.SwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeDown.Location = New System.Drawing.Point(124, 168)
+        Me.SwipeDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeDown.Location = New System.Drawing.Point(123, 185)
         Me.SwipeDown.Name = "SwipeDown"
         Me.SwipeDown.Size = New System.Drawing.Size(45, 45)
         Me.SwipeDown.TabIndex = 14

@@ -208,12 +208,6 @@
   <data name="drake_song" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drake_song.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="NewMsgPrompt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewMsgPrompt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notepad_smallest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notepad_smallest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="no_cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\no_cover.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -267,5 +261,8 @@
   </data>
   <data name="power_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\power_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_msg_pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_msg_pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

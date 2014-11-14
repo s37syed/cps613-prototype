@@ -52,7 +52,7 @@ Public Class Main
         'worker thread to handle display of new msg event
         Threading.Thread.Sleep(2000) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(4000) '2 seconds currently
         AccessControl2()
     End Sub
     Private Sub AccessControl()
@@ -60,7 +60,7 @@ Public Class Main
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
-            'NewMsgEventPic.Visible = True
+            NewMsgEventPic.Visible = True
         End If
     End Sub
     Private Sub BaseLoad()

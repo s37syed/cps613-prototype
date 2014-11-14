@@ -39,7 +39,7 @@ Partial Class Tasks
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(3, 86)
+        Me.Label1.Location = New System.Drawing.Point(16, 88)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(27, 13)
         Me.Label1.TabIndex = 0
@@ -49,17 +49,17 @@ Partial Class Tasks
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(35, 86)
+        Me.Label2.Location = New System.Drawing.Point(52, 88)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 13)
+        Me.Label2.Size = New System.Drawing.Size(60, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "french lessons"
+        Me.Label2.Text = "fre. lessons"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(3, 70)
+        Me.Label3.Location = New System.Drawing.Point(16, 74)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(27, 13)
         Me.Label3.TabIndex = 2
@@ -69,7 +69,7 @@ Partial Class Tasks
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Location = New System.Drawing.Point(3, 55)
+        Me.Label4.Location = New System.Drawing.Point(16, 60)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 13)
         Me.Label4.TabIndex = 3
@@ -79,7 +79,7 @@ Partial Class Tasks
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Location = New System.Drawing.Point(3, 27)
+        Me.Label5.Location = New System.Drawing.Point(16, 35)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(27, 13)
         Me.Label5.TabIndex = 4
@@ -89,7 +89,7 @@ Partial Class Tasks
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Location = New System.Drawing.Point(3, 40)
+        Me.Label6.Location = New System.Drawing.Point(21, 46)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(16, 13)
         Me.Label6.TabIndex = 5
@@ -99,7 +99,7 @@ Partial Class Tasks
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(35, 27)
+        Me.Label7.Location = New System.Drawing.Point(53, 34)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 6
@@ -109,7 +109,7 @@ Partial Class Tasks
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(35, 41)
+        Me.Label8.Location = New System.Drawing.Point(53, 48)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(38, 13)
         Me.Label8.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class Tasks
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Location = New System.Drawing.Point(35, 55)
+        Me.Label9.Location = New System.Drawing.Point(53, 61)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(38, 13)
         Me.Label9.TabIndex = 8
@@ -129,7 +129,7 @@ Partial Class Tasks
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(35, 70)
+        Me.Label10.Location = New System.Drawing.Point(53, 75)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(36, 13)
         Me.Label10.TabIndex = 9
@@ -139,10 +139,10 @@ Partial Class Tasks
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(35, 10)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(41, 13)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(46, 17)
+        Me.Label11.Size = New System.Drawing.Size(36, 13)
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "Tasks"
         '
@@ -150,7 +150,7 @@ Partial Class Tasks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.notepad_smallest
+        Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
