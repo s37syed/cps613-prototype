@@ -11,6 +11,7 @@
 
     Private Sub CallButton_Click(sender As Object, e As EventArgs) Handles CallButton.Click
         Main.CallingScreen.ContactName.Text = Main.CallContactScreen.CallContactName.Text
+        Main.CallingScreen.ContactName.Left = 57 - Main.CallingScreen.ContactName.Width \ 2
         Main.CallContactScreen.Enabled = False
         Main.CallContactScreen.Visible = False
         Main.CallingScreen.Visible = True
