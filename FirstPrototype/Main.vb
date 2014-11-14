@@ -217,11 +217,8 @@ Public Class Main
         Me.Close()
     End Sub
 
-    Private Sub DoorButton_Click(sender As Object, e As EventArgs) Handles DoorButton.Click
-        MenuScreen1.Visible = False
-        MenuScreen2.Visible = False
-        MenuScreen0.Visible = True
-        MainScreenTracker = 0
+    Private Sub DoorButton_Click(sender As Object, e As EventArgs)
+
     End Sub
     Private Sub SwipeDownButton_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
         'Chris' code
@@ -346,4 +343,11 @@ Public Class Main
         End If
     End Sub
 
+    Private Sub DoorButton_Click_1(sender As Object, e As EventArgs) Handles DoorButton.Click
+        MenuScreen1.Visible = False
+        MenuScreen2.Visible = False
+        MenuScreen0.Visible = True
+        horizontalCount = 0
+        MainScreenTracker = 0
+    End Sub
 End Class

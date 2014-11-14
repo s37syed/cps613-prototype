@@ -24,7 +24,6 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MainWatch = New System.Windows.Forms.Panel()
-        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDown = New System.Windows.Forms.Button()
@@ -32,14 +31,16 @@ Partial Class Main
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.PowerButton = New System.Windows.Forms.Button()
-        Me.DoorButton = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.MainWatch.SuspendLayout
-        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
+        Me.DoorButton = New System.Windows.Forms.PictureBox()
+        Me.MainWatch.SuspendLayout()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'MainWatch
         '
@@ -51,17 +52,6 @@ Partial Class Main
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 1
         '
-        'NewMsgEventPic
-        '
-        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
-        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
-        Me.NewMsgEventPic.Name = "NewMsgEventPic"
-        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
-        Me.NewMsgEventPic.TabIndex = 10
-        Me.NewMsgEventPic.TabStop = false
-        Me.NewMsgEventPic.Visible = false
-        '
         'SwipeUpButton
         '
         Me.SwipeUpButton.Location = New System.Drawing.Point(80, 20)
@@ -69,7 +59,7 @@ Partial Class Main
         Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
         Me.SwipeUpButton.TabIndex = 2
         Me.SwipeUpButton.Text = "SwipeUpFromTop"
-        Me.SwipeUpButton.UseVisualStyleBackColor = true
+        Me.SwipeUpButton.UseVisualStyleBackColor = True
         '
         'SwipeLeftButton
         '
@@ -78,7 +68,7 @@ Partial Class Main
         Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeLeftButton.TabIndex = 3
         Me.SwipeLeftButton.Text = "SwipeLeft"
-        Me.SwipeLeftButton.UseVisualStyleBackColor = true
+        Me.SwipeLeftButton.UseVisualStyleBackColor = True
         '
         'SwipeDown
         '
@@ -87,7 +77,7 @@ Partial Class Main
         Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
         Me.SwipeDown.TabIndex = 4
         Me.SwipeDown.Text = "SwipeDownFromBottom"
-        Me.SwipeDown.UseVisualStyleBackColor = true
+        Me.SwipeDown.UseVisualStyleBackColor = True
         '
         'SwipeRightButton
         '
@@ -96,7 +86,7 @@ Partial Class Main
         Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeRightButton.TabIndex = 5
         Me.SwipeRightButton.Text = "SwipeRight"
-        Me.SwipeRightButton.UseVisualStyleBackColor = true
+        Me.SwipeRightButton.UseVisualStyleBackColor = True
         '
         'VolumeUpButton
         '
@@ -105,7 +95,7 @@ Partial Class Main
         Me.VolumeUpButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeUpButton.TabIndex = 6
         Me.VolumeUpButton.Text = "+"
-        Me.VolumeUpButton.UseVisualStyleBackColor = true
+        Me.VolumeUpButton.UseVisualStyleBackColor = True
         '
         'VolumeDownButton
         '
@@ -114,7 +104,7 @@ Partial Class Main
         Me.VolumeDownButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeDownButton.TabIndex = 7
         Me.VolumeDownButton.Text = "-"
-        Me.VolumeDownButton.UseVisualStyleBackColor = true
+        Me.VolumeDownButton.UseVisualStyleBackColor = True
         '
         'PowerButton
         '
@@ -123,16 +113,7 @@ Partial Class Main
         Me.PowerButton.Size = New System.Drawing.Size(75, 23)
         Me.PowerButton.TabIndex = 8
         Me.PowerButton.Text = "Power"
-        Me.PowerButton.UseVisualStyleBackColor = true
-        '
-        'DoorButton
-        '
-        Me.DoorButton.Location = New System.Drawing.Point(111, 205)
-        Me.DoorButton.Name = "DoorButton"
-        Me.DoorButton.Size = New System.Drawing.Size(75, 23)
-        Me.DoorButton.TabIndex = 9
-        Me.DoorButton.Text = "Door"
-        Me.DoorButton.UseVisualStyleBackColor = true
+        Me.PowerButton.UseVisualStyleBackColor = True
         '
         'HomeButton
         '
@@ -141,14 +122,34 @@ Partial Class Main
         Me.HomeButton.Size = New System.Drawing.Size(75, 23)
         Me.HomeButton.TabIndex = 9
         Me.HomeButton.Text = "Door"
-        Me.HomeButton.UseVisualStyleBackColor = true
+        Me.HomeButton.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.NewMsgPrompt
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
+        '
+        'DoorButton
+        '
+        Me.DoorButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.door_resized1
+        Me.DoorButton.Location = New System.Drawing.Point(130, 197)
+        Me.DoorButton.Name = "DoorButton"
+        Me.DoorButton.Size = New System.Drawing.Size(33, 33)
+        Me.DoorButton.TabIndex = 9
+        Me.DoorButton.TabStop = False
+        '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
         Me.Controls.Add(Me.DoorButton)
@@ -163,9 +164,10 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.MainWatch.ResumeLayout(false)
-        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        Me.MainWatch.ResumeLayout(False)
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
 
 End Sub
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
@@ -176,12 +178,12 @@ End Sub
     Friend WithEvents VolumeUpButton As System.Windows.Forms.Button
     Friend WithEvents VolumeDownButton As System.Windows.Forms.Button
     Friend WithEvents PowerButton As System.Windows.Forms.Button
-    Friend WithEvents DoorButton As System.Windows.Forms.Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     'Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents HomeButton As System.Windows.Forms.Button
     Friend WithEvents NewMsgEventPic As System.Windows.Forms.PictureBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents DoorButton As System.Windows.Forms.PictureBox
 
 End Class
