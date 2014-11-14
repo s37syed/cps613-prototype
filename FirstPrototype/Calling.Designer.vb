@@ -49,11 +49,12 @@ Partial Class Calling
         '
         'HangUp
         '
-        Me.HangUp.Location = New System.Drawing.Point(19, 87)
+        Me.HangUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.HangUp.Location = New System.Drawing.Point(-1, 89)
         Me.HangUp.Name = "HangUp"
-        Me.HangUp.Size = New System.Drawing.Size(75, 23)
+        Me.HangUp.Size = New System.Drawing.Size(113, 23)
         Me.HangUp.TabIndex = 2
-        Me.HangUp.Text = "HangUp"
+        Me.HangUp.Text = "Hang Up"
         Me.HangUp.UseVisualStyleBackColor = True
         '
         'CallingTimer

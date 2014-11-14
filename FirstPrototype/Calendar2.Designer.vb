@@ -35,17 +35,19 @@ Partial Class Calendar2
         'WeekLabel
         '
         Me.WeekLabel.AutoSize = True
-        Me.WeekLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.WeekLabel.BackColor = System.Drawing.Color.Transparent
+        Me.WeekLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WeekLabel.Location = New System.Drawing.Point(31, 0)
         Me.WeekLabel.Name = "WeekLabel"
-        Me.WeekLabel.Size = New System.Drawing.Size(51, 18)
+        Me.WeekLabel.Size = New System.Drawing.Size(39, 13)
         Me.WeekLabel.TabIndex = 17
         Me.WeekLabel.Text = "Label1"
         '
         'Day1
         '
         Me.Day1.AutoSize = True
-        Me.Day1.Location = New System.Drawing.Point(1, 18)
+        Me.Day1.BackColor = System.Drawing.Color.Transparent
+        Me.Day1.Location = New System.Drawing.Point(12, 24)
         Me.Day1.Name = "Day1"
         Me.Day1.Size = New System.Drawing.Size(39, 13)
         Me.Day1.TabIndex = 21
@@ -54,7 +56,8 @@ Partial Class Calendar2
         'Day2
         '
         Me.Day2.AutoSize = True
-        Me.Day2.Location = New System.Drawing.Point(1, 32)
+        Me.Day2.BackColor = System.Drawing.Color.Transparent
+        Me.Day2.Location = New System.Drawing.Point(12, 38)
         Me.Day2.Name = "Day2"
         Me.Day2.Size = New System.Drawing.Size(39, 13)
         Me.Day2.TabIndex = 22
@@ -63,7 +66,8 @@ Partial Class Calendar2
         'Day3
         '
         Me.Day3.AutoSize = True
-        Me.Day3.Location = New System.Drawing.Point(1, 44)
+        Me.Day3.BackColor = System.Drawing.Color.Transparent
+        Me.Day3.Location = New System.Drawing.Point(12, 50)
         Me.Day3.Name = "Day3"
         Me.Day3.Size = New System.Drawing.Size(39, 13)
         Me.Day3.TabIndex = 23
@@ -72,7 +76,8 @@ Partial Class Calendar2
         'Day4
         '
         Me.Day4.AutoSize = True
-        Me.Day4.Location = New System.Drawing.Point(1, 56)
+        Me.Day4.BackColor = System.Drawing.Color.Transparent
+        Me.Day4.Location = New System.Drawing.Point(12, 62)
         Me.Day4.Name = "Day4"
         Me.Day4.Size = New System.Drawing.Size(39, 13)
         Me.Day4.TabIndex = 24
@@ -81,7 +86,8 @@ Partial Class Calendar2
         'Day5
         '
         Me.Day5.AutoSize = True
-        Me.Day5.Location = New System.Drawing.Point(1, 68)
+        Me.Day5.BackColor = System.Drawing.Color.Transparent
+        Me.Day5.Location = New System.Drawing.Point(12, 74)
         Me.Day5.Name = "Day5"
         Me.Day5.Size = New System.Drawing.Size(39, 13)
         Me.Day5.TabIndex = 25
@@ -90,7 +96,8 @@ Partial Class Calendar2
         'Day6
         '
         Me.Day6.AutoSize = True
-        Me.Day6.Location = New System.Drawing.Point(1, 80)
+        Me.Day6.BackColor = System.Drawing.Color.Transparent
+        Me.Day6.Location = New System.Drawing.Point(12, 86)
         Me.Day6.Name = "Day6"
         Me.Day6.Size = New System.Drawing.Size(39, 13)
         Me.Day6.TabIndex = 26
@@ -99,7 +106,8 @@ Partial Class Calendar2
         'Day7
         '
         Me.Day7.AutoSize = True
-        Me.Day7.Location = New System.Drawing.Point(1, 92)
+        Me.Day7.BackColor = System.Drawing.Color.Transparent
+        Me.Day7.Location = New System.Drawing.Point(12, 98)
         Me.Day7.Name = "Day7"
         Me.Day7.Size = New System.Drawing.Size(39, 13)
         Me.Day7.TabIndex = 27
@@ -109,6 +117,7 @@ Partial Class Calendar2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
         Me.Controls.Add(Me.Day7)
         Me.Controls.Add(Me.Day6)
         Me.Controls.Add(Me.Day5)

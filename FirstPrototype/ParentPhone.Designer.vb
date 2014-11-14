@@ -49,8 +49,11 @@ Partial Class ParentPhone
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(233, 376)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MainPhoneControl)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "ParentPhone"
         Me.Text = "ParentPhone"
         Me.ResumeLayout(False)

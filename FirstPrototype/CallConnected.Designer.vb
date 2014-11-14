@@ -47,9 +47,10 @@ Partial Class CallConnected
         '
         'ConnectedHangUpButton
         '
-        Me.ConnectedHangUpButton.Location = New System.Drawing.Point(19, 77)
+        Me.ConnectedHangUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ConnectedHangUpButton.Location = New System.Drawing.Point(-1, 89)
         Me.ConnectedHangUpButton.Name = "ConnectedHangUpButton"
-        Me.ConnectedHangUpButton.Size = New System.Drawing.Size(75, 23)
+        Me.ConnectedHangUpButton.Size = New System.Drawing.Size(113, 23)
         Me.ConnectedHangUpButton.TabIndex = 2
         Me.ConnectedHangUpButton.Text = "Hang Up"
         Me.ConnectedHangUpButton.UseVisualStyleBackColor = True

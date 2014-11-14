@@ -39,18 +39,20 @@ Partial Class CallNotConnected
         '
         'LeaveMessageButton
         '
-        Me.LeaveMessageButton.Location = New System.Drawing.Point(10, 54)
+        Me.LeaveMessageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LeaveMessageButton.Location = New System.Drawing.Point(-1, 61)
         Me.LeaveMessageButton.Name = "LeaveMessageButton"
-        Me.LeaveMessageButton.Size = New System.Drawing.Size(93, 23)
+        Me.LeaveMessageButton.Size = New System.Drawing.Size(113, 23)
         Me.LeaveMessageButton.TabIndex = 1
         Me.LeaveMessageButton.Text = "Leave Message"
         Me.LeaveMessageButton.UseVisualStyleBackColor = True
         '
         'RedialButton
         '
-        Me.RedialButton.Location = New System.Drawing.Point(11, 83)
+        Me.RedialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RedialButton.Location = New System.Drawing.Point(-1, 89)
         Me.RedialButton.Name = "RedialButton"
-        Me.RedialButton.Size = New System.Drawing.Size(93, 23)
+        Me.RedialButton.Size = New System.Drawing.Size(113, 23)
         Me.RedialButton.TabIndex = 2
         Me.RedialButton.Text = "Redial"
         Me.RedialButton.UseVisualStyleBackColor = True

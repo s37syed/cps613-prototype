@@ -28,6 +28,7 @@
                     cont.hide()
                 Next
                 Main.CallConnectedScreen.ContactNameLabel.Text = ContactName.Text
+                Main.CallConnectedScreen.ContactNameLabel.Left = 57 - Main.CallConnectedScreen.ContactNameLabel.Width \ 2
                 Main.CallingScreen.Visible = False
                 Main.CallConnectedScreen.Visible = True
                 Main.CallConnectedScreen.BringToFront()

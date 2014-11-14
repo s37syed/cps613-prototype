@@ -20,7 +20,7 @@
 
     Private Sub CalendarMenuButton_Click(sender As Object, e As EventArgs) Handles CalendarMenuButton.Click
         Main.MainScreenTracker = 0
-        Main.horizontalCount = 5
+        Main.horizontalCount = 13
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
         Next

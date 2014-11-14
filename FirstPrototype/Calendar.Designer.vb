@@ -33,65 +33,71 @@ Partial Class Calendar
         'MonthLabel
         '
         Me.MonthLabel.AutoSize = True
-        Me.MonthLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.MonthLabel.Location = New System.Drawing.Point(18, 0)
+        Me.MonthLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MonthLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MonthLabel.Location = New System.Drawing.Point(33, 9)
         Me.MonthLabel.Name = "MonthLabel"
-        Me.MonthLabel.Size = New System.Drawing.Size(77, 18)
+        Me.MonthLabel.Size = New System.Drawing.Size(56, 13)
         Me.MonthLabel.TabIndex = 0
         Me.MonthLabel.Text = "November"
         '
         'Week1
         '
         Me.Week1.AutoSize = True
+        Me.Week1.BackColor = System.Drawing.Color.Transparent
         Me.Week1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Week1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Week1.Location = New System.Drawing.Point(1, 18)
+        Me.Week1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Week1.Location = New System.Drawing.Point(11, 34)
         Me.Week1.Name = "Week1"
-        Me.Week1.Size = New System.Drawing.Size(110, 15)
+        Me.Week1.Size = New System.Drawing.Size(102, 13)
         Me.Week1.TabIndex = 1
         Me.Week1.Text = "Week 1          (1 - 7)"
         '
         'Week3
         '
         Me.Week3.AutoSize = True
+        Me.Week3.BackColor = System.Drawing.Color.Transparent
         Me.Week3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Week3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Week3.Location = New System.Drawing.Point(1, 52)
+        Me.Week3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Week3.Location = New System.Drawing.Point(11, 61)
         Me.Week3.Name = "Week3"
-        Me.Week3.Size = New System.Drawing.Size(112, 15)
+        Me.Week3.Size = New System.Drawing.Size(102, 13)
         Me.Week3.TabIndex = 8
         Me.Week3.Text = "Week 3      (15 - 21)"
         '
         'Week2
         '
         Me.Week2.AutoSize = True
+        Me.Week2.BackColor = System.Drawing.Color.Transparent
         Me.Week2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Week2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Week2.Location = New System.Drawing.Point(1, 35)
+        Me.Week2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Week2.Location = New System.Drawing.Point(11, 47)
         Me.Week2.Name = "Week2"
-        Me.Week2.Size = New System.Drawing.Size(111, 15)
+        Me.Week2.Size = New System.Drawing.Size(102, 13)
         Me.Week2.TabIndex = 5
         Me.Week2.Text = "Week 2        (8 - 14)"
         '
         'Week4
         '
         Me.Week4.AutoSize = True
+        Me.Week4.BackColor = System.Drawing.Color.Transparent
         Me.Week4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Week4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Week4.Location = New System.Drawing.Point(1, 69)
+        Me.Week4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Week4.Location = New System.Drawing.Point(11, 75)
         Me.Week4.Name = "Week4"
-        Me.Week4.Size = New System.Drawing.Size(112, 15)
+        Me.Week4.Size = New System.Drawing.Size(102, 13)
         Me.Week4.TabIndex = 12
         Me.Week4.Text = "Week 4      (22 - 28)"
         '
         'Week5
         '
         Me.Week5.AutoSize = True
+        Me.Week5.BackColor = System.Drawing.Color.Transparent
         Me.Week5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Week5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Week5.Location = New System.Drawing.Point(1, 86)
+        Me.Week5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Week5.Location = New System.Drawing.Point(11, 88)
         Me.Week5.Name = "Week5"
-        Me.Week5.Size = New System.Drawing.Size(112, 15)
+        Me.Week5.Size = New System.Drawing.Size(102, 13)
         Me.Week5.TabIndex = 13
         Me.Week5.Text = "Week 5      (29 - 30)"
         '
@@ -99,6 +105,7 @@ Partial Class Calendar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
         Me.Controls.Add(Me.Week5)
         Me.Controls.Add(Me.Week4)
         Me.Controls.Add(Me.Week3)

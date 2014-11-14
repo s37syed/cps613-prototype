@@ -29,9 +29,10 @@ Partial Class CallContact
         '
         'CallButton
         '
-        Me.CallButton.Location = New System.Drawing.Point(19, 87)
+        Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CallButton.Location = New System.Drawing.Point(-1, 89)
         Me.CallButton.Name = "CallButton"
-        Me.CallButton.Size = New System.Drawing.Size(75, 23)
+        Me.CallButton.Size = New System.Drawing.Size(113, 23)
         Me.CallButton.TabIndex = 0
         Me.CallButton.Text = "Call"
         Me.CallButton.UseVisualStyleBackColor = True
