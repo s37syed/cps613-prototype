@@ -23,6 +23,7 @@ Public Class Main
     Friend Strt As System.Threading.Thread
     Friend ErrorMsgTime As System.Threading.Thread
     Friend ReminderTime As System.Threading.Thread
+    Friend LeaveMsgTime As System.Threading.Thread
     Friend volumeStatus As VolumeStatus = New VolumeStatus()
     Friend CallConnectedScreen As CallConnected = New CallConnected
     Friend RediallingScreen As Redialling = New Redialling
@@ -75,6 +76,13 @@ Public Class Main
         Threading.Thread.Sleep(2000) '2 seconds currently
         AccessControl6()
     End Sub
+    Friend Sub WorkerThread4()
+        'worker thread to handle display of new msg event
+        Threading.Thread.Sleep(300) '2 seconds currently
+        AccessControl7()
+        Threading.Thread.Sleep(2000) '2 seconds currently
+        AccessControl8()
+    End Sub
     Private Sub AccessControl()
         'display new msg prompt
         If Me.InvokeRequired Then
@@ -120,6 +128,22 @@ Public Class Main
             Me.Invoke(New MethodInvoker(AddressOf AccessControl6))
         Else
             Reminder.Visible = False
+        End If
+    End Sub
+    Private Sub AccessControl7()
+        'display new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl7))
+        Else
+            CallNotConnectedScreen.LeaveMsgText.Visible = True
+        End If
+    End Sub
+    Private Sub AccessControl8()
+        'remove new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl8))
+        Else
+            CallNotConnectedScreen.LeaveMsgText.Visible = False
         End If
     End Sub
     Private Sub BaseLoad()
@@ -269,7 +293,7 @@ Public Class Main
             MainScreenTracker = 0
             horizontalCount = 0
         End If
-        'add calendar with first half of days
+        'add calendar with first half of days - dont think we need this 
         'MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click

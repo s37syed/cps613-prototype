@@ -25,6 +25,7 @@ Partial Class CallNotConnected
         Me.CallNotConnectedLabel = New System.Windows.Forms.Label()
         Me.LeaveMessageButton = New System.Windows.Forms.Button()
         Me.RedialButton = New System.Windows.Forms.Button()
+        Me.LeaveMsgText = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CallNotConnectedLabel
@@ -54,10 +55,21 @@ Partial Class CallNotConnected
         Me.RedialButton.Text = "Redial"
         Me.RedialButton.UseVisualStyleBackColor = True
         '
+        'LeaveMsgText
+        '
+        Me.LeaveMsgText.AutoSize = True
+        Me.LeaveMsgText.Location = New System.Drawing.Point(5, 40)
+        Me.LeaveMsgText.Name = "LeaveMsgText"
+        Me.LeaveMsgText.Size = New System.Drawing.Size(102, 13)
+        Me.LeaveMsgText.TabIndex = 3
+        Me.LeaveMsgText.Text = "Leaving a message!"
+        Me.LeaveMsgText.Visible = False
+        '
         'CallNotConnected
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.LeaveMsgText)
         Me.Controls.Add(Me.RedialButton)
         Me.Controls.Add(Me.LeaveMessageButton)
         Me.Controls.Add(Me.CallNotConnectedLabel)
@@ -70,5 +82,6 @@ Partial Class CallNotConnected
     Friend WithEvents CallNotConnectedLabel As System.Windows.Forms.Label
     Friend WithEvents LeaveMessageButton As System.Windows.Forms.Button
     Friend WithEvents RedialButton As System.Windows.Forms.Button
+    Friend WithEvents LeaveMsgText As System.Windows.Forms.Label
 
 End Class
