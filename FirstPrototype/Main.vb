@@ -59,9 +59,9 @@ Public Class Main
     End Sub
     Friend Sub WorkerThread()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(5) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(5) '2 seconds currently
+        Threading.Thread.Sleep(2000) '2 seconds currently
         AccessControl2()
     End Sub
     Friend Sub WorkerThread2()
@@ -88,7 +88,7 @@ Public Class Main
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
-            'NewMsgEventPic.Visible = True
+            NewMsgEventPic.Visible = True
         End If
     End Sub
     Private Sub AccessControl2()
@@ -405,9 +405,6 @@ Public Class Main
     End Sub
     Friend Sub ResetTracker()
         MainScreenTracker = 0
-    End Sub
-    Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
-        'load message
     End Sub
 
     Private Sub Clock1_TimeChanged(sender As Object, e As EventArgs)
