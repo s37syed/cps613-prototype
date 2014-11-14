@@ -25,6 +25,8 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.MainWatch = New System.Windows.Forms.Panel()
+        Me.Reminder = New System.Windows.Forms.Label()
+        Me.ErrorMsg = New System.Windows.Forms.Label()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
@@ -32,31 +34,53 @@ Partial Class Main
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SwipeDown = New System.Windows.Forms.PictureBox()
+        Me.SwipeUpButton = New System.Windows.Forms.PictureBox()
+        Me.SwipeRightButton = New System.Windows.Forms.PictureBox()
+        Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
         Me.PowerButton = New System.Windows.Forms.PictureBox()
         Me.DoorButton = New System.Windows.Forms.PictureBox()
-        Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
-        Me.SwipeRightButton = New System.Windows.Forms.PictureBox()
-        Me.SwipeUpButton = New System.Windows.Forms.PictureBox()
-        Me.SwipeDown = New System.Windows.Forms.PictureBox()
         Me.MainWatch.SuspendLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainWatch
         '
         Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Controls.Add(Me.Reminder)
+        Me.MainWatch.Controls.Add(Me.ErrorMsg)
         Me.MainWatch.Controls.Add(Me.NewMsgEventPic)
         Me.MainWatch.Location = New System.Drawing.Point(84, 62)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 1
+        '
+        'Reminder
+        '
+        Me.Reminder.AutoSize = True
+        Me.Reminder.Location = New System.Drawing.Point(0, 34)
+        Me.Reminder.Name = "Reminder"
+        Me.Reminder.Size = New System.Drawing.Size(110, 13)
+        Me.Reminder.TabIndex = 12
+        Me.Reminder.Text = "Fre. Lesson Reminder"
+        Me.Reminder.Visible = False
+        '
+        'ErrorMsg
+        '
+        Me.ErrorMsg.AutoSize = True
+        Me.ErrorMsg.Location = New System.Drawing.Point(12, 47)
+        Me.ErrorMsg.Name = "ErrorMsg"
+        Me.ErrorMsg.Size = New System.Drawing.Size(87, 13)
+        Me.ErrorMsg.TabIndex = 11
+        Me.ErrorMsg.Text = "Not Implemented"
+        Me.ErrorMsg.Visible = False
         '
         'NewMsgEventPic
         '
@@ -99,6 +123,50 @@ Partial Class Main
         'Timer1
         '
         '
+        'SwipeDown
+        '
+        Me.SwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
+        Me.SwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeDown.Location = New System.Drawing.Point(123, 185)
+        Me.SwipeDown.Name = "SwipeDown"
+        Me.SwipeDown.Size = New System.Drawing.Size(45, 45)
+        Me.SwipeDown.TabIndex = 14
+        Me.SwipeDown.TabStop = False
+        '
+        'SwipeUpButton
+        '
+        Me.SwipeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
+        Me.SwipeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeUpButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeUpButton.Location = New System.Drawing.Point(123, 3)
+        Me.SwipeUpButton.Name = "SwipeUpButton"
+        Me.SwipeUpButton.Size = New System.Drawing.Size(45, 45)
+        Me.SwipeUpButton.TabIndex = 13
+        Me.SwipeUpButton.TabStop = False
+        '
+        'SwipeRightButton
+        '
+        Me.SwipeRightButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
+        Me.SwipeRightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeRightButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeRightButton.Location = New System.Drawing.Point(213, 94)
+        Me.SwipeRightButton.Name = "SwipeRightButton"
+        Me.SwipeRightButton.Size = New System.Drawing.Size(45, 45)
+        Me.SwipeRightButton.TabIndex = 12
+        Me.SwipeRightButton.TabStop = False
+        '
+        'SwipeLeftButton
+        '
+        Me.SwipeLeftButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
+        Me.SwipeLeftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SwipeLeftButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SwipeLeftButton.Location = New System.Drawing.Point(21, 94)
+        Me.SwipeLeftButton.Name = "SwipeLeftButton"
+        Me.SwipeLeftButton.Size = New System.Drawing.Size(45, 45)
+        Me.SwipeLeftButton.TabIndex = 11
+        Me.SwipeLeftButton.TabStop = False
+        '
         'PowerButton
         '
         Me.PowerButton.BackgroundImage = CType(resources.GetObject("PowerButton.BackgroundImage"), System.Drawing.Image)
@@ -121,50 +189,6 @@ Partial Class Main
         Me.DoorButton.TabStop = False
         Me.DoorButton.Visible = False
         '
-        'SwipeLeftButton
-        '
-        Me.SwipeLeftButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
-        Me.SwipeLeftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeLeftButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SwipeLeftButton.Location = New System.Drawing.Point(21, 94)
-        Me.SwipeLeftButton.Name = "SwipeLeftButton"
-        Me.SwipeLeftButton.Size = New System.Drawing.Size(45, 45)
-        Me.SwipeLeftButton.TabIndex = 11
-        Me.SwipeLeftButton.TabStop = False
-        '
-        'SwipeRightButton
-        '
-        Me.SwipeRightButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
-        Me.SwipeRightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeRightButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SwipeRightButton.Location = New System.Drawing.Point(213, 94)
-        Me.SwipeRightButton.Name = "SwipeRightButton"
-        Me.SwipeRightButton.Size = New System.Drawing.Size(45, 45)
-        Me.SwipeRightButton.TabIndex = 12
-        Me.SwipeRightButton.TabStop = False
-        '
-        'SwipeUpButton
-        '
-        Me.SwipeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
-        Me.SwipeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeUpButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SwipeUpButton.Location = New System.Drawing.Point(123, 3)
-        Me.SwipeUpButton.Name = "SwipeUpButton"
-        Me.SwipeUpButton.Size = New System.Drawing.Size(45, 45)
-        Me.SwipeUpButton.TabIndex = 13
-        Me.SwipeUpButton.TabStop = False
-        '
-        'SwipeDown
-        '
-        Me.SwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
-        Me.SwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwipeDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SwipeDown.Location = New System.Drawing.Point(123, 185)
-        Me.SwipeDown.Name = "SwipeDown"
-        Me.SwipeDown.Size = New System.Drawing.Size(45, 45)
-        Me.SwipeDown.TabIndex = 14
-        Me.SwipeDown.TabStop = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,13 +207,14 @@ Partial Class Main
         Me.Name = "Main"
         Me.Text = "Prototype B1"
         Me.MainWatch.ResumeLayout(False)
+        Me.MainWatch.PerformLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -209,5 +234,7 @@ Partial Class Main
     Friend WithEvents SwipeRightButton As System.Windows.Forms.PictureBox
     Friend WithEvents SwipeUpButton As System.Windows.Forms.PictureBox
     Friend WithEvents SwipeDown As System.Windows.Forms.PictureBox
+    Friend WithEvents ErrorMsg As System.Windows.Forms.Label
+    Friend WithEvents Reminder As System.Windows.Forms.Label
 
 End Class

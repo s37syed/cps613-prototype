@@ -22,13 +22,14 @@ Partial Class MenuScreen2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuScreen2))
         Me.MenuPage3Tracker = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.ReminderAppoint = New System.Windows.Forms.PictureBox()
         Me.SettingsMenuButton = New System.Windows.Forms.PictureBox()
         Me.SilenceMenuButton = New System.Windows.Forms.PictureBox()
         Me.MusicMenuButton = New System.Windows.Forms.PictureBox()
         CType(Me.MenuPage3Tracker, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ReminderAppoint, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SettingsMenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SilenceMenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MusicMenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,17 +44,21 @@ Partial Class MenuScreen2
         Me.MenuPage3Tracker.TabIndex = 4
         Me.MenuPage3Tracker.TabStop = False
         '
-        'PictureBox4
+        'ReminderAppoint
         '
-        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox4.Location = New System.Drawing.Point(59, 54)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(45, 45)
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.ReminderAppoint.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.reminder_image
+        Me.ReminderAppoint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ReminderAppoint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ReminderAppoint.Location = New System.Drawing.Point(59, 54)
+        Me.ReminderAppoint.Name = "ReminderAppoint"
+        Me.ReminderAppoint.Size = New System.Drawing.Size(45, 45)
+        Me.ReminderAppoint.TabIndex = 3
+        Me.ReminderAppoint.TabStop = False
         '
         'SettingsMenuButton
         '
+        Me.SettingsMenuButton.BackgroundImage = CType(resources.GetObject("SettingsMenuButton.BackgroundImage"), System.Drawing.Image)
+        Me.SettingsMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SettingsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SettingsMenuButton.Location = New System.Drawing.Point(8, 54)
         Me.SettingsMenuButton.Name = "SettingsMenuButton"
@@ -63,6 +68,8 @@ Partial Class MenuScreen2
         '
         'SilenceMenuButton
         '
+        Me.SilenceMenuButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.playlist_icon
+        Me.SilenceMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SilenceMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SilenceMenuButton.Location = New System.Drawing.Point(59, 3)
         Me.SilenceMenuButton.Name = "SilenceMenuButton"
@@ -85,14 +92,14 @@ Partial Class MenuScreen2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.MenuPage3Tracker)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.ReminderAppoint)
         Me.Controls.Add(Me.SettingsMenuButton)
         Me.Controls.Add(Me.SilenceMenuButton)
         Me.Controls.Add(Me.MusicMenuButton)
         Me.Name = "MenuScreen2"
         Me.Size = New System.Drawing.Size(113, 113)
         CType(Me.MenuPage3Tracker, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ReminderAppoint, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SettingsMenuButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SilenceMenuButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MusicMenuButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -102,7 +109,7 @@ Partial Class MenuScreen2
     Friend WithEvents MusicMenuButton As System.Windows.Forms.PictureBox
     Friend WithEvents SilenceMenuButton As System.Windows.Forms.PictureBox
     Friend WithEvents SettingsMenuButton As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents ReminderAppoint As System.Windows.Forms.PictureBox
     Friend WithEvents MenuPage3Tracker As System.Windows.Forms.PictureBox
 
 End Class

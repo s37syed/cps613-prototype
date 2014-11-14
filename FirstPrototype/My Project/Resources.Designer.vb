@@ -111,6 +111,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property create_reminder() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("create_reminder", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property death_metal() As System.IO.UnmanagedMemoryStream
@@ -361,6 +371,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property playlist_icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("playlist_icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property power_off() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("power_off", resourceCulture)
@@ -393,6 +413,16 @@ Namespace My.Resources
         Friend ReadOnly Property RandyMap() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("RandyMap", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property reminder_image() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("reminder_image", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
