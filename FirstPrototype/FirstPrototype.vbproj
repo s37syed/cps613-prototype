@@ -466,12 +466,6 @@
     <None Include="Resources\Calendar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\16number.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17NumberSeventeenInCircle.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\notepad.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -554,6 +548,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\playlist_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_18819.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

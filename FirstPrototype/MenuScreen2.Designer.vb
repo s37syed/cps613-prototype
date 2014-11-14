@@ -22,6 +22,7 @@ Partial Class MenuScreen2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuScreen2))
         Me.MenuPage3Tracker = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.SettingsMenuButton = New System.Windows.Forms.PictureBox()
@@ -45,6 +46,8 @@ Partial Class MenuScreen2
         '
         'PictureBox4
         '
+        Me.PictureBox4.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.reminder_image
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Location = New System.Drawing.Point(59, 54)
         Me.PictureBox4.Name = "PictureBox4"
@@ -54,7 +57,7 @@ Partial Class MenuScreen2
         '
         'SettingsMenuButton
         '
-        Me.SettingsMenuButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.Settings
+        Me.SettingsMenuButton.BackgroundImage = CType(resources.GetObject("SettingsMenuButton.BackgroundImage"), System.Drawing.Image)
         Me.SettingsMenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SettingsMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SettingsMenuButton.Location = New System.Drawing.Point(8, 54)
