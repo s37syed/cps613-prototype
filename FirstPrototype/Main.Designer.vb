@@ -25,6 +25,9 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.MainWatch = New System.Windows.Forms.Panel()
+        Me.Reminder = New System.Windows.Forms.Label()
+        Me.ErrorMsg = New System.Windows.Forms.Label()
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.VolumeUpButton = New System.Windows.Forms.Button()
         Me.VolumeDownButton = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
@@ -37,28 +40,58 @@ Partial Class Main
         Me.SwipeLeftButton = New System.Windows.Forms.PictureBox()
         Me.PowerButton = New System.Windows.Forms.PictureBox()
         Me.DoorButton = New System.Windows.Forms.PictureBox()
-        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
-        Me.ErrorMsg = New System.Windows.Forms.Label()
         Me.MainWatch.SuspendLayout()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainWatch
         '
         Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainWatch.Controls.Add(Me.Reminder)
         Me.MainWatch.Controls.Add(Me.ErrorMsg)
         Me.MainWatch.Controls.Add(Me.NewMsgEventPic)
         Me.MainWatch.Location = New System.Drawing.Point(84, 62)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
         Me.MainWatch.TabIndex = 1
+        '
+        'Reminder
+        '
+        Me.Reminder.AutoSize = True
+        Me.Reminder.Location = New System.Drawing.Point(0, 34)
+        Me.Reminder.Name = "Reminder"
+        Me.Reminder.Size = New System.Drawing.Size(110, 13)
+        Me.Reminder.TabIndex = 12
+        Me.Reminder.Text = "Fre. Lesson Reminder"
+        Me.Reminder.Visible = False
+        '
+        'ErrorMsg
+        '
+        Me.ErrorMsg.AutoSize = True
+        Me.ErrorMsg.Location = New System.Drawing.Point(12, 47)
+        Me.ErrorMsg.Name = "ErrorMsg"
+        Me.ErrorMsg.Size = New System.Drawing.Size(87, 13)
+        Me.ErrorMsg.TabIndex = 11
+        Me.ErrorMsg.Text = "Not Implemented"
+        Me.ErrorMsg.Visible = False
+        '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
         '
         'VolumeUpButton
         '
@@ -156,27 +189,6 @@ Partial Class Main
         Me.DoorButton.TabStop = False
         Me.DoorButton.Visible = False
         '
-        'NewMsgEventPic
-        '
-        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
-        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
-        Me.NewMsgEventPic.Name = "NewMsgEventPic"
-        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
-        Me.NewMsgEventPic.TabIndex = 10
-        Me.NewMsgEventPic.TabStop = False
-        Me.NewMsgEventPic.Visible = False
-        '
-        'ErrorMsg
-        '
-        Me.ErrorMsg.AutoSize = True
-        Me.ErrorMsg.Location = New System.Drawing.Point(12, 47)
-        Me.ErrorMsg.Name = "ErrorMsg"
-        Me.ErrorMsg.Size = New System.Drawing.Size(87, 13)
-        Me.ErrorMsg.TabIndex = 11
-        Me.ErrorMsg.Text = "Not Implemented"
-        Me.ErrorMsg.Visible = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -196,13 +208,13 @@ Partial Class Main
         Me.Text = "Prototype B1"
         Me.MainWatch.ResumeLayout(False)
         Me.MainWatch.PerformLayout()
+        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwipeDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwipeUpButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwipeRightButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwipeLeftButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PowerButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoorButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -223,5 +235,6 @@ Partial Class Main
     Friend WithEvents SwipeUpButton As System.Windows.Forms.PictureBox
     Friend WithEvents SwipeDown As System.Windows.Forms.PictureBox
     Friend WithEvents ErrorMsg As System.Windows.Forms.Label
+    Friend WithEvents Reminder As System.Windows.Forms.Label
 
 End Class

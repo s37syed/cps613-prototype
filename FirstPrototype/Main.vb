@@ -16,10 +16,12 @@ Public Class Main
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
     Public Shared tasks2 As New Tasks2
+    Public Shared appOptions As New AppointmentOptions
     Public Shared horizontalCount = 0
     Public contactScreen1 As ContactScreen = New ContactScreen
-    Private Strt As System.Threading.Thread
+    Friend Strt As System.Threading.Thread
     Friend ErrorMsgTime As System.Threading.Thread
+    Friend ReminderTime As System.Threading.Thread
     Friend volumeStatus As VolumeStatus = New VolumeStatus()
     Dim TimerValue As Integer = 0
 
@@ -50,7 +52,7 @@ Public Class Main
         Strt = New System.Threading.Thread(AddressOf WorkerThread)
         Strt.Start()
     End Sub
-    Private Sub WorkerThread()
+    Friend Sub WorkerThread()
         'worker thread to handle display of new msg event
         Threading.Thread.Sleep(5) '2 seconds currently
         AccessControl()
@@ -62,12 +64,27 @@ Public Class Main
         Threading.Thread.Sleep(2000)
         AccessControl4()
     End Sub
+    Friend Sub WorkerThread3()
+        'worker thread to handle display of new msg event
+        Threading.Thread.Sleep(300) '2 seconds currently
+        AccessControl5()
+        Threading.Thread.Sleep(2000) '2 seconds currently
+        AccessControl6()
+    End Sub
     Private Sub AccessControl()
         'display new msg prompt
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
             NewMsgEventPic.Visible = True
+        End If
+    End Sub
+    Private Sub AccessControl2()
+        'remove new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
+        Else
+            NewMsgEventPic.Visible = False
         End If
     End Sub
     Private Sub AccessControl3()
@@ -83,6 +100,22 @@ Public Class Main
             Me.Invoke(New MethodInvoker(AddressOf AccessControl4))
         Else
             ErrorMsg.Visible = False
+        End If
+    End Sub
+    Private Sub AccessControl5()
+        'display new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl5))
+        Else
+            Reminder.Visible = True
+        End If
+    End Sub
+    Private Sub AccessControl6()
+        'remove new msg prompt
+        If Me.InvokeRequired Then
+            Me.Invoke(New MethodInvoker(AddressOf AccessControl6))
+        Else
+            Reminder.Visible = False
         End If
     End Sub
     Private Sub BaseLoad()
@@ -102,6 +135,7 @@ Public Class Main
         MainWatch.Controls.Add(cal2)
         MainWatch.Controls.Add(task)
         MainWatch.Controls.Add(tasks2)
+        MainWatch.Controls.Add(appOptions)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
@@ -218,11 +252,21 @@ Public Class Main
             MainScreenTracker = 0
             horizontalCount = 0
         End If
+        If (horizontalCount = 9) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
         'add calendar with first half of days
         MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -268,6 +312,9 @@ Public Class Main
         If (horizontalCount = 7) Then
             Me.MsgSendContacts1.scrollDown()
         End If
+        If (horizontalCount = 9) Then
+            appOptions.Hide()
+        End If
     End Sub
     Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
@@ -292,17 +339,12 @@ Public Class Main
         If (horizontalCount = 7) Then
             Me.MsgSendContacts1.scrollUp()
         End If
+        If (horizontalCount = 9) Then
+            appOptions.Show()
+        End If
     End Sub
     Friend Sub ResetTracker()
         MainScreenTracker = 0
-    End Sub
-    Private Sub AccessControl2()
-        'remove new msg prompt
-        If Me.InvokeRequired Then
-            Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
-        Else
-            NewMsgEventPic.Visible = False
-        End If
     End Sub
     Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
         'load message

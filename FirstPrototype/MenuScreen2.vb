@@ -25,7 +25,7 @@
 
     Private Sub Reminder_Click(sender As Object, e As EventArgs) Handles ReminderAppoint.Click
         'selecting current date of calendar brings up tasks
-        Main.horizontalCount = 6
+        Main.horizontalCount = 9
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
         Next

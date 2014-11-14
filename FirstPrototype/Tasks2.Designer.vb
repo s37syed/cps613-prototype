@@ -35,11 +35,11 @@ Partial Class Tasks2
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(19, 13)
+        Me.Label11.Location = New System.Drawing.Point(32, 13)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(84, 13)
+        Me.Label11.Size = New System.Drawing.Size(57, 13)
         Me.Label11.TabIndex = 16
-        Me.Label11.Text = "Tasks for Today"
+        Me.Label11.Text = "Reminders"
         '
         'Label6
         '

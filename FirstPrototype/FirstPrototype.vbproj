@@ -77,6 +77,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentOptions.Designer.vb">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CallChild.Designer.vb">
       <DependentUpon>CallChild.vb</DependentUpon>
     </Compile>
@@ -278,6 +284,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AppointmentOptions.resx">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CallChild.resx">
       <DependentUpon>CallChild.vb</DependentUpon>
     </EmbeddedResource>
@@ -563,6 +572,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reminder_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_reminder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
