@@ -7,6 +7,7 @@
         countDown -= 1
         RedialingTimerLabel.Text = countDown
         If timerValue = 5 Then
+            Main.CallContactScreen.RingToneSound.PlayLooping()
             countDown = 6
             RedialTimer.Stop()
             timerValue = 0

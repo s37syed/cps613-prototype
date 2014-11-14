@@ -519,7 +519,7 @@ Public Class Main
             cont.Hide()
         Next
         receive_msg_notification.ContactName.Text = "Andrea"
-        receive_msg_notification.TransparentRichTextBox1.Text = "12/12/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "um y didnt u invite me? lol k im comin over tn"
+        receive_msg_notification.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
         receive_msg_notification.Visible = True
     End Sub
 End Class

@@ -1,4 +1,5 @@
-﻿Public Class Calling
+﻿Imports System.Media
+Public Class Calling
     Dim timerValue As Integer = 0
     Friend rndValue As Integer = 0
 
@@ -9,6 +10,7 @@
         Main.ResetTracker()
         CallingTimer.Stop()
         timerValue = 0
+        Main.CallContactScreen.RingToneSound.Stop()
         'Main.SwipeLeftButton.
     End Sub
 
@@ -22,6 +24,7 @@
         If timerValue = 5 Then
             If rndValue = 1 Or rndValue = 2 Or rndValue = 3 Then
                 Debug.WriteLine("Connected")
+                Main.CallContactScreen.RingToneSound.Stop()
                 CallingTimer.Stop()
                 timerValue = 0
                 For Each cont In Main.MainWatch.Controls
@@ -34,6 +37,8 @@
                 Main.CallConnectedScreen.BringToFront()
             ElseIf rndValue = 4 Or rndValue = 5 Then
                 Debug.WriteLine("Did not connect")
+                Main.CallContactScreen.RingToneSound.Stop()
+
                 CallingTimer.Stop()
                 timerValue = 0
                 For Each cont In Main.MainWatch.Controls
