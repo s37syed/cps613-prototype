@@ -9,6 +9,6 @@
         Me.Hide()
         Main.ReminderTime = New System.Threading.Thread(AddressOf Main.WorkerThread3)
         Main.ReminderTime.Start()
-        Main.tasks2.Label1.Text = "6pm - fre. lessons"
+        Main.tasks2.Label1.Text = "6pm - danielle mom"
     End Sub
 End Class

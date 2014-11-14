@@ -15,5 +15,6 @@
                 cont.HideOptions()
             End If
         Next
+        Main.receive_msg_notification.TransparentRichTextBox1.Text = ""
     End Sub
 End Class

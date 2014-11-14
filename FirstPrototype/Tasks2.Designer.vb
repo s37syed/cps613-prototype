@@ -92,9 +92,9 @@ Partial Class Tasks2
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Location = New System.Drawing.Point(15, 88)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 13)
+        Me.Label1.Size = New System.Drawing.Size(100, 13)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = "6pm - fre. lessons"
+        Me.Label1.Text = "6pm - danielle mom "
         '
         'Tasks2
         '
