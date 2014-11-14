@@ -28,18 +28,20 @@ Partial Class DayWeekSelect
         '
         'DayButton
         '
-        Me.DayButton.Location = New System.Drawing.Point(19, 20)
+        Me.DayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DayButton.Location = New System.Drawing.Point(-1, 20)
         Me.DayButton.Name = "DayButton"
-        Me.DayButton.Size = New System.Drawing.Size(75, 23)
+        Me.DayButton.Size = New System.Drawing.Size(113, 23)
         Me.DayButton.TabIndex = 0
         Me.DayButton.Text = "Day"
         Me.DayButton.UseVisualStyleBackColor = True
         '
         'WeekButton
         '
-        Me.WeekButton.Location = New System.Drawing.Point(19, 65)
+        Me.WeekButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.WeekButton.Location = New System.Drawing.Point(-1, 58)
         Me.WeekButton.Name = "WeekButton"
-        Me.WeekButton.Size = New System.Drawing.Size(75, 23)
+        Me.WeekButton.Size = New System.Drawing.Size(113, 23)
         Me.WeekButton.TabIndex = 1
         Me.WeekButton.Text = "Week"
         Me.WeekButton.UseVisualStyleBackColor = True

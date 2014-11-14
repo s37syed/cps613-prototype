@@ -9,7 +9,11 @@
             'selecting current date of calendar brings up tasks
             Main.horizontalCount = 6
             Main.cal2.Hide()
-            Main.task.Show()
+            For Each cont In Main.MainWatch.Controls
+                cont.Hide()
+            Next
+            Main.cal2.Visible = False
+            'Main.task.Show()
         End If
     End Sub
 End Class
