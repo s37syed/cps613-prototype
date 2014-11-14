@@ -213,7 +213,7 @@ Public Class Main
 
         End If
     End Sub
-    Private Sub PowerButton_Click(sender As Object, e As EventArgs) Handles PowerButton.Click
+    Private Sub PowerButton_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -349,5 +349,9 @@ Public Class Main
         MenuScreen0.Visible = True
         horizontalCount = 0
         MainScreenTracker = 0
+    End Sub
+
+    Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerButton.Click
+        Me.Close()
     End Sub
 End Class
