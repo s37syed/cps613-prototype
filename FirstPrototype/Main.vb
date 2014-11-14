@@ -29,6 +29,7 @@ Public Class Main
     Friend CallConnectedScreen As CallConnected = New CallConnected
     Friend RediallingScreen As Redialling = New Redialling
     Friend CallNotConnectedScreen As CallNotConnected = New CallNotConnected
+    Friend receive_msg_notification As ReceiveMsg = New ReceiveMsg
     Dim TimerValue As Integer = 0
 
     Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
@@ -167,6 +168,7 @@ Public Class Main
         MainWatch.Controls.Add(appOptions)
         MainWatch.Controls.Add(day_or_week)
         MainWatch.Controls.Add(receive_call)
+        MainWatch.Controls.Add(receive_msg_notification)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
@@ -323,11 +325,20 @@ Public Class Main
             MainScreenTracker = 0
             horizontalCount = 0
         End If
-        'add calendar with first half of days - dont think we need this 
-        'MainWatch.Controls.Add(cal)
+        If (horizontalCount = 15) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
+
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 And Not horizontalCount = 11 And Not horizontalCount = 13 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 And Not horizontalCount = 11 And Not horizontalCount = 13 And Not horizontalCount = 15 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -477,5 +488,14 @@ Public Class Main
 
     Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerButton.Click
         Me.Close()
+    End Sub
+
+    Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
+        For Each cont In MainWatch.Controls
+            cont.Hide()
+        Next
+        receive_msg_notification.ContactName.Text = "Andrea"
+        receive_msg_notification.TransparentRichTextBox1.Text = "12/12/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "um y didnt u invite me? lol k im comin over tn"
+        receive_msg_notification.Visible = True
     End Sub
 End Class

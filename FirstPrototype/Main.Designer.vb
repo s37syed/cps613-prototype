@@ -92,6 +92,7 @@ Partial Class Main
         '
         Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
         Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Cursor = System.Windows.Forms.Cursors.Hand
         Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
         Me.NewMsgEventPic.Name = "NewMsgEventPic"
         Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
