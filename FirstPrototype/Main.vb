@@ -14,6 +14,7 @@ Public Class Main
     Friend send_message As SendMsg = New SendMsg
     Friend day_or_week As DayWeekSelect = New DayWeekSelect
     Friend receive_call As ReceiveCall = New ReceiveCall
+    Friend msgOptions2 As MessageOptions = New MessageOptions
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -198,6 +199,7 @@ Public Class Main
         MainWatch.Controls.Add(CallConnectedScreen)
         MainWatch.Controls.Add(RediallingScreen)
         MainWatch.Controls.Add(CallNotConnectedScreen)
+        MainWatch.Controls.Add(msgOptions2)
         ParentPhone.Visible = True
 
         'Add controls
@@ -398,6 +400,10 @@ Public Class Main
         If (horizontalCount = 9) Then
             appOptions.Hide()
         End If
+        If (horizontalCount = 16) Then
+            msgOptions2.SendToBack()
+            msgOptions2.Hide()
+        End If
     End Sub
     Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
@@ -424,6 +430,11 @@ Public Class Main
         End If
         If (horizontalCount = 9) Then
             appOptions.Show()
+        End If
+        If (horizontalCount = 16) Then
+            msgOptions2.Location = New Point(0, 75)
+            msgOptions2.BringToFront()
+            msgOptions2.Show()
         End If
     End Sub
     Friend Sub ResetTracker()
