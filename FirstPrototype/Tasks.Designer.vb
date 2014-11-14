@@ -33,6 +33,7 @@ Partial Class Tasks
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.DateLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -146,12 +147,23 @@ Partial Class Tasks
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "Tasks"
         '
+        'DateLabel
+        '
+        Me.DateLabel.AutoSize = True
+        Me.DateLabel.BackColor = System.Drawing.Color.Transparent
+        Me.DateLabel.Location = New System.Drawing.Point(59, 0)
+        Me.DateLabel.Name = "DateLabel"
+        Me.DateLabel.Size = New System.Drawing.Size(53, 13)
+        Me.DateLabel.TabIndex = 11
+        Me.DateLabel.Text = "99/99/99"
+        '
         'Tasks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.note_bg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -163,6 +175,7 @@ Partial Class Tasks
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Name = "Tasks"
         Me.Size = New System.Drawing.Size(113, 113)
         Me.ResumeLayout(False)
@@ -180,5 +193,6 @@ Partial Class Tasks
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents DateLabel As System.Windows.Forms.Label
 
 End Class

@@ -12,6 +12,7 @@ Public Class Main
     Friend send_image As SendImg = New SendImg
     Friend send_video As SendVid = New SendVid
     Friend send_message As SendMsg = New SendMsg
+    Friend day_or_week As DayWeekSelect = New DayWeekSelect
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -60,7 +61,7 @@ Public Class Main
         If Me.InvokeRequired Then
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
-            NewMsgEventPic.Visible = True
+            'NewMsgEventPic.Visible = True
         End If
     End Sub
     Private Sub BaseLoad()
@@ -79,6 +80,7 @@ Public Class Main
         MainWatch.Controls.Add(cal)
         MainWatch.Controls.Add(cal2)
         MainWatch.Controls.Add(task)
+        MainWatch.Controls.Add(day_or_week)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)

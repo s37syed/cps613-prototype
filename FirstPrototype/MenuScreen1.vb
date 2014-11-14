@@ -20,7 +20,7 @@
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
         Next
-        Main.cal.Visible = True
+        Main.day_or_week.Visible = True
     End Sub
 
     Private Sub MessagesMenuButton_Click(sender As Object, e As EventArgs) Handles MessagesMenuButton.Click
@@ -29,6 +29,6 @@
         For Each cont In Main.MainWatch.Controls
             cont.Hide()
         Next
-        Main.SendMsgType2.Visible = True 'added this
+        Main.SendMsgType2.Visible = True
     End Sub
 End Class
