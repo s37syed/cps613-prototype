@@ -39,9 +39,10 @@ Partial Class SongPanel
         '
         Me.PictureBox1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.no_cover
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 28)
+        Me.PictureBox1.Size = New System.Drawing.Size(26, 26)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '

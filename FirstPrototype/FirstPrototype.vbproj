@@ -149,8 +149,6 @@
     <Compile Include="Calendar2.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Album.vb" />
-    <Compile Include="Artist.vb" />
     <Compile Include="DayWeekSelect.Designer.vb">
       <DependentUpon>DayWeekSelect.vb</DependentUpon>
     </Compile>
