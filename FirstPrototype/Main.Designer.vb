@@ -22,9 +22,9 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
-        Me.components = New System.ComponentModel.Container()
         Me.SwipeUpButton = New System.Windows.Forms.Button()
         Me.SwipeLeftButton = New System.Windows.Forms.Button()
         Me.SwipeDown = New System.Windows.Forms.Button()
@@ -36,10 +36,10 @@ Partial Class Main
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
-        Me.MainWatch.SuspendLayout()
-        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.SuspendLayout()
+        Me.MainWatch.SuspendLayout
+        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'MainWatch
         '
@@ -49,7 +49,7 @@ Partial Class Main
         Me.MainWatch.Location = New System.Drawing.Point(87, 49)
         Me.MainWatch.Name = "MainWatch"
         Me.MainWatch.Size = New System.Drawing.Size(113, 113)
-        Me.MainWatch.TabIndex = 10
+        Me.MainWatch.TabIndex = 1
         '
         'NewMsgEventPic
         '
@@ -59,8 +59,8 @@ Partial Class Main
         Me.NewMsgEventPic.Name = "NewMsgEventPic"
         Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
         Me.NewMsgEventPic.TabIndex = 10
-        Me.NewMsgEventPic.TabStop = False
-        Me.NewMsgEventPic.Visible = False
+        Me.NewMsgEventPic.TabStop = false
+        Me.NewMsgEventPic.Visible = false
         '
         'SwipeUpButton
         '
@@ -69,7 +69,7 @@ Partial Class Main
         Me.SwipeUpButton.Size = New System.Drawing.Size(132, 23)
         Me.SwipeUpButton.TabIndex = 2
         Me.SwipeUpButton.Text = "SwipeUpFromTop"
-        Me.SwipeUpButton.UseVisualStyleBackColor = True
+        Me.SwipeUpButton.UseVisualStyleBackColor = true
         '
         'SwipeLeftButton
         '
@@ -78,7 +78,7 @@ Partial Class Main
         Me.SwipeLeftButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeLeftButton.TabIndex = 3
         Me.SwipeLeftButton.Text = "SwipeLeft"
-        Me.SwipeLeftButton.UseVisualStyleBackColor = True
+        Me.SwipeLeftButton.UseVisualStyleBackColor = true
         '
         'SwipeDown
         '
@@ -87,7 +87,7 @@ Partial Class Main
         Me.SwipeDown.Size = New System.Drawing.Size(132, 23)
         Me.SwipeDown.TabIndex = 4
         Me.SwipeDown.Text = "SwipeDownFromBottom"
-        Me.SwipeDown.UseVisualStyleBackColor = True
+        Me.SwipeDown.UseVisualStyleBackColor = true
         '
         'SwipeRightButton
         '
@@ -96,7 +96,7 @@ Partial Class Main
         Me.SwipeRightButton.Size = New System.Drawing.Size(75, 23)
         Me.SwipeRightButton.TabIndex = 5
         Me.SwipeRightButton.Text = "SwipeRight"
-        Me.SwipeRightButton.UseVisualStyleBackColor = True
+        Me.SwipeRightButton.UseVisualStyleBackColor = true
         '
         'VolumeUpButton
         '
@@ -105,7 +105,7 @@ Partial Class Main
         Me.VolumeUpButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeUpButton.TabIndex = 6
         Me.VolumeUpButton.Text = "+"
-        Me.VolumeUpButton.UseVisualStyleBackColor = True
+        Me.VolumeUpButton.UseVisualStyleBackColor = true
         '
         'VolumeDownButton
         '
@@ -114,7 +114,7 @@ Partial Class Main
         Me.VolumeDownButton.Size = New System.Drawing.Size(23, 23)
         Me.VolumeDownButton.TabIndex = 7
         Me.VolumeDownButton.Text = "-"
-        Me.VolumeDownButton.UseVisualStyleBackColor = True
+        Me.VolumeDownButton.UseVisualStyleBackColor = true
         '
         'PowerButton
         '
@@ -123,7 +123,7 @@ Partial Class Main
         Me.PowerButton.Size = New System.Drawing.Size(75, 23)
         Me.PowerButton.TabIndex = 8
         Me.PowerButton.Text = "Power"
-        Me.PowerButton.UseVisualStyleBackColor = True
+        Me.PowerButton.UseVisualStyleBackColor = true
         '
         'DoorButton
         '
@@ -132,7 +132,7 @@ Partial Class Main
         Me.DoorButton.Size = New System.Drawing.Size(75, 23)
         Me.DoorButton.TabIndex = 9
         Me.DoorButton.Text = "Door"
-        Me.DoorButton.UseVisualStyleBackColor = True
+        Me.DoorButton.UseVisualStyleBackColor = true
         '
         'HomeButton
         '
@@ -141,23 +141,14 @@ Partial Class Main
         Me.HomeButton.Size = New System.Drawing.Size(75, 23)
         Me.HomeButton.TabIndex = 9
         Me.HomeButton.Text = "Door"
-        Me.HomeButton.UseVisualStyleBackColor = True
-        '
-        'MainWatch
-        '
-        Me.MainWatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainWatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.MainWatch.Location = New System.Drawing.Point(87, 49)
-        Me.MainWatch.Name = "MainWatch"
-        Me.MainWatch.Size = New System.Drawing.Size(113, 113)
-        Me.MainWatch.TabIndex = 1
+        Me.HomeButton.UseVisualStyleBackColor = true
         '
         'Timer1
         '
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(293, 240)
         Me.Controls.Add(Me.DoorButton)
@@ -172,11 +163,11 @@ Partial Class Main
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
         Me.Text = "Prototype B1"
-        Me.MainWatch.ResumeLayout(False)
-        CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        Me.MainWatch.ResumeLayout(false)
+        CType(Me.NewMsgEventPic,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents MainWatch As System.Windows.Forms.Panel
     Friend WithEvents SwipeUpButton As System.Windows.Forms.Button
     Friend WithEvents SwipeLeftButton As System.Windows.Forms.Button

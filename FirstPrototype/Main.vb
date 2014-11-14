@@ -7,35 +7,24 @@ Public Class Main
     Friend PhoneContactsScreen As PhoneContacts = New PhoneContacts
     Friend CallContactScreen As CallContact = New CallContact
     Friend CallingScreen As Calling = New Calling
-
-
     Friend SendMsgType2 As SelectMsgType2 = New SelectMsgType2 'added this
     Friend MsgSendContacts1 As MsgSendContacts = New MsgSendContacts ' added this
     Friend send_image As SendImg = New SendImg 'added this
     Friend send_video As SendVid = New SendVid 'added this
     Friend send_message As SendMsg = New SendMsg 'assed this
-
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
-    ' Assuming we're already in the first screen
     Public Shared horizontalCount = 0
-    'Create controls
     Public contactScreen1 As ContactScreen = New ContactScreen
-
     Private Strt As System.Threading.Thread
-
-    '########################################## ADD this into the MAIN Form ##########################################
-    '@author Daniel Kozij 
     Friend volumeStatus As VolumeStatus = New VolumeStatus()
-
     Dim TimerValue As Integer = 0
 
     Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
     Private SongPlayer2 As SoundPlayer = New SoundPlayer(My.Resources.push_lorde)
     Private SongPlayer3 As SoundPlayer = New SoundPlayer(My.Resources.death_metal)
     Private SongPlayer4 As SoundPlayer = New SoundPlayer(My.Resources.drake_song)
-
 
     Dim song1 As Music = New Music("Yung Lean", SongPlayer1)
     Dim song2 As Music = New Music("Lorde - Push", SongPlayer2)
@@ -48,13 +37,10 @@ Public Class Main
     Friend songPanel2 As SongPanel
     Friend songPanel3 As SongPanel
     Friend songPanel4 As SongPanel
-
+    
     Friend MusicAppCounter As Integer = 0
 
     Friend musicControls As MusicPanelControl
-
-    '########################################## ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##########################################
-
 
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         BaseLoad()
@@ -93,7 +79,26 @@ Public Class Main
         MainWatch.Controls.Add(cal)
         MainWatch.Controls.Add(cal2)
         MainWatch.Controls.Add(task)
+        songPanel1 = New SongPanel(songs, 0)
+        songPanel2 = New SongPanel(songs, 1)
+        songPanel3 = New SongPanel(songs, 2)
+        songPanel4 = New SongPanel(songs, 3)
 
+        songPanel1.Location = New Point(0, 0)
+        songPanel2.Location = New Point(0, 28)
+        songPanel3.Location = New Point(0, 56)
+        songPanel4.Location = New Point(0, 84)
+
+
+        Me.MainWatch.Controls.Add(songPanel1)
+        Me.MainWatch.Controls.Add(songPanel2)
+        Me.MainWatch.Controls.Add(songPanel3)
+        Me.MainWatch.Controls.Add(songPanel4)
+
+        MainWatch.Controls.Add(songPanel1)
+        MainWatch.Controls.Add(songPanel2)
+        MainWatch.Controls.Add(songPanel3)
+        MainWatch.Controls.Add(songPanel4)
 
         MainWatch.Controls.Add(SendMsgType2) 'added this 
         MainWatch.Controls.Add(MsgSendContacts1) ' added this
@@ -180,11 +185,21 @@ Public Class Main
             MainScreenTracker = 0
             horizontalCount = 0
         End If
+        If (horizontalCount = 8) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
         'add calendar with first half of days
         MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 7 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 7 And Not horizontalCount = 8 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -274,8 +289,6 @@ Public Class Main
     End Sub
 
     Private Sub Clock1_TimeChanged(sender As Object, e As EventArgs)
-
-
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
@@ -298,44 +311,6 @@ Public Class Main
         songPanel4.BringToFront()
         MusicAppCounter += 1
     End Sub
-
-    'Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
-
-    '    If MouseButtons >= 0 Then
-    '        MusicAppCounter -= 1
-    '        MsgBox(MusicAppCounter)
-
-    '        If MusicAppCounter = 0 Then
-    '            musicControls.Hide()
-    '            songPanel1.Hide()
-    '            songPanel2.Hide()
-    '            songPanel3.Hide()
-    '            songPanel4.Hide()
-
-    '        ElseIf MusicAppCounter = 1 Then
-
-    '            songPanel1.Show()
-    '            songPanel2.Show()
-    '            songPanel3.Show()
-    '            songPanel4.Show()
-    '            songPanel1.BringToFront()
-    '            songPanel2.BringToFront()
-    '            songPanel3.BringToFront()
-    '            songPanel4.BringToFront()
-
-    '        ElseIf MusicAppCounter = 2 Then
-
-
-    '        End If
-    '    End If
-
-
-    'End Sub
-
-
-    '########################################## ADD this into the MAIN Form ##########################################
-    ' Note: make sure the Volume buttons are called VolumeDownButton and VolumeUpButton
-    '@author Daniel Kozij 
     Private Sub VolumeDownButton_Click(sender As Object, e As EventArgs) Handles VolumeDownButton.Click
         volumeStatus.SubtractVolumeLevel()
         MainWatch.Controls.Add(volumeStatus)
@@ -370,6 +345,5 @@ Public Class Main
             TimerValue = 0
         End If
     End Sub
-    '########################################## ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##########################################
 
 End Class
