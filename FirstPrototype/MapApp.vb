@@ -4,7 +4,6 @@
         ParentPhone.MapAppScreen.Visible = False
         ParentPhone.ChildLocationScreen.Enabled = True
         ParentPhone.ChildLocationScreen.Visible = True
-        ParentPhone.ChildLocationScreen.CallChildButton.Text = "Call " & Child1.Text
         ParentPhone.ChildLocationScreen.PictureBox1.Image = My.Resources.ChristinaMap
         ParentPhone.ChildLocationScreen.childName = Child1.Text
     End Sub
@@ -14,7 +13,6 @@
         ParentPhone.MapAppScreen.Visible = False
         ParentPhone.ChildLocationScreen.Enabled = True
         ParentPhone.ChildLocationScreen.Visible = True
-        ParentPhone.ChildLocationScreen.CallChildButton.Text = "Call " & Child2.Text
         ParentPhone.ChildLocationScreen.PictureBox1.Image = My.Resources.RandyMap
         ParentPhone.ChildLocationScreen.childName = Child2.Text
     End Sub
@@ -24,7 +22,6 @@
         ParentPhone.MapAppScreen.Visible = False
         ParentPhone.ChildLocationScreen.Enabled = True
         ParentPhone.ChildLocationScreen.Visible = True
-        ParentPhone.ChildLocationScreen.CallChildButton.Text = "Call " & Child3.Text
         ParentPhone.ChildLocationScreen.PictureBox1.Image = My.Resources.VladimirMap
         ParentPhone.ChildLocationScreen.childName = Child3.Text
     End Sub

@@ -12,6 +12,4 @@
         ParentPhone.MapAppScreen.Enabled = True
         ParentPhone.MapAppScreen.Visible = True
     End Sub
-
-    
 End Class

@@ -22,10 +22,20 @@ Partial Class ChildLocation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CallChildButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'CallChildButton
+        '
+        Me.CallChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CallChildButton.Location = New System.Drawing.Point(46, 264)
+        Me.CallChildButton.Name = "CallChildButton"
+        Me.CallChildButton.Size = New System.Drawing.Size(118, 44)
+        Me.CallChildButton.TabIndex = 1
+        Me.CallChildButton.Text = "Call Child"
+        Me.CallChildButton.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -34,15 +44,6 @@ Partial Class ChildLocation
         Me.PictureBox1.Size = New System.Drawing.Size(210, 323)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'CallChildButton
-        '
-        Me.CallChildButton.Location = New System.Drawing.Point(64, 285)
-        Me.CallChildButton.Name = "CallChildButton"
-        Me.CallChildButton.Size = New System.Drawing.Size(75, 23)
-        Me.CallChildButton.TabIndex = 1
-        Me.CallChildButton.Text = "Call Child"
-        Me.CallChildButton.UseVisualStyleBackColor = True
         '
         'ChildLocation
         '

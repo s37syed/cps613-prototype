@@ -36,7 +36,7 @@ Partial Class ParentPhone
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(83, 341)
+        Me.Button1.Location = New System.Drawing.Point(79, 341)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -49,11 +49,9 @@ Partial Class ParentPhone
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(233, 376)
-        Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MainPhoneControl)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ParentPhone"
         Me.Text = "ParentPhone"
         Me.ResumeLayout(False)

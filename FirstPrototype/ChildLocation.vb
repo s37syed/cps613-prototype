@@ -3,7 +3,8 @@
     Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
         ParentPhone.ChildLocationScreen.Enabled = False
         ParentPhone.ChildLocationScreen.Visible = False
-        ParentPhone.CallChildScreen.CallerName.Text = "Calling" & childName
+        ParentPhone.CallChildScreen.CallerName.Text = "Calling " & childName
+        ParentPhone.CallChildScreen.CallerName.Left = 105 - ParentPhone.CallChildScreen.CallerName.Width \ 2
         ParentPhone.CallChildScreen.Enabled = True
         ParentPhone.CallChildScreen.Visible = True
     End Sub
