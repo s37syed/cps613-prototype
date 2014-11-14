@@ -93,13 +93,6 @@
             Main.send_video.Label1.Text = "To: " & button.Text
             Main.send_video.Visible = True
         End If
-
-
-        'Main.CallContactScreen.Enabled = True
-        'Main.PhoneContactsScreen.Visible = False
-        'Main.CallContactScreen.Visible = True
-        'Main.PhoneContactsScreen.Enabled = False
-        'Debug.Write(selectedContact)
     End Sub
 
     Public Function getSelected() As String

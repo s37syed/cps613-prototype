@@ -1,5 +1,5 @@
 ﻿Public Class CallContact
-    Dim phoneNumbers() As String
+    Friend phoneNumbers() As String
     Dim value As String = ""
 
     Sub New()
@@ -12,7 +12,6 @@
         Main.horizontalCount = 10
         Main.CallingScreen.ContactName.Text = Main.CallContactScreen.CallContactName.Text
         Main.CallingScreen.ContactName.Left = 57 - Main.CallingScreen.ContactName.Width \ 2
-        Main.CallContactScreen.Enabled = False
         Main.CallContactScreen.Visible = False
         Main.CallingScreen.Visible = True
         Main.CallingScreen.CallingTimer.Start()

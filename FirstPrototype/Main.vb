@@ -194,8 +194,6 @@ Public Class Main
         MainWatch.Controls.Add(CallConnectedScreen)
         MainWatch.Controls.Add(RediallingScreen)
         MainWatch.Controls.Add(CallNotConnectedScreen)
-        PhoneContactsScreen.Enabled = False
-        CallContactScreen.Enabled = False
         ParentPhone.Visible = True
 
         'Add controls
@@ -303,11 +301,21 @@ Public Class Main
             MainScreenTracker = 0
             horizontalCount = 0
         End If
+        If (horizontalCount = 11) Then
+            For Each cont In MainWatch.Controls
+                cont.Hide()
+            Next
+            MenuScreen0.Visible = True
+            MenuScreen1.Visible = False
+            MenuScreen2.Visible = False
+            MainScreenTracker = 0
+            horizontalCount = 0
+        End If
         'add calendar with first half of days - dont think we need this 
         'MainWatch.Controls.Add(cal)
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 Then
+        If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 And Not horizontalCount = 11 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
             MenuScreen2.Visible = False
@@ -330,7 +338,7 @@ Public Class Main
     End Sub
     Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
         'Chris' code
-        If PhoneContactsScreen.Enabled = True Then
+        If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollDown()
         End If
         'Shah's code
@@ -360,7 +368,7 @@ Public Class Main
     End Sub
     Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
-        If PhoneContactsScreen.Enabled = True Then
+        If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollUp()
         End If
         'Shah's code

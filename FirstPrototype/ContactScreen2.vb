@@ -45,4 +45,32 @@
         receiveMsg.ContactName.Left = 57 - receiveMsg.ContactName.Width \ 2
         Main.horizontalCount = 4
     End Sub
+
+    Private Sub ContactPhone_Click(sender As Object, e As EventArgs) Handles ContactPhone.Click
+        Main.horizontalCount = 11
+        For Each cont In Main.MainWatch.Controls
+            cont.Hide()
+        Next
+        Main.CallContactScreen.CallContactName.Text = ContactName.Text
+        Select Case Main.CallContactScreen.CallContactName.Text
+            Case "Dad"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(1)
+            Case "Mom"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(0)
+            Case "Andrea"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(4)
+            Case "Shahzina"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(3)
+            Case "Johnny"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(5)
+            Case "Danielle"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(2)
+            Case "Lorde"
+                Main.CallContactScreen.CallContactNumber.Text = Main.CallContactScreen.phoneNumbers(6)
+        End Select
+        Main.CallContactScreen.CallContactName.Text = ContactName.Text
+        Main.CallContactScreen.CallContactName.Left = 57 - Main.CallContactScreen.CallContactName.Width \ 2
+        Main.CallContactScreen.Visible = True
+
+    End Sub
 End Class
