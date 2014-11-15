@@ -1,8 +1,13 @@
-﻿Public Class ChildLocation
+﻿Imports System.Media
+Public Class ChildLocation
     Friend childName As String
+
+    Friend OutGoingRingtone As SoundPlayer = New SoundPlayer(My.Resources.soundOutgoingRington)
+
     Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
         ParentPhone.ChildLocationScreen.Enabled = False
         ParentPhone.ChildLocationScreen.Visible = False
+        Me.OutGoingRingtone.PlayLooping()
         If ParentPhone.ChildLocationScreen.childName = "Christina" Then
             ' call user control here
             For Each cont In Main.MainWatch.Controls
