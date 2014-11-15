@@ -2,7 +2,7 @@
 Public Class ChildLocation
     Friend childName As String
 
-    Friend OutGoingRingtone As SoundPlayer = New SoundPlayer(My.Resources.soundOutgoingRington)
+    Friend OutGoingRingtone As SoundPlayer = New SoundPlayer(My.Resources.old_telephone)
 
     Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
         ParentPhone.ChildLocationScreen.Enabled = False
