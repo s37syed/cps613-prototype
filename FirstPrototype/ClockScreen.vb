@@ -1,5 +1,8 @@
 ﻿Public Class ClockScreen
     Private IsSelected As Boolean = False
+    Public Sub Clock_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Clock1.UtcOffset = TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)
+    End Sub
     Public Sub ClockScreen_Click(sender As Object, e As EventArgs) Handles Clock1.Click
         If IsSelected = False Then
             Clock1.HourHand.Color = Color.Red

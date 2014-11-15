@@ -14,6 +14,7 @@ Public Class Main
     Friend send_message As SendMsg = New SendMsg
     Friend day_or_week As DayWeekSelect = New DayWeekSelect
     Friend receive_call As ReceiveCall = New ReceiveCall
+    Friend msgOptions2 As MessageOptions = New MessageOptions
     Public cal As New Calendar
     Public cal2 As New Calendar2
     Public Shared task As New Tasks
@@ -30,6 +31,7 @@ Public Class Main
     Friend RediallingScreen As Redialling = New Redialling
     Friend CallNotConnectedScreen As CallNotConnected = New CallNotConnected
     Friend receive_msg_notification As ReceiveMsg = New ReceiveMsg
+    Friend msg_sent_popup As MsgSentPopUp = New MsgSentPopUp
     Dim TimerValue As Integer = 0
 
     Private SongPlayer1 As SoundPlayer = New SoundPlayer(My.Resources.yung_lean)
@@ -63,7 +65,7 @@ Public Class Main
         'worker thread to handle display of new msg event
         Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl2()
     End Sub
     Friend Sub WorkerThread2()
@@ -169,6 +171,7 @@ Public Class Main
         MainWatch.Controls.Add(day_or_week)
         MainWatch.Controls.Add(receive_call)
         MainWatch.Controls.Add(receive_msg_notification)
+        MainWatch.Controls.Add(msg_sent_popup)
         songPanel1 = New SongPanel(songs, 0)
         songPanel2 = New SongPanel(songs, 1)
         songPanel3 = New SongPanel(songs, 2)
@@ -190,14 +193,15 @@ Public Class Main
         MainWatch.Controls.Add(songPanel3)
         MainWatch.Controls.Add(songPanel4)
 
-        MainWatch.Controls.Add(SendMsgType2) 'added this 
-        MainWatch.Controls.Add(MsgSendContacts1) ' added this
-        MainWatch.Controls.Add(send_image) ' added this
-        MainWatch.Controls.Add(send_video) ' added this
-        MainWatch.Controls.Add(send_message) ' added this
+        MainWatch.Controls.Add(SendMsgType2)
+        MainWatch.Controls.Add(MsgSendContacts1)
+        MainWatch.Controls.Add(send_image)
+        MainWatch.Controls.Add(send_video)
+        MainWatch.Controls.Add(send_message)
         MainWatch.Controls.Add(CallConnectedScreen)
         MainWatch.Controls.Add(RediallingScreen)
         MainWatch.Controls.Add(CallNotConnectedScreen)
+        MainWatch.Controls.Add(msgOptions2)
         ParentPhone.Visible = True
 
         'Add controls
@@ -398,6 +402,10 @@ Public Class Main
         If (horizontalCount = 9) Then
             appOptions.Hide()
         End If
+        If (horizontalCount = 16) Then
+            msgOptions2.SendToBack()
+            msgOptions2.Hide()
+        End If
     End Sub
     Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
         'Chris' code
@@ -424,6 +432,11 @@ Public Class Main
         End If
         If (horizontalCount = 9) Then
             appOptions.Show()
+        End If
+        If (horizontalCount = 16) Then
+            msgOptions2.Location = New Point(0, 75)
+            msgOptions2.BringToFront()
+            msgOptions2.Show()
         End If
     End Sub
     Friend Sub ResetTracker()
@@ -506,7 +519,7 @@ Public Class Main
             cont.Hide()
         Next
         receive_msg_notification.ContactName.Text = "Andrea"
-        receive_msg_notification.TransparentRichTextBox1.Text = "12/12/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "um y didnt u invite me? lol k im comin over tn"
+        receive_msg_notification.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
         receive_msg_notification.Visible = True
     End Sub
 End Class
