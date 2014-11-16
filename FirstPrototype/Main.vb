@@ -102,6 +102,7 @@ Public Class Main
             Me.Invoke(New MethodInvoker(AddressOf AccessControl2))
         Else
             NewMsgEventPic.Visible = False
+            horizontalCount = 0
         End If
     End Sub
     Private Sub AccessControl3()
