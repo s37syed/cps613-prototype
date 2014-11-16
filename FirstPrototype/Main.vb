@@ -31,7 +31,7 @@ Public Class Main
     Friend CallConnectedScreen As CallConnected = New CallConnected
     Friend RediallingScreen As Redialling = New Redialling
     Friend CallNotConnectedScreen As CallNotConnected = New CallNotConnected
-    Friend receive_msg_notification As ReceiveMsg = New ReceiveMsg
+    Friend receive_msg_notification As ReceiveMsgNotification = New ReceiveMsgNotification
     Friend msg_sent_popup As MsgSentPopUp = New MsgSentPopUp
     Dim TimerValue As Integer = 0
 
@@ -79,9 +79,9 @@ Public Class Main
     End Sub
     Friend Sub WorkerThread()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(2) '2 seconds currently
+        Threading.Thread.Sleep(500) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(2) '2 seconds currently
+        Threading.Thread.Sleep(500) '2 seconds currently
         AccessControl2()
     End Sub
     Friend Sub WorkerThread2()
@@ -109,8 +109,8 @@ Public Class Main
             Me.Invoke(New MethodInvoker(AddressOf AccessControl))
         Else
             NewMsgEventPic.Visible = True
-            horizontalCount = 18
         End If
+        horizontalCount = 18
     End Sub
     Private Sub AccessControl2()
         'remove new msg prompt
@@ -270,7 +270,6 @@ Public Class Main
             For Each cont In MainWatch.Controls
                 cont.Hide()
             Next
-            'Main.SendMsg.MsgSentNotification.Hide()
             MenuScreen0.Visible = True
             MenuScreen1.Visible = False
             MenuScreen2.Visible = False
@@ -395,6 +394,7 @@ Public Class Main
         End If
     End Sub
     Private Sub PowerButton_Click(sender As Object, e As EventArgs)
+        Strt.Abort()
         Me.Close()
     End Sub
 
@@ -541,13 +541,15 @@ Public Class Main
     End Sub
 
     Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
-        horizontalCount = 18
-        receive_call.swipeLeft()
         For Each cont In MainWatch.Controls
             cont.Hide()
         Next
+        Debug.WriteLine(horizontalCount)
+        'receive_call.swipeLeft()
         receive_msg_notification.ContactName.Text = "From: Andrea"
         receive_msg_notification.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
         receive_msg_notification.Visible = True
+        horizontalCount = 18
+        Debug.WriteLine(horizontalCount)
     End Sub
 End Class

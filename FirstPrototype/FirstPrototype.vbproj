@@ -125,6 +125,12 @@
     <Compile Include="ReceiveCall.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ReceiveMsgNotification.Designer.vb">
+      <DependentUpon>ReceiveMsgNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMsgNotification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Redialling.Designer.vb">
       <DependentUpon>Redialling.vb</DependentUpon>
     </Compile>
@@ -341,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReceiveCall.resx">
       <DependentUpon>ReceiveCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveMsgNotification.resx">
+      <DependentUpon>ReceiveMsgNotification.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Redialling.resx">
       <DependentUpon>Redialling.vb</DependentUpon>
