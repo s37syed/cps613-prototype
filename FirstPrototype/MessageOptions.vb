@@ -17,7 +17,7 @@
         Next
         Debug.WriteLine("delete message")
         Main.receive_msg_notification.TransparentRichTextBox1.Hide()
-        'Main.receive_msg_notification.TransparentRichTextBox1.Clear()
-        'Main.receive_msg_notification.TransparentRichTextBox1.Refresh()
+        Main.receive_msg_notification.TransparentRichTextBox1.Clear()
+        Main.receive_msg_notification.TransparentRichTextBox1.Refresh()
     End Sub
 End Class
