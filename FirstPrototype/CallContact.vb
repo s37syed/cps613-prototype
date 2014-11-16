@@ -3,7 +3,7 @@ Public Class CallContact
     Friend phoneNumbers() As String
     Dim value As String = ""
 
-    Friend RingToneSound As SoundPlayer = New SoundPlayer(My.Resources.old_telephone)
+    Friend RingToneSound As SoundPlayer = New SoundPlayer(My.Resources.soundOutgoingRington)
 
     Sub New()
         ' This call is required by the designer.

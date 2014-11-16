@@ -5,6 +5,10 @@
         ParentPhone.CallChildScreen.Visible = False
         ParentPhone.phoneMenuScreen.Enabled = True
         ParentPhone.phoneMenuScreen.Visible = True
-
+        ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()
+        Main.CallConnectedScreen.Visible = False
+        Main.horizontalCount = 0
+        Main.MenuScreen0.Visible = True
+        Main.MenuScreen0.BringToFront()
     End Sub
 End Class

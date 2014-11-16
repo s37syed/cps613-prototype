@@ -5,5 +5,7 @@
         Main.horizontalCount = 15
         Main.CallConnectedScreen.ContactNameLabel.Text = "Dad"
         Main.CallConnectedScreen.Visible = True
+        ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()
+        ParentPhone.CallChildScreen.CallerName.Text = "Connected"
     End Sub
 End Class
