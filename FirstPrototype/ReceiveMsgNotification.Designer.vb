@@ -29,24 +29,24 @@ Partial Class ReceiveMsgNotification
         'TransparentRichTextBox1
         '
         Me.TransparentRichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TransparentRichTextBox1.Location = New System.Drawing.Point(16, 21)
+        Me.TransparentRichTextBox1.Location = New System.Drawing.Point(16, 22)
         Me.TransparentRichTextBox1.Name = "TransparentRichTextBox1"
         Me.TransparentRichTextBox1.ReadOnly = True
         Me.TransparentRichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
         Me.TransparentRichTextBox1.ShortcutsEnabled = False
         Me.TransparentRichTextBox1.Size = New System.Drawing.Size(97, 94)
         Me.TransparentRichTextBox1.TabIndex = 4
-        Me.TransparentRichTextBox1.Text = "This is a message."
+        Me.TransparentRichTextBox1.Text = "Text"
         '
         'ContactName
         '
         Me.ContactName.AutoSize = True
         Me.ContactName.BackColor = System.Drawing.Color.Transparent
-        Me.ContactName.Location = New System.Drawing.Point(39, 3)
+        Me.ContactName.Location = New System.Drawing.Point(21, 3)
         Me.ContactName.Name = "ContactName"
-        Me.ContactName.Size = New System.Drawing.Size(35, 13)
+        Me.ContactName.Size = New System.Drawing.Size(70, 13)
         Me.ContactName.TabIndex = 3
-        Me.ContactName.Text = "Name"
+        Me.ContactName.Text = "From: Andrea"
         '
         'ReceiveMsgNotification
         '

@@ -13,6 +13,9 @@ Public Class Main
     Friend send_image As SendImg = New SendImg
     Friend send_video As SendVid = New SendVid
     Friend send_message As SendMsg = New SendMsg
+    Friend send_image2 As SendImg = New SendImg
+    Friend send_video2 As SendVid = New SendVid
+    Friend send_message2 As SendMsg = New SendMsg
     Friend day_or_week As DayWeekSelect = New DayWeekSelect
     Friend receive_call As ReceiveCall = New ReceiveCall
     Friend msgOptions2 As MessageOptions = New MessageOptions
@@ -216,6 +219,9 @@ Public Class Main
         MainWatch.Controls.Add(send_image)
         MainWatch.Controls.Add(send_video)
         MainWatch.Controls.Add(send_message)
+        MainWatch.Controls.Add(send_image2)
+        MainWatch.Controls.Add(send_video2)
+        MainWatch.Controls.Add(send_message2)
         MainWatch.Controls.Add(CallConnectedScreen)
         MainWatch.Controls.Add(RediallingScreen)
         MainWatch.Controls.Add(CallNotConnectedScreen)
@@ -545,9 +551,6 @@ Public Class Main
             cont.Hide()
         Next
         Debug.WriteLine(horizontalCount)
-        'receive_call.swipeLeft()
-        receive_msg_notification.ContactName.Text = "From: Andrea"
-        receive_msg_notification.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
         receive_msg_notification.Visible = True
         horizontalCount = 18
         Debug.WriteLine(horizontalCount)
