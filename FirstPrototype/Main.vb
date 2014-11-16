@@ -82,9 +82,9 @@ Public Class Main
     End Sub
     Friend Sub WorkerThread()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(500) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl()
-        Threading.Thread.Sleep(500) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl2()
     End Sub
     Friend Sub WorkerThread2()
