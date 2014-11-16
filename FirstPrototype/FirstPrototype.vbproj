@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AnalogClockControl">
-      <HintPath>..\..\assets\AnalogClockControl\AnalogClockControl\bin\Release\AnalogClockControl.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\AnalogClockControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -61,6 +61,9 @@
     <Reference Include="System.Data.DataSetExtensions" />
   </ItemGroup>
   <ItemGroup>
+    <Import Include="FirstPrototype" />
+    <Import Include="FirstPrototype.My" />
+    <Import Include="FirstPrototype.My.Resources" />
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
@@ -74,12 +77,139 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentOptions.Designer.vb">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallChild.Designer.vb">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallChild.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallConnected.Designer.vb">
+      <DependentUpon>CallConnected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallConnected.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallContact.Designer.vb">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallContact.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calling.Designer.vb">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CallNotConnected.Designer.vb">
+      <DependentUpon>CallNotConnected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CallNotConnected.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MsgSentPopUp.Designer.vb">
+      <DependentUpon>MsgSentPopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MsgSentPopUp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiveCall.Designer.vb">
+      <DependentUpon>ReceiveCall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveCall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Redialling.Designer.vb">
+      <DependentUpon>Redialling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Redialling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildLocation.Designer.vb">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildLocation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClockScreen.Designer.vb">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClockScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactScreen2.Designer.vb">
+      <DependentUpon>ContactScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar2.Designer.vb">
+      <DependentUpon>Calendar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DayWeekSelect.Designer.vb">
+      <DependentUpon>DayWeekSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DayWeekSelect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapApp.Designer.vb">
+      <DependentUpon>MapApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapApp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen1.Designer.vb">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen2.Designer.vb">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageOptions.Designer.vb">
+      <DependentUpon>MessageOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MsgSendContacts.Designer.vb">
+      <DependentUpon>MsgSendContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MsgSendContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music.vb" />
+    <Compile Include="MusicPanelControl.Designer.vb">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MusicPanelControl.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -96,15 +226,217 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ContactScreen.Designer.vb">
+      <DependentUpon>ContactScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContactScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParentPhone.Designer.vb">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneMenu.Designer.vb">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiveMsg.Designer.vb">
+      <DependentUpon>ReceiveMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMsg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectMsgType.Designer.vb">
+      <DependentUpon>SelectMsgType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMsgType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectMsgType2.Designer.vb">
+      <DependentUpon>SelectMsgType2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMsgType2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendImg.Designer.vb">
+      <DependentUpon>SendImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendImg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendMsg.Designer.vb">
+      <DependentUpon>SendMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendMsg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendVid.Designer.vb">
+      <DependentUpon>SendVid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendVid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tasks2.Designer.vb">
+      <DependentUpon>Tasks2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransparentBox.Designer.vb">
+      <DependentUpon>TransparentBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PhoneContacts.Designer.vb">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tasks.Designer.vb">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SongPanel.Designer.vb">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SongPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VolumeStatus.Designer.vb">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VolumeStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AppointmentOptions.resx">
+      <DependentUpon>AppointmentOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallChild.resx">
+      <DependentUpon>CallChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallConnected.resx">
+      <DependentUpon>CallConnected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallContact.resx">
+      <DependentUpon>CallContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calling.resx">
+      <DependentUpon>Calling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CallNotConnected.resx">
+      <DependentUpon>CallNotConnected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgSentPopUp.resx">
+      <DependentUpon>MsgSentPopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveCall.resx">
+      <DependentUpon>ReceiveCall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Redialling.resx">
+      <DependentUpon>Redialling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildLocation.resx">
+      <DependentUpon>ChildLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockScreen.resx">
+      <DependentUpon>ClockScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactScreen2.resx">
+      <DependentUpon>ContactScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar2.resx">
+      <DependentUpon>Calendar2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayWeekSelect.resx">
+      <DependentUpon>DayWeekSelect.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MapApp.resx">
+      <DependentUpon>MapApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen1.resx">
+      <DependentUpon>MenuScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen2.resx">
+      <DependentUpon>MenuScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageOptions.resx">
+      <DependentUpon>MessageOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgSendContacts.resx">
+      <DependentUpon>MsgSendContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicPanelControl.resx">
+      <DependentUpon>MusicPanelControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactScreen.resx">
+      <DependentUpon>ContactScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPhone.resx">
+      <DependentUpon>ParentPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneMenu.resx">
+      <DependentUpon>PhoneMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveMsg.resx">
+      <DependentUpon>ReceiveMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMsgType.resx">
+      <DependentUpon>SelectMsgType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMsgType2.resx">
+      <DependentUpon>SelectMsgType2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendImg.resx">
+      <DependentUpon>SendImg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMsg.resx">
+      <DependentUpon>SendMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendVid.resx">
+      <DependentUpon>SendVid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks2.resx">
+      <DependentUpon>Tasks2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentBox.resx">
+      <DependentUpon>TransparentBox.vb</DependentUpon>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneContacts.resx">
+      <DependentUpon>PhoneContacts.vb</DependentUpon>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongPanel.resx">
+      <DependentUpon>SongPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolumeStatus.resx">
+      <DependentUpon>VolumeStatus.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -120,7 +452,193 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\placeholder_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_delete_msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_new_msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoolander.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rickroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageTracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1Tracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page1TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page2TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page3TrackerClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VladimirMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChristinaMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RandyMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhoneTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_even_smaller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad_smallest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMsgPrompt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death_metal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drake_song.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\push_lorde.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yung_lean.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swipe_up.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\door_resized1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_msg_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playlist_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_18819.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminder_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_loud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_silent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old_telephone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundOutgoingRington.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
