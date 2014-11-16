@@ -17,8 +17,5 @@
             Clock1.CenterPoint.Color = Color.Black
             IsSelected = False
         End If
-
-
-
     End Sub
 End Class

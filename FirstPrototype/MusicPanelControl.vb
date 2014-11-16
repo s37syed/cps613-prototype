@@ -4,6 +4,7 @@
     Private Strt As System.Threading.Thread
     Dim song As Music()
     Dim max_songs As Integer = 3
+    Private IsSelected As Boolean = False
 
     Sub New(ByVal music As Music(), ByVal playing As Integer)
         ' This call is required by the designer.
@@ -32,7 +33,7 @@
         Me.SongName.Text = song(whichPlaying).getSongName
         Strt = New System.Threading.Thread(AddressOf WorkerThread)
         Strt.Start()
-        notify.Text = "Shuffling Playlist"
+        notify.Text = "Shuffling Songs"
         notify.Left = 57 - notify.Width \ 2
         notify.Visible = True
     End Sub
@@ -85,10 +86,21 @@
     End Sub
 
     Private Sub RepeatButton_Click(sender As Object, e As EventArgs) Handles RepeatButton.Click
-        Strt = New System.Threading.Thread(AddressOf WorkerThread)
-        Strt.Start()
-        notify.Text = "Repeating Playlist"
-        notify.Left = 57 - notify.Width \ 2
         notify.Visible = True
+        If IsSelected = False Then
+            Strt = New System.Threading.Thread(AddressOf WorkerThread)
+            Strt.Start()
+            notify.Text = "Repeat is on"
+            notify.Left = 57 - notify.Width \ 2
+            Me.song(whichPlaying).getSongPlayer.PlayLooping()
+            IsSelected = True
+        ElseIf IsSelected = True Then
+            Strt = New System.Threading.Thread(AddressOf WorkerThread)
+            Strt.Start()
+            notify.Text = "Repeat is off"
+            notify.Left = 57 - notify.Width \ 2
+            Me.song(whichPlaying).getSongPlayer.Play()
+            IsSelected = False
+        End If
     End Sub
 End Class

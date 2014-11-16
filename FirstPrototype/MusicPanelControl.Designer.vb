@@ -119,6 +119,7 @@ Partial Class MusicPanelControl
         '
         Me.PictureBox1.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.artist_icon
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(32, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
@@ -128,9 +129,10 @@ Partial Class MusicPanelControl
         'notify
         '
         Me.notify.AutoSize = True
+        Me.notify.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.notify.Location = New System.Drawing.Point(33, 19)
         Me.notify.Name = "notify"
-        Me.notify.Size = New System.Drawing.Size(39, 13)
+        Me.notify.Size = New System.Drawing.Size(41, 15)
         Me.notify.TabIndex = 8
         Me.notify.Text = "Label1"
         Me.notify.Visible = False

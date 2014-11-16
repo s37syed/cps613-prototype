@@ -1,4 +1,5 @@
 ﻿Imports System.Media
+Imports System.Runtime.InteropServices
 Public Class Main
     Public Shared MainScreenTracker = 0
     Friend MenuScreen0 As ClockScreen = New ClockScreen
@@ -55,11 +56,26 @@ Public Class Main
 
     Friend musicControls As MusicPanelControl
 
+    Friend Const VolUp As Integer = &HA0000
+    Friend Const VolDn As Integer = &H90000
+    Friend Const MsgNo As Integer = &H319
+
+    Declare Function SendMessageW Lib "user32" (ByVal hWnd As IntPtr, _
+                                                                  ByVal Msg As Integer, _
+                                                                  ByVal wParam As IntPtr, _
+                                                                  ByVal lParam As IntPtr) As IntPtr
+
     Private Sub MainFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         BaseLoad()
         'thread for delayed msg prompt
         Strt = New System.Threading.Thread(AddressOf WorkerThread)
         Strt.Start()
+        For counter = 0 To 41
+            SendMessageW(Me.Handle, Main.MsgNo, Me.Handle, New IntPtr(Main.VolDn))
+        Next
+        For counter = 0 To 21
+            SendMessageW(Me.Handle, Main.MsgNo, Me.Handle, New IntPtr(Main.VolUp))
+        Next
     End Sub
     Friend Sub WorkerThread()
         'worker thread to handle display of new msg event
