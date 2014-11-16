@@ -246,7 +246,12 @@ Public Class Main
             MainScreenTracker = 1
         End If
         If horizontalCount = 0 Then
-
+            If NewMsgEventPic.Visible = True Then
+                NewMsgEventPic.Hide()
+                MenuScreen0.Visible = True
+                MenuScreen1.Visible = False
+                MenuScreen2.Visible = False
+            End If
         ElseIf horizontalCount = 1 Or horizontalCount = 2 Then
             contactScreen1.Hide()
             MenuScreen0.Visible = True
