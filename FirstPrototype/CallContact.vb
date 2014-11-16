@@ -19,7 +19,6 @@ Public Class CallContact
         Main.CallingScreen.Visible = True
         Main.CallingScreen.CallingTimer.Start()
         Dim value As Integer = CInt(Int((5 * Rnd()) + 1))
-        Debug.WriteLine("value is " & value)
         Main.CallingScreen.rndValue = value
         RingToneSound.PlayLooping()
     End Sub

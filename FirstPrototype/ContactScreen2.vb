@@ -8,7 +8,6 @@
     Public Shared nameContact As String
 
     Private Sub ContactMsg_Click(sender As Object, e As EventArgs) Handles ContactMsg.Click
-        Debug.WriteLine("Test")
         'continue from here
         Main.MainWatch.Controls.Add(receiveMsg)
         For Each cont In Main.MainWatch.Controls
