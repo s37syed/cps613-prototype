@@ -205,7 +205,7 @@ Public Class Main
         MainWatch.Controls.Add(CallNotConnectedScreen)
         MainWatch.Controls.Add(msgOptions2)
         ParentPhone.Visible = True
-
+        Me.Timer1.Start()
         'Add controls
         MainWatch.Controls.Add(contactScreen1)
     End Sub
@@ -406,7 +406,6 @@ Public Class Main
                 cont.Hide()
             Next
             cal.Show()
-            Debug.WriteLine("i was called 1")
         End If
         If (horizontalCount = 7) Then
             Me.MsgSendContacts1.scrollDown()
@@ -414,7 +413,7 @@ Public Class Main
         If (horizontalCount = 9) Then
             appOptions.Hide()
         End If
-        If (horizontalCount = 16) Then
+        If (horizontalCount = 18) Then
             msgOptions2.SendToBack()
             msgOptions2.Hide()
         End If
@@ -445,7 +444,7 @@ Public Class Main
         If (horizontalCount = 9) Then
             appOptions.Show()
         End If
-        If (horizontalCount = 16) Then
+        If (horizontalCount = 18) Then
             msgOptions2.Location = New Point(0, 75)
             msgOptions2.BringToFront()
             msgOptions2.Show()
@@ -483,7 +482,6 @@ Public Class Main
         MainWatch.Controls.Add(volumeStatus)
         volumeStatus.BringToFront()
         Me.Timer1.Start()
-
     End Sub
 
     '@author Daniel Kozij 
@@ -522,16 +520,17 @@ Public Class Main
     End Sub
 
     Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerButton.Click
+        Strt.Abort()
         Me.Close()
     End Sub
 
     Private Sub NewMsgEventPic_Click(sender As Object, e As EventArgs) Handles NewMsgEventPic.Click
-        horizontalCount = 16
+        horizontalCount = 18
         receive_call.swipeLeft()
         For Each cont In MainWatch.Controls
             cont.Hide()
         Next
-        receive_msg_notification.ContactName.Text = "Andrea"
+        receive_msg_notification.ContactName.Text = "From: Andrea"
         receive_msg_notification.TransparentRichTextBox1.Text = "12/19/2014" & vbCrLf & "@4:00 PM" & vbCrLf & "I wanna hang out with you gals tonight!"
         receive_msg_notification.Visible = True
     End Sub

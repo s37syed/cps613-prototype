@@ -28,8 +28,10 @@ Public Class VolumeStatus
 
         If VolumeLevel.Equals(0) Then
             VolumeStatusLabel.Text = "Silent"
+            VolumeStatusLabel.Left = 44 - VolumeStatusLabel.Width / 2
         Else
             VolumeStatusLabel.Text = "Vol: " & VolumeLevel
+            VolumeStatusLabel.Left = 44 - VolumeStatusLabel.Width / 2
         End If
 
 
