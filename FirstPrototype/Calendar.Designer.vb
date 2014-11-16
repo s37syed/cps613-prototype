@@ -47,7 +47,7 @@ Partial Class Calendar
         Me.Week1.BackColor = System.Drawing.Color.Transparent
         Me.Week1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Week1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Week1.Location = New System.Drawing.Point(11, 34)
+        Me.Week1.Location = New System.Drawing.Point(14, 34)
         Me.Week1.Name = "Week1"
         Me.Week1.Size = New System.Drawing.Size(102, 13)
         Me.Week1.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class Calendar
         Me.Week3.BackColor = System.Drawing.Color.Transparent
         Me.Week3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Week3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Week3.Location = New System.Drawing.Point(11, 61)
+        Me.Week3.Location = New System.Drawing.Point(14, 61)
         Me.Week3.Name = "Week3"
         Me.Week3.Size = New System.Drawing.Size(102, 13)
         Me.Week3.TabIndex = 8
@@ -71,7 +71,7 @@ Partial Class Calendar
         Me.Week2.BackColor = System.Drawing.Color.Transparent
         Me.Week2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Week2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Week2.Location = New System.Drawing.Point(11, 47)
+        Me.Week2.Location = New System.Drawing.Point(14, 47)
         Me.Week2.Name = "Week2"
         Me.Week2.Size = New System.Drawing.Size(102, 13)
         Me.Week2.TabIndex = 5
@@ -83,7 +83,7 @@ Partial Class Calendar
         Me.Week4.BackColor = System.Drawing.Color.Transparent
         Me.Week4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Week4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Week4.Location = New System.Drawing.Point(11, 75)
+        Me.Week4.Location = New System.Drawing.Point(14, 75)
         Me.Week4.Name = "Week4"
         Me.Week4.Size = New System.Drawing.Size(102, 13)
         Me.Week4.TabIndex = 12
@@ -95,7 +95,7 @@ Partial Class Calendar
         Me.Week5.BackColor = System.Drawing.Color.Transparent
         Me.Week5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Week5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Week5.Location = New System.Drawing.Point(11, 88)
+        Me.Week5.Location = New System.Drawing.Point(14, 88)
         Me.Week5.Name = "Week5"
         Me.Week5.Size = New System.Drawing.Size(102, 13)
         Me.Week5.TabIndex = 13

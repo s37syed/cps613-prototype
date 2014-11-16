@@ -57,7 +57,7 @@ Partial Class Calendar2
         '
         Me.Day2.AutoSize = True
         Me.Day2.BackColor = System.Drawing.Color.Transparent
-        Me.Day2.Location = New System.Drawing.Point(12, 38)
+        Me.Day2.Location = New System.Drawing.Point(12, 37)
         Me.Day2.Name = "Day2"
         Me.Day2.Size = New System.Drawing.Size(39, 13)
         Me.Day2.TabIndex = 22
@@ -67,7 +67,7 @@ Partial Class Calendar2
         '
         Me.Day3.AutoSize = True
         Me.Day3.BackColor = System.Drawing.Color.Transparent
-        Me.Day3.Location = New System.Drawing.Point(12, 50)
+        Me.Day3.Location = New System.Drawing.Point(12, 49)
         Me.Day3.Name = "Day3"
         Me.Day3.Size = New System.Drawing.Size(39, 13)
         Me.Day3.TabIndex = 23
@@ -87,7 +87,7 @@ Partial Class Calendar2
         '
         Me.Day5.AutoSize = True
         Me.Day5.BackColor = System.Drawing.Color.Transparent
-        Me.Day5.Location = New System.Drawing.Point(12, 74)
+        Me.Day5.Location = New System.Drawing.Point(12, 75)
         Me.Day5.Name = "Day5"
         Me.Day5.Size = New System.Drawing.Size(39, 13)
         Me.Day5.TabIndex = 25
@@ -97,7 +97,7 @@ Partial Class Calendar2
         '
         Me.Day6.AutoSize = True
         Me.Day6.BackColor = System.Drawing.Color.Transparent
-        Me.Day6.Location = New System.Drawing.Point(12, 86)
+        Me.Day6.Location = New System.Drawing.Point(12, 87)
         Me.Day6.Name = "Day6"
         Me.Day6.Size = New System.Drawing.Size(39, 13)
         Me.Day6.TabIndex = 26
@@ -107,7 +107,7 @@ Partial Class Calendar2
         '
         Me.Day7.AutoSize = True
         Me.Day7.BackColor = System.Drawing.Color.Transparent
-        Me.Day7.Location = New System.Drawing.Point(12, 98)
+        Me.Day7.Location = New System.Drawing.Point(12, 100)
         Me.Day7.Name = "Day7"
         Me.Day7.Size = New System.Drawing.Size(39, 13)
         Me.Day7.TabIndex = 27
