@@ -78,7 +78,6 @@
         Main.PhoneContactsScreen.Visible = False
         Main.CallContactScreen.Visible = True
         Main.PhoneContactsScreen.Enabled = False
-        Debug.Write(selectedContact)
     End Sub
 
     Public Function getSelected() As String

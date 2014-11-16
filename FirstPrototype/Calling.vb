@@ -11,13 +11,7 @@ Public Class Calling
         CallingTimer.Stop()
         timerValue = 0
         Main.CallContactScreen.RingToneSound.Stop()
-        'Main.SwipeLeftButton.
     End Sub
-
-    'Friend Sub timerOutput()
-    '    Debug.Write(CallingTimer.)
-    'End Sub
-
     Private Sub CallingTimer_Tick(sender As Object, e As EventArgs) Handles CallingTimer.Tick
         timerValue += 1
         If timerValue = 5 Then

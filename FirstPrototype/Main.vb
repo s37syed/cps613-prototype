@@ -230,7 +230,6 @@ Public Class Main
         MainWatch.Controls.Add(contactScreen1)
     End Sub
     Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
-        Debug.WriteLine("Value of horizontalCount was at: " & horizontalCount)
         'Chris' code
         If MainScreenTracker = 0 Then
 
@@ -388,7 +387,6 @@ Public Class Main
         End If
     End Sub
     Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
-        Debug.WriteLine("Value of horizontalCount was at: " & horizontalCount)
         If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 And Not horizontalCount = 11 And Not horizontalCount = 13 And Not horizontalCount = 15 And Not horizontalCount = 16 And Not horizontalCount = 18 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
@@ -412,7 +410,6 @@ Public Class Main
 
     End Sub
     Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
-        Debug.WriteLine("Value of horizontalCount was at: " & horizontalCount)
         'Chris' code
         If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollDown()
@@ -446,7 +443,6 @@ Public Class Main
         End If
     End Sub
     Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
-        Debug.WriteLine("Value of horizontalCount was at: " & horizontalCount)
         'Chris' code
         If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollUp()
@@ -556,9 +552,7 @@ Public Class Main
         For Each cont In MainWatch.Controls
             cont.Hide()
         Next
-        Debug.WriteLine(horizontalCount)
         receive_msg_notification.Visible = True
         horizontalCount = 18
-        Debug.WriteLine(horizontalCount)
     End Sub
 End Class
