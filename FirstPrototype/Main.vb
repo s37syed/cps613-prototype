@@ -75,16 +75,16 @@ Public Class Main
     End Sub
     Friend Sub WorkerThread3()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(300) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl5()
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl6()
     End Sub
     Friend Sub WorkerThread4()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(300) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl7()
-        Threading.Thread.Sleep(2000) '2 seconds currently
+        Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl8()
     End Sub
     Private Sub AccessControl()
@@ -333,6 +333,7 @@ Public Class Main
             For Each cont In MainWatch.Controls
                 cont.Hide()
             Next
+            receive_call.swipeLeft()
             MenuScreen0.Visible = True
             MenuScreen1.Visible = False
             MenuScreen2.Visible = False

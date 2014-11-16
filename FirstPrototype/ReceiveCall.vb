@@ -8,4 +8,10 @@
         ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()
         ParentPhone.CallChildScreen.CallerName.Text = "Connected"
     End Sub
+    Public Sub swipeLeft()
+        ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()
+        ParentPhone.ChildLocationScreen.Visible = False
+        ParentPhone.phoneMenuScreen.Visible = True
+        ParentPhone.phoneMenuScreen.Enabled = True
+    End Sub
 End Class

@@ -49,6 +49,7 @@ Partial Class Calling
         '
         'HangUp
         '
+        Me.HangUp.Cursor = System.Windows.Forms.Cursors.Hand
         Me.HangUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.HangUp.Location = New System.Drawing.Point(-1, 89)
         Me.HangUp.Name = "HangUp"

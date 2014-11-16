@@ -39,6 +39,7 @@ Partial Class CallNotConnected
         '
         'LeaveMessageButton
         '
+        Me.LeaveMessageButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LeaveMessageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LeaveMessageButton.Location = New System.Drawing.Point(-1, 61)
         Me.LeaveMessageButton.Name = "LeaveMessageButton"
@@ -49,6 +50,7 @@ Partial Class CallNotConnected
         '
         'RedialButton
         '
+        Me.RedialButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.RedialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RedialButton.Location = New System.Drawing.Point(-1, 89)
         Me.RedialButton.Name = "RedialButton"

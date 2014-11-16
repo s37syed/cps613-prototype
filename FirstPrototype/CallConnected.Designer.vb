@@ -47,6 +47,7 @@ Partial Class CallConnected
         '
         'ConnectedHangUpButton
         '
+        Me.ConnectedHangUpButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ConnectedHangUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ConnectedHangUpButton.Location = New System.Drawing.Point(-1, 89)
         Me.ConnectedHangUpButton.Name = "ConnectedHangUpButton"

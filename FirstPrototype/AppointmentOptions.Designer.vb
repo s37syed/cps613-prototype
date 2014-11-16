@@ -33,6 +33,7 @@ Partial Class AppointmentOptions
         Me.DeleteMessage.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.icon_delete_msg
         Me.DeleteMessage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.DeleteMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DeleteMessage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DeleteMessage.Location = New System.Drawing.Point(75, 0)
         Me.DeleteMessage.Name = "DeleteMessage"
         Me.DeleteMessage.Size = New System.Drawing.Size(33, 33)
@@ -44,6 +45,7 @@ Partial Class AppointmentOptions
         Me.CreateReminder.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.create_reminder
         Me.CreateReminder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CreateReminder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CreateReminder.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CreateReminder.Location = New System.Drawing.Point(5, 0)
         Me.CreateReminder.Name = "CreateReminder"
         Me.CreateReminder.Size = New System.Drawing.Size(33, 33)

@@ -29,6 +29,7 @@ Partial Class ChildLocation
         '
         'CallChildButton
         '
+        Me.CallChildButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CallChildButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallChildButton.Location = New System.Drawing.Point(46, 264)
         Me.CallChildButton.Name = "CallChildButton"

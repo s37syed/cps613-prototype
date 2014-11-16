@@ -3,6 +3,7 @@
     Private Sub SendMsg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateLabel.Text = Format(Date.Now(), "dd" + "/" + " MM" + "/" + "yy")
         NameLabel.Text = "To: " & Main.contactScreen1.sendName
+        NameLabel.Left = 57 - NameLabel.Width \ 2
     End Sub
 
     Private Sub Contact1_Click(sender As Object, e As EventArgs) Handles Contact1.Click, Contact2.Click, Contact3.Click
@@ -26,7 +27,7 @@
     Friend Sub checkIfEmpty()
         If Main.contactScreen1.sendName = vbNullString Then
             NameLabel.Text = "To: Andrea"
+            NameLabel.Left = 57 - NameLabel.Width \ 2
         End If
     End Sub
-
 End Class

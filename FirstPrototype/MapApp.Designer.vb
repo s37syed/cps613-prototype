@@ -39,6 +39,7 @@ Partial Class MapApp
         '
         'Child1
         '
+        Me.Child1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Child1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Child1.Location = New System.Drawing.Point(68, 98)
         Me.Child1.Name = "Child1"
@@ -49,6 +50,7 @@ Partial Class MapApp
         '
         'Child2
         '
+        Me.Child2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Child2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Child2.Location = New System.Drawing.Point(68, 127)
         Me.Child2.Name = "Child2"
@@ -59,6 +61,7 @@ Partial Class MapApp
         '
         'Child3
         '
+        Me.Child3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Child3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Child3.Location = New System.Drawing.Point(68, 156)
         Me.Child3.Name = "Child3"

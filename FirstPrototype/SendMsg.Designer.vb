@@ -43,21 +43,22 @@ Partial Class SendMsg
         '
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.Color.Transparent
-        Me.DateLabel.Location = New System.Drawing.Point(17, 20)
+        Me.DateLabel.Location = New System.Drawing.Point(30, 14)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(67, 13)
+        Me.DateLabel.Size = New System.Drawing.Size(53, 13)
         Me.DateLabel.TabIndex = 1
-        Me.DateLabel.Text = "Current Date"
+        Me.DateLabel.Text = "99/99/99"
         '
         'Contact3
         '
-        Me.Contact3.BackColor = System.Drawing.Color.Transparent
-        Me.Contact3.FlatAppearance.BorderSize = 0
+        Me.Contact3.BackColor = System.Drawing.SystemColors.Control
+        Me.Contact3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Contact3.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Contact3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.Contact3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Contact3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro
+        Me.Contact3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark
         Me.Contact3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Contact3.Location = New System.Drawing.Point(-27, 93)
+        Me.Contact3.Location = New System.Drawing.Point(-1, 85)
         Me.Contact3.Name = "Contact3"
         Me.Contact3.Size = New System.Drawing.Size(113, 23)
         Me.Contact3.TabIndex = 6
@@ -66,13 +67,14 @@ Partial Class SendMsg
         '
         'Contact2
         '
-        Me.Contact2.BackColor = System.Drawing.Color.Transparent
-        Me.Contact2.FlatAppearance.BorderSize = 0
+        Me.Contact2.BackColor = System.Drawing.SystemColors.Control
+        Me.Contact2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Contact2.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Contact2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.Contact2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Contact2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro
+        Me.Contact2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark
         Me.Contact2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Contact2.Location = New System.Drawing.Point(-16, 69)
+        Me.Contact2.Location = New System.Drawing.Point(-1, 58)
         Me.Contact2.Name = "Contact2"
         Me.Contact2.Size = New System.Drawing.Size(113, 23)
         Me.Contact2.TabIndex = 5
@@ -81,13 +83,14 @@ Partial Class SendMsg
         '
         'Contact1
         '
-        Me.Contact1.BackColor = System.Drawing.Color.Transparent
-        Me.Contact1.FlatAppearance.BorderSize = 0
+        Me.Contact1.BackColor = System.Drawing.SystemColors.Control
+        Me.Contact1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Contact1.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Contact1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.Contact1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Contact1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro
+        Me.Contact1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark
         Me.Contact1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Contact1.Location = New System.Drawing.Point(4, 44)
+        Me.Contact1.Location = New System.Drawing.Point(-1, 31)
         Me.Contact1.Name = "Contact1"
         Me.Contact1.Size = New System.Drawing.Size(113, 23)
         Me.Contact1.TabIndex = 4

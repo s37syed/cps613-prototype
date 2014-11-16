@@ -28,6 +28,7 @@ Partial Class DayWeekSelect
         '
         'DayButton
         '
+        Me.DayButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DayButton.Location = New System.Drawing.Point(-1, 20)
         Me.DayButton.Name = "DayButton"
@@ -38,6 +39,7 @@ Partial Class DayWeekSelect
         '
         'WeekButton
         '
+        Me.WeekButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.WeekButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.WeekButton.Location = New System.Drawing.Point(-1, 58)
         Me.WeekButton.Name = "WeekButton"

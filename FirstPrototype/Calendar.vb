@@ -2,6 +2,11 @@
     'user control for days of the first half of the month 
     Friend SelectableDay As Integer
     Private Sub Week1_Click(sender As Object, e As EventArgs) Handles Week1.Click, Week2.Click, Week3.Click, Week4.Click, Week5.Click
+        If Main.cal.SelectableDay = 3 Then
+            Main.cal2.Day5.Cursor = Cursors.Hand
+        Else
+            Main.cal2.Day5.Cursor = Cursors.Default
+        End If
         Dim selectedWeek As Label = sender
         If selectedWeek.Text = Week1.Text Then
             SelectableDay = 1

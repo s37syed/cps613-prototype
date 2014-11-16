@@ -30,6 +30,7 @@ Partial Class MsgSendContacts
         '
         'PhoneContact3
         '
+        Me.PhoneContact3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PhoneContact3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PhoneContact3.Location = New System.Drawing.Point(-1, 85)
         Me.PhoneContact3.Name = "PhoneContact3"
@@ -40,6 +41,7 @@ Partial Class MsgSendContacts
         '
         'PhoneContact2
         '
+        Me.PhoneContact2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PhoneContact2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PhoneContact2.Location = New System.Drawing.Point(-1, 58)
         Me.PhoneContact2.Name = "PhoneContact2"
@@ -50,6 +52,7 @@ Partial Class MsgSendContacts
         '
         'PhoneContact1
         '
+        Me.PhoneContact1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PhoneContact1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PhoneContact1.Location = New System.Drawing.Point(-1, 31)
         Me.PhoneContact1.Name = "PhoneContact1"
@@ -60,6 +63,7 @@ Partial Class MsgSendContacts
         '
         'PhoneContact0
         '
+        Me.PhoneContact0.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PhoneContact0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PhoneContact0.Location = New System.Drawing.Point(-1, 4)
         Me.PhoneContact0.Name = "PhoneContact0"

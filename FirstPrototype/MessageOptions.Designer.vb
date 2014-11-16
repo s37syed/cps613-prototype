@@ -33,6 +33,7 @@ Partial Class MessageOptions
         Me.DeleteMessage.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.icon_delete_msg
         Me.DeleteMessage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.DeleteMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DeleteMessage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DeleteMessage.Location = New System.Drawing.Point(75, 0)
         Me.DeleteMessage.Name = "DeleteMessage"
         Me.DeleteMessage.Size = New System.Drawing.Size(33, 33)
@@ -43,6 +44,7 @@ Partial Class MessageOptions
         '
         Me.NewMessage.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.icon_new_msg
         Me.NewMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NewMessage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.NewMessage.Location = New System.Drawing.Point(5, 0)
         Me.NewMessage.Name = "NewMessage"
         Me.NewMessage.Size = New System.Drawing.Size(33, 33)

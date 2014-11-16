@@ -30,6 +30,7 @@ Partial Class ContactScreen
         '
         'Contact1
         '
+        Me.Contact1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Contact1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Contact1.Location = New System.Drawing.Point(-1, 4)
         Me.Contact1.Name = "Contact1"
@@ -40,6 +41,7 @@ Partial Class ContactScreen
         '
         'Contact2
         '
+        Me.Contact2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Contact2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Contact2.Location = New System.Drawing.Point(-1, 31)
         Me.Contact2.Name = "Contact2"
@@ -50,6 +52,7 @@ Partial Class ContactScreen
         '
         'Contact3
         '
+        Me.Contact3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Contact3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Contact3.Location = New System.Drawing.Point(-1, 58)
         Me.Contact3.Name = "Contact3"
@@ -60,6 +63,7 @@ Partial Class ContactScreen
         '
         'Contact4
         '
+        Me.Contact4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Contact4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Contact4.Location = New System.Drawing.Point(-1, 85)
         Me.Contact4.Name = "Contact4"

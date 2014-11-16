@@ -37,6 +37,7 @@ Partial Class CallChild
         '
         'ParentHangUpButton
         '
+        Me.ParentHangUpButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ParentHangUpButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ParentHangUpButton.Location = New System.Drawing.Point(46, 262)
         Me.ParentHangUpButton.Name = "ParentHangUpButton"

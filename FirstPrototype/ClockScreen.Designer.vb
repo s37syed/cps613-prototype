@@ -42,6 +42,7 @@ Partial Class ClockScreen
         Me.Clock1.CenterPoint.PaintAttributes = New AnalogClock.PaintAttributes(AnalogClock.PaintObject.Brush, 1.0!)
         Me.Clock1.CenterPoint.RelativeRadius = 0.03!
         Me.Clock1.CenterPoint.Tag = Nothing
+        Me.Clock1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Clock1.HourHand.PaintAttributes = New AnalogClock.PaintAttributes(AnalogClock.PaintObject.Brush, 1.0!)
         Me.Clock1.HourHand.RelativeRadius = 0.65!
         Me.Clock1.HourHand.Tag = Nothing

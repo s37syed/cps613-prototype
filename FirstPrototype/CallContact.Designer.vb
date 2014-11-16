@@ -29,6 +29,7 @@ Partial Class CallContact
         '
         'CallButton
         '
+        Me.CallButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CallButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CallButton.Location = New System.Drawing.Point(-1, 89)
         Me.CallButton.Name = "CallButton"
