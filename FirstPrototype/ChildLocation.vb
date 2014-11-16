@@ -7,7 +7,6 @@ Public Class ChildLocation
     Private Sub CallChildButton_Click(sender As Object, e As EventArgs) Handles CallChildButton.Click
         ParentPhone.ChildLocationScreen.Enabled = False
         ParentPhone.ChildLocationScreen.Visible = False
-        Me.OutGoingRingtone.PlayLooping()
         If ParentPhone.ChildLocationScreen.childName = "Christina" Then
             ' call user control here
             For Each cont In Main.MainWatch.Controls
@@ -16,6 +15,7 @@ Public Class ChildLocation
             Main.horizontalCount = 15
             Main.MainScreenTracker = 0
             Main.receive_call.Visible = True
+            Me.OutGoingRingtone.PlayLooping()
         End If
         ParentPhone.CallChildScreen.CallerName.Text = "Calling " & childName
         ParentPhone.CallChildScreen.CallerName.Left = 105 - ParentPhone.CallChildScreen.CallerName.Width \ 2

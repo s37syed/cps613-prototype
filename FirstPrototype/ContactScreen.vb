@@ -61,5 +61,10 @@
         contactScreen2.ContactName.Left = 57 - contactScreen2.ContactName.Width \ 2
         Debug.WriteLine("what is the name: " & sendName)
         Debug.WriteLine("what it should be: " & clickedLabel.Text.ToString)
+        Main.send_image.Label1.Left = 57 - Main.send_image.Label1.Width \ 2
+        Main.send_video.Label1.Left = 57 - Main.send_image.Label1.Width \ 2
+        Main.send_message.NameLabel.Text = "To: " & Main.contactScreen1.sendName
+        Main.send_message.NameLabel.Left = 57 - Main.send_message.NameLabel.Width \ 2
+        Main.send_message.DateLabel.Left = 57 - Main.send_message.DateLabel.Width \ 2
     End Sub
 End Class

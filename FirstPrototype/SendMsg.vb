@@ -4,6 +4,7 @@
         DateLabel.Text = Format(Date.Now(), "dd" + "/" + " MM" + "/" + "yy")
         NameLabel.Text = "To: " & Main.contactScreen1.sendName
         NameLabel.Left = 57 - NameLabel.Width \ 2
+        DateLabel.Left = 25 + DateLabel.Width \ 2
     End Sub
 
     Private Sub Contact1_Click(sender As Object, e As EventArgs) Handles Contact1.Click, Contact2.Click, Contact3.Click

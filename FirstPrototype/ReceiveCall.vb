@@ -4,9 +4,11 @@
         Me.Visible = False
         Main.horizontalCount = 15
         Main.CallConnectedScreen.ContactNameLabel.Text = "Dad"
+        Main.CallConnectedScreen.ContactNameLabel.Left = 57 - Main.CallConnectedScreen.ContactNameLabel.Width \ 2
         Main.CallConnectedScreen.Visible = True
         ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()
         ParentPhone.CallChildScreen.CallerName.Text = "Connected"
+        ParentPhone.CallChildScreen.CallerName.Left = 105 - ParentPhone.CallChildScreen.CallerName.Width \ 2
     End Sub
     Public Sub swipeLeft()
         ParentPhone.ChildLocationScreen.OutGoingRingtone.Stop()

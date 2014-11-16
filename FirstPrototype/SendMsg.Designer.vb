@@ -62,7 +62,7 @@ Partial Class SendMsg
         Me.Contact3.Name = "Contact3"
         Me.Contact3.Size = New System.Drawing.Size(113, 23)
         Me.Contact3.TabIndex = 6
-        Me.Contact3.Text = "yes"
+        Me.Contact3.Text = "Yes, of course!"
         Me.Contact3.UseVisualStyleBackColor = False
         '
         'Contact2
@@ -78,7 +78,7 @@ Partial Class SendMsg
         Me.Contact2.Name = "Contact2"
         Me.Contact2.Size = New System.Drawing.Size(113, 23)
         Me.Contact2.TabIndex = 5
-        Me.Contact2.Text = "No i h8 u"
+        Me.Contact2.Text = "No, thank you."
         Me.Contact2.UseVisualStyleBackColor = False
         '
         'Contact1
@@ -94,7 +94,7 @@ Partial Class SendMsg
         Me.Contact1.Name = "Contact1"
         Me.Contact1.Size = New System.Drawing.Size(113, 23)
         Me.Contact1.TabIndex = 4
-        Me.Contact1.Text = "OK see u soon <3"
+        Me.Contact1.Text = "OK see you soon."
         Me.Contact1.UseVisualStyleBackColor = False
         '
         'SendMsg

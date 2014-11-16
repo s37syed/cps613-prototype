@@ -40,7 +40,7 @@ Partial Class ReceiveCall
         'CallerName
         '
         Me.CallerName.AutoSize = True
-        Me.CallerName.Location = New System.Drawing.Point(43, 22)
+        Me.CallerName.Location = New System.Drawing.Point(43, 35)
         Me.CallerName.Name = "CallerName"
         Me.CallerName.Size = New System.Drawing.Size(27, 13)
         Me.CallerName.TabIndex = 4
@@ -49,7 +49,7 @@ Partial Class ReceiveCall
         'CallingLabel
         '
         Me.CallingLabel.AutoSize = True
-        Me.CallingLabel.Location = New System.Drawing.Point(35, 5)
+        Me.CallingLabel.Location = New System.Drawing.Point(31, 9)
         Me.CallingLabel.Name = "CallingLabel"
         Me.CallingLabel.Size = New System.Drawing.Size(50, 13)
         Me.CallingLabel.TabIndex = 3
