@@ -17,7 +17,5 @@
         Next
         Main.receive_msg_notification.TransparentRichTextBox1.Hide()
         Main.msgOptions2.Hide()
-        'Main.receive_msg_notification.TransparentRichTextBox1.Clear()
-        'Main.receive_msg_notification.TransparentRichTextBox1.Refresh()
     End Sub
 End Class

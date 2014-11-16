@@ -14,6 +14,7 @@
             cont.Hide()
         Next cont
         Main.send_image2.Show()
+        Main.send_image2.checkIfEmpty()
         hide_thread = New System.Threading.Thread(AddressOf WorkerThread)
         hide_thread.Start()
     End Sub
@@ -23,6 +24,7 @@
             cont.Hide()
         Next cont
         Main.send_video2.Show()
+        Main.send_video2.checkIfEmpty()
         hide_thread = New System.Threading.Thread(AddressOf WorkerThread2)
         hide_thread.Start()
     End Sub
