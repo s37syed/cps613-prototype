@@ -113,7 +113,6 @@ Public Class Main
         Else
             NewMsgEventPic.Visible = True
         End If
-        horizontalCount = 18
     End Sub
     Private Sub AccessControl2()
         'remove new msg prompt
