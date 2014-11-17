@@ -170,7 +170,7 @@ Public Class Main
         End If
     End Sub
     Private Sub BaseLoad()
-        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+
         'Start the form in the center
         Dim X As Integer = (Screen.PrimaryScreen.Bounds.Width - Me.Width) / 2
         Dim Y As Integer = (Screen.PrimaryScreen.Bounds.Height - Me.Height) / 2
