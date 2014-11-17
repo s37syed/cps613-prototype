@@ -7,6 +7,7 @@
 
     Private Sub CreateReminder_Click(sender As Object, e As EventArgs) Handles CreateReminder.Click
         Me.Hide()
+        Main.tasks2.Label1.Visible = True
         Main.ReminderTime = New System.Threading.Thread(AddressOf Main.WorkerThread3)
         Main.ReminderTime.Start()
         Main.tasks2.Label1.Text = "6pm - danielle mom"

@@ -95,6 +95,7 @@ Partial Class Tasks2
         Me.Label1.Size = New System.Drawing.Size(100, 13)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "6pm - danielle mom "
+        Me.Label1.Visible = False
         '
         'Tasks2
         '
