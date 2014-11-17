@@ -51,9 +51,9 @@ Partial Class ParentPhone
         Me.ClientSize = New System.Drawing.Size(233, 376)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MainPhoneControl)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "ParentPhone"
-        Me.Text = "ParentPhone"
+        Me.Text = "Parent Phone"
         Me.ResumeLayout(False)
 
     End Sub

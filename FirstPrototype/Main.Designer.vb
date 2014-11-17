@@ -198,7 +198,7 @@ Partial Class Main
         Me.Controls.Add(Me.MainWatch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Main"
-        Me.Text = "Prototype B1"
+        Me.Text = "Child Watch"
         Me.MainWatch.ResumeLayout(False)
         Me.MainWatch.PerformLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).EndInit()
