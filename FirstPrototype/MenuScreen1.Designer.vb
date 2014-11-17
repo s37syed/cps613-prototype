@@ -46,12 +46,14 @@ Partial Class MenuScreen1
         '
         'MessagesMenuButton
         '
+        Me.MessagesMenuButton.BackColor = System.Drawing.SystemColors.Control
         Me.MessagesMenuButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.MessagesMenuButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MessagesMenuButton.Image = CType(resources.GetObject("MessagesMenuButton.Image"), System.Drawing.Image)
+        Me.MessagesMenuButton.Image = Global.FirstPrototype.My.Resources.Resources.scaled_new_note
         Me.MessagesMenuButton.Location = New System.Drawing.Point(59, 54)
         Me.MessagesMenuButton.Name = "MessagesMenuButton"
         Me.MessagesMenuButton.Size = New System.Drawing.Size(45, 45)
+        Me.MessagesMenuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.MessagesMenuButton.TabIndex = 3
         Me.MessagesMenuButton.TabStop = False
         '

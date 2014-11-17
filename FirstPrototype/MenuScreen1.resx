@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="MessagesMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfeCwgWIyDL6EZq
-        AAAClUlEQVRoQ+3YvWsUQRzG8dOoECTaaiEENVF8iSgYX5CARYIWdiJoKVb+A1oqNkER7FXwDwgRtAhW
-        mhSmyT8gChoUFVG0NS/q91n5HcNkLpnx5uYumAc+cLu53Xt2M7c3u7XVnr14iIlC7mIz/jlj+N0mV5Gc
-        89DGv7CIzwV8glt8P5LyHLbxVq0olFOwzx3XikD24Ce+oU8rLO+gDZ9US+WyAfpc/YentMLLEOZgB6by
-        B1BlFlr5uFoqFystfumDUEkdkL3HXu9Dx5UegK0P0XBuWFo73ZiR9ucmVFpDQmfY1ofMIFj6Gfw35/AU
-        Fre0zp7OsD8kfLq6HUOw9Hv4G+TwFha39BfndSMqvBtVQqWP4DquZaT9HYLFLR3jOOpp1xexC36xkPqQ
-        cNOu0itdJUSFd2FJ2lE65iohS86wpXTppKtEo5QsHTskdmLZhEprvjsP/fbH0vt/QD/BocQOiUGsmFDp
-        D/B3FusM/MQOiajCSqi0/j23cCPBTVyGn2xDwk0rx/QIYobEJJLSytIXoLPol/SF5tPLphWlt8PmCSfg
-        lxR9ee11R5Qehs6wzRdUXMvuF/Gk8zpL6U3oh+7LYmi+7EaPIqyQFT8HlV7AUaxD1tKaaNsOY7yCG/dv
-        OsM2VHQAvX9fBm8CohMq/RG2w1iW0wj93b9+Zy99GHcwGsl9bnEfVkbPN3QXdAU9cJO9dDPRGL+HHdVS
-        43RU6dislS6VlpTWbY4mMTm5yV469TodaxqW7KXtoWRub2DJXlo/4Zcyu4j6wxay9kUslaZKf8WqK/0a
-        2vBltVQu3dDnarr6QitS8gB2xI9wtgDdJOgxhX3ubSRFExw7YttJSd+xHsnR5NyGSUn6EduGpqIj3lLI
-        /5Ra7Q9WELENeRdDRgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="PhoneMenuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

@@ -26,19 +26,19 @@ Partial Class Main
         Me.MainWatch = New System.Windows.Forms.Panel()
         Me.Reminder = New System.Windows.Forms.Label()
         Me.ErrorMsg = New System.Windows.Forms.Label()
-        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.VolumeDownButton = New System.Windows.Forms.Button()
-        Me.VolumeUpButton = New System.Windows.Forms.Button()
-        Me.ButtonSwipeRight = New System.Windows.Forms.Button()
-        Me.ButtonSwipeUp = New System.Windows.Forms.Button()
-        Me.ButtonSwipeDown = New System.Windows.Forms.Button()
-        Me.ButtonSwipeLeft = New System.Windows.Forms.Button()
         Me.PowerOffButton = New System.Windows.Forms.Button()
+        Me.ButtonSwipeLeft = New System.Windows.Forms.Button()
+        Me.ButtonSwipeDown = New System.Windows.Forms.Button()
+        Me.ButtonSwipeUp = New System.Windows.Forms.Button()
+        Me.ButtonSwipeRight = New System.Windows.Forms.Button()
+        Me.VolumeUpButton = New System.Windows.Forms.Button()
+        Me.VolumeDownButton = New System.Windows.Forms.Button()
+        Me.NewMsgEventPic = New System.Windows.Forms.PictureBox()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MainWatch.SuspendLayout()
         CType(Me.NewMsgEventPic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,18 +80,6 @@ Partial Class Main
         Me.ErrorMsg.Text = "Not Implemented"
         Me.ErrorMsg.Visible = False
         '
-        'NewMsgEventPic
-        '
-        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
-        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.NewMsgEventPic.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
-        Me.NewMsgEventPic.Name = "NewMsgEventPic"
-        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
-        Me.NewMsgEventPic.TabIndex = 10
-        Me.NewMsgEventPic.TabStop = False
-        Me.NewMsgEventPic.Visible = False
-        '
         'HomeButton
         '
         Me.HomeButton.Location = New System.Drawing.Point(108, 205)
@@ -104,78 +92,96 @@ Partial Class Main
         'Timer1
         '
         '
-        'VolumeDownButton
+        'PowerOffButton
         '
-        Me.VolumeDownButton.BackColor = System.Drawing.Color.Transparent
-        Me.VolumeDownButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_silent
-        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VolumeDownButton.Location = New System.Drawing.Point(200, 197)
-        Me.VolumeDownButton.Name = "VolumeDownButton"
-        Me.VolumeDownButton.Size = New System.Drawing.Size(33, 33)
-        Me.VolumeDownButton.TabIndex = 15
-        Me.VolumeDownButton.UseVisualStyleBackColor = False
-        '
-        'VolumeUpButton
-        '
-        Me.VolumeUpButton.BackColor = System.Drawing.Color.Transparent
-        Me.VolumeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_loud
-        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.VolumeUpButton.Location = New System.Drawing.Point(239, 197)
-        Me.VolumeUpButton.Name = "VolumeUpButton"
-        Me.VolumeUpButton.Size = New System.Drawing.Size(33, 33)
-        Me.VolumeUpButton.TabIndex = 16
-        Me.VolumeUpButton.UseVisualStyleBackColor = False
-        '
-        'ButtonSwipeRight
-        '
-        Me.ButtonSwipeRight.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
-        Me.ButtonSwipeRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonSwipeRight.Location = New System.Drawing.Point(212, 94)
-        Me.ButtonSwipeRight.Name = "ButtonSwipeRight"
-        Me.ButtonSwipeRight.Size = New System.Drawing.Size(45, 45)
-        Me.ButtonSwipeRight.TabIndex = 17
-        Me.ButtonSwipeRight.UseVisualStyleBackColor = True
-        '
-        'ButtonSwipeUp
-        '
-        Me.ButtonSwipeUp.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
-        Me.ButtonSwipeUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonSwipeUp.Image = Global.FirstPrototype.My.Resources.Resources.swipe_up
-        Me.ButtonSwipeUp.Location = New System.Drawing.Point(124, 11)
-        Me.ButtonSwipeUp.Name = "ButtonSwipeUp"
-        Me.ButtonSwipeUp.Size = New System.Drawing.Size(45, 45)
-        Me.ButtonSwipeUp.TabIndex = 18
-        Me.ButtonSwipeUp.UseVisualStyleBackColor = True
-        '
-        'ButtonSwipeDown
-        '
-        Me.ButtonSwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
-        Me.ButtonSwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonSwipeDown.Location = New System.Drawing.Point(124, 185)
-        Me.ButtonSwipeDown.Name = "ButtonSwipeDown"
-        Me.ButtonSwipeDown.Size = New System.Drawing.Size(45, 45)
-        Me.ButtonSwipeDown.TabIndex = 19
-        Me.ButtonSwipeDown.UseVisualStyleBackColor = True
+        Me.PowerOffButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.power_off
+        Me.PowerOffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PowerOffButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PowerOffButton.Location = New System.Drawing.Point(21, 185)
+        Me.PowerOffButton.Name = "PowerOffButton"
+        Me.PowerOffButton.Size = New System.Drawing.Size(45, 45)
+        Me.PowerOffButton.TabIndex = 21
+        Me.PowerOffButton.UseVisualStyleBackColor = True
         '
         'ButtonSwipeLeft
         '
         Me.ButtonSwipeLeft.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_left
         Me.ButtonSwipeLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonSwipeLeft.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonSwipeLeft.Location = New System.Drawing.Point(21, 94)
         Me.ButtonSwipeLeft.Name = "ButtonSwipeLeft"
         Me.ButtonSwipeLeft.Size = New System.Drawing.Size(45, 45)
         Me.ButtonSwipeLeft.TabIndex = 20
         Me.ButtonSwipeLeft.UseVisualStyleBackColor = True
         '
-        'PowerOffButton
+        'ButtonSwipeDown
         '
-        Me.PowerOffButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.power_off
-        Me.PowerOffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PowerOffButton.Location = New System.Drawing.Point(21, 185)
-        Me.PowerOffButton.Name = "PowerOffButton"
-        Me.PowerOffButton.Size = New System.Drawing.Size(45, 45)
-        Me.PowerOffButton.TabIndex = 21
-        Me.PowerOffButton.UseVisualStyleBackColor = True
+        Me.ButtonSwipeDown.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_down
+        Me.ButtonSwipeDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonSwipeDown.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonSwipeDown.Location = New System.Drawing.Point(124, 185)
+        Me.ButtonSwipeDown.Name = "ButtonSwipeDown"
+        Me.ButtonSwipeDown.Size = New System.Drawing.Size(45, 45)
+        Me.ButtonSwipeDown.TabIndex = 19
+        Me.ButtonSwipeDown.UseVisualStyleBackColor = True
+        '
+        'ButtonSwipeUp
+        '
+        Me.ButtonSwipeUp.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_up
+        Me.ButtonSwipeUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonSwipeUp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonSwipeUp.Location = New System.Drawing.Point(124, 11)
+        Me.ButtonSwipeUp.Name = "ButtonSwipeUp"
+        Me.ButtonSwipeUp.Size = New System.Drawing.Size(45, 45)
+        Me.ButtonSwipeUp.TabIndex = 18
+        Me.ButtonSwipeUp.UseVisualStyleBackColor = True
+        '
+        'ButtonSwipeRight
+        '
+        Me.ButtonSwipeRight.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.swipe_right
+        Me.ButtonSwipeRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonSwipeRight.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonSwipeRight.Location = New System.Drawing.Point(212, 94)
+        Me.ButtonSwipeRight.Name = "ButtonSwipeRight"
+        Me.ButtonSwipeRight.Size = New System.Drawing.Size(45, 45)
+        Me.ButtonSwipeRight.TabIndex = 17
+        Me.ButtonSwipeRight.UseVisualStyleBackColor = True
+        '
+        'VolumeUpButton
+        '
+        Me.VolumeUpButton.BackColor = System.Drawing.Color.Transparent
+        Me.VolumeUpButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_loud
+        Me.VolumeUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeUpButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VolumeUpButton.Location = New System.Drawing.Point(239, 197)
+        Me.VolumeUpButton.Name = "VolumeUpButton"
+        Me.VolumeUpButton.Size = New System.Drawing.Size(33, 33)
+        Me.VolumeUpButton.TabIndex = 16
+        Me.VolumeUpButton.UseVisualStyleBackColor = False
+        '
+        'VolumeDownButton
+        '
+        Me.VolumeDownButton.BackColor = System.Drawing.Color.Transparent
+        Me.VolumeDownButton.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.volume_silent
+        Me.VolumeDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.VolumeDownButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VolumeDownButton.Location = New System.Drawing.Point(200, 197)
+        Me.VolumeDownButton.Name = "VolumeDownButton"
+        Me.VolumeDownButton.Size = New System.Drawing.Size(33, 33)
+        Me.VolumeDownButton.TabIndex = 15
+        Me.VolumeDownButton.UseVisualStyleBackColor = False
+        '
+        'NewMsgEventPic
+        '
+        Me.NewMsgEventPic.BackgroundImage = Global.FirstPrototype.My.Resources.Resources.new_msg_pic
+        Me.NewMsgEventPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NewMsgEventPic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.NewMsgEventPic.Location = New System.Drawing.Point(-1, -1)
+        Me.NewMsgEventPic.Name = "NewMsgEventPic"
+        Me.NewMsgEventPic.Size = New System.Drawing.Size(113, 113)
+        Me.NewMsgEventPic.TabIndex = 10
+        Me.NewMsgEventPic.TabStop = False
+        Me.NewMsgEventPic.Visible = False
         '
         'Main
         '
