@@ -101,7 +101,7 @@ Public Class Main
     End Sub
     Friend Sub WorkerThread4()
         'worker thread to handle display of new msg event
-        Threading.Thread.Sleep(5000) '2 seconds currently
+        Threading.Thread.Sleep(1) '2 seconds currently
         AccessControl7()
         Threading.Thread.Sleep(5000) '2 seconds currently
         AccessControl8()
@@ -406,6 +406,27 @@ Public Class Main
         Me.Close()
     End Sub
     Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles ButtonSwipeDown.Click
+        'Shah's code
+
+        If (horizontalCount = 4) Then
+            For Each cont In MainWatch.Controls
+                If cont.ToString = "FirstPrototype.ReceiveMsg" Then
+                    cont.ShowOptions()
+                End If
+            Next
+        End If
+        If (horizontalCount = 5) Then
+            cal.Hide()
+            cal2.Show()
+        End If
+        If (horizontalCount = 9) Then
+            appOptions.Show()
+        End If
+        If (horizontalCount = 18) Then
+            msgOptions2.Location = New Point(0, 75)
+            msgOptions2.BringToFront()
+            msgOptions2.Show()
+        End If
         'Chris' code
         If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollDown()
@@ -413,6 +434,14 @@ Public Class Main
         'Shah's code
         If (horizontalCount = 1) Then
             contactScreen1.scrollDown()
+        End If
+        If (horizontalCount = 7) Then
+            Me.MsgSendContacts1.scrollDown()
+        End If
+    End Sub
+    Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles ButtonSwipeUp.Click
+        If PhoneContactsScreen.Visible = True Then
+            PhoneContactsScreen.scrollUp()
         End If
         If (horizontalCount = 4) Then
             For Each cont In MainWatch.Controls
@@ -427,9 +456,6 @@ Public Class Main
             Next
             cal.Show()
         End If
-        If (horizontalCount = 7) Then
-            Me.MsgSendContacts1.scrollDown()
-        End If
         If (horizontalCount = 9) Then
             appOptions.Hide()
         End If
@@ -437,38 +463,14 @@ Public Class Main
             msgOptions2.SendToBack()
             msgOptions2.Hide()
         End If
-    End Sub
-    Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles ButtonSwipeUp.Click
-        'Chris' code
-        If PhoneContactsScreen.Visible = True Then
-            PhoneContactsScreen.scrollUp()
-        End If
-        'Shah's code
+
         If (horizontalCount = 1) Then
             contactScreen1.scrollUp()
-        End If
-        If (horizontalCount = 4) Then
-            For Each cont In MainWatch.Controls
-                If cont.ToString = "FirstPrototype.ReceiveMsg" Then
-                    cont.ShowOptions()
-                End If
-            Next
-        End If
-        If (horizontalCount = 5) Then
-            cal.Hide()
-            cal2.Show()
         End If
         If (horizontalCount = 7) Then
             Me.MsgSendContacts1.scrollUp()
         End If
-        If (horizontalCount = 9) Then
-            appOptions.Show()
-        End If
-        If (horizontalCount = 18) Then
-            msgOptions2.Location = New Point(0, 75)
-            msgOptions2.BringToFront()
-            msgOptions2.Show()
-        End If
+
     End Sub
     Friend Sub ResetTracker()
         MainScreenTracker = 0
