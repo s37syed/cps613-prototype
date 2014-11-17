@@ -229,7 +229,7 @@ Public Class Main
         'Add controls
         MainWatch.Controls.Add(contactScreen1)
     End Sub
-    Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles SwipeLeftButton.Click
+    Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles ButtonSwipeLeft.Click
         'Chris' code
         If MainScreenTracker = 0 Then
 
@@ -386,7 +386,7 @@ Public Class Main
             horizontalCount = 0
         End If
     End Sub
-    Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles SwipeRightButton.Click
+    Private Sub SwipeRightButton_Click(sender As Object, e As EventArgs) Handles ButtonSwipeRight.Click
         If MainScreenTracker = 0 And Not horizontalCount = 1 And Not horizontalCount = 2 And Not horizontalCount = 4 And Not horizontalCount = 5 And Not horizontalCount = 6 And Not horizontalCount = 7 And Not horizontalCount = 8 And Not horizontalCount = 9 And Not horizontalCount = 10 And Not horizontalCount = 11 And Not horizontalCount = 13 And Not horizontalCount = 15 And Not horizontalCount = 16 And Not horizontalCount = 18 Then
             MenuScreen0.Visible = False
             MenuScreen1.Visible = True
@@ -401,15 +401,11 @@ Public Class Main
 
         End If
     End Sub
-    Private Sub PowerButton_Click(sender As Object, e As EventArgs)
+    Private Sub PowerButton_Click(sender As Object, e As EventArgs) Handles PowerOffButton.Click
         Strt.Abort()
         Me.Close()
     End Sub
-
-    Private Sub DoorButton_Click(sender As Object, e As EventArgs)
-
-    End Sub
-    Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles SwipeDown.Click
+    Private Sub SwipeDown_Click(sender As Object, e As EventArgs) Handles ButtonSwipeDown.Click
         'Chris' code
         If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollDown()
@@ -442,7 +438,7 @@ Public Class Main
             msgOptions2.Hide()
         End If
     End Sub
-    Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles SwipeUpButton.Click
+    Private Sub SwipeUp_Click(sender As Object, e As EventArgs) Handles ButtonSwipeUp.Click
         'Chris' code
         If PhoneContactsScreen.Visible = True Then
             PhoneContactsScreen.scrollUp()
@@ -501,33 +497,15 @@ Public Class Main
         songPanel4.BringToFront()
         MusicAppCounter += 1
     End Sub
-    Private Sub VolumeDownButton_Click(sender As Object, e As EventArgs) Handles VolumeDownButton.Click
-        volumeStatus.SubtractVolumeLevel()
-        MainWatch.Controls.Add(volumeStatus)
-        volumeStatus.BringToFront()
-        Me.Timer1.Start()
-    End Sub
-
-    '@author Daniel Kozij 
-    Private Sub VolumeUpButton_Click(sender As Object, e As EventArgs) Handles VolumeUpButton.Click
-        volumeStatus.AddVolumeLevel()
-        MainWatch.Controls.Add(volumeStatus)
-        volumeStatus.BringToFront()
-        Me.Timer1.Start()
-
-    End Sub
 
     'Timer Tick handler
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
         TimerValue = TimerValue + 1
         TurnOffVolumeStatus()
-
     End Sub
 
 
     Private Sub TurnOffVolumeStatus()
-
         If (TimerValue.Equals(10)) Then
             MainWatch.Controls.Remove(volumeStatus)
             Timer1.Stop()
@@ -535,15 +513,15 @@ Public Class Main
         End If
     End Sub
 
-    Private Sub DoorButton_Click_1(sender As Object, e As EventArgs) Handles DoorButton.Click
-        MenuScreen1.Visible = False
-        MenuScreen2.Visible = False
-        MenuScreen0.Visible = True
-        horizontalCount = 0
-        MainScreenTracker = 0
-    End Sub
+    'Private Sub DoorButton_Click_1(sender As Object, e As EventArgs) Handles Nothing
+    '    MenuScreen1.Visible = False
+    '    MenuScreen2.Visible = False
+    '    MenuScreen0.Visible = True
+    '    horizontalCount = 0
+    '    MainScreenTracker = 0
+    'End Sub
 
-    Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerButton.Click
+    Private Sub PowerButton_Click_1(sender As Object, e As EventArgs) Handles PowerOffButton.Click
         Strt.Abort()
         Me.Close()
     End Sub
@@ -554,5 +532,18 @@ Public Class Main
         Next
         receive_msg_notification.Visible = True
         horizontalCount = 18
+    End Sub
+
+    Private Sub VolumeDownButton_Click(sender As Object, e As EventArgs) Handles VolumeDownButton.Click
+        volumeStatus.SubtractVolumeLevel()
+        MainWatch.Controls.Add(volumeStatus)
+        volumeStatus.BringToFront()
+        Me.Timer1.Start()
+    End Sub
+    Private Sub VolumeUpButton_Click(sender As Object, e As EventArgs) Handles VolumeUpButton.Click
+        volumeStatus.AddVolumeLevel()
+        MainWatch.Controls.Add(volumeStatus)
+        volumeStatus.BringToFront()
+        Me.Timer1.Start()
     End Sub
 End Class
