@@ -230,7 +230,13 @@ Public Class Main
         MainWatch.Controls.Add(contactScreen1)
     End Sub
     Private Sub SwipeLeftButton_Click(sender As Object, e As EventArgs) Handles ButtonSwipeLeft.Click
-        'Chris' code
+
+        'Try
+        '    send_message.msg_sent_popup_thread.Abort()
+        '    send_message2.msg_sent_popup_thread.Abort()
+        'Catch v As NullReferenceException
+        'End Try
+
         If MainScreenTracker = 0 Then
 
         ElseIf MainScreenTracker = 1 Then
